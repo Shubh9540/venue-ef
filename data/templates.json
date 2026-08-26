@@ -1,0 +1,694 @@
+{
+  "common": {
+    "globalUI": {
+      "loading": "Loading...",
+      "notFound": "Not found"
+    }
+  },
+  "categories": {
+    "Venue": {
+      "templateComponents": {
+        "template-1": {
+          "shared": {
+            "Topbar": "VenueTopBar1",
+            "Header": "VenueHeader1",
+            "Footer": "VenueFooter1"
+          },
+          "pages": {
+            "home": {
+              "components": [
+                {
+                  "key": "Hero",
+                  "component": "VenueHero1"
+                },
+                {
+                  "key": "AboutUs",
+                  "component": "VenueAboutUs1"
+                },
+                {
+                  "key": "WhyChooseUs",
+                  "component": "VenueWhyChooseUs1"
+                },
+                {
+                  "key": "Services",
+                  "component": "VenueServices1"
+                },
+                {
+                  "key": "OurValues",
+                  "component": "VenueOurValues1"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "VenueTestimonials1"
+                },
+                {
+                  "key": "CTA",
+                  "component": "VenueCTA1"
+                },
+                {
+                  "key": "Blogs",
+                  "component": "VenueBlogs1"
+                }
+              ]
+            },
+            "about": {
+              "components": [
+                {
+                  "key": "AboutUs",
+                  "component": "VenueAboutUs1"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "sections": {
+        "TopBar": {
+          "variants": {
+            "VenueTopBar1": {
+              "phone": "+91 98765 43210",
+              "phoneIcon": "FaPhoneAlt",
+              "email": "info@venuev.com",
+              "emailIcon": "FaEnvelope",
+              "socialTitle": "Follow Us:",
+              "socialLinks": [
+                {
+                  "id": "ig",
+                  "icon": "FaInstagram",
+                  "url": "#"
+                },
+                {
+                  "id": "fb",
+                  "icon": "FaFacebookF",
+                  "url": "#"
+                },
+                {
+                  "id": "yt",
+                  "icon": "FaYoutube",
+                  "url": "#"
+                }
+              ]
+            }
+          }
+        },
+        "Header": {
+          "variants": {
+            "VenueHeader1": {
+              "image": "/main logo/logo.webp",
+              "imageAlt": "Venu EV Logo",
+              "navLinks": [
+                {
+                  "id": "home",
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "id": "about",
+                  "label": "About",
+                  "url": "/about"
+                },
+                {
+                  "id": "services",
+                  "label": "Services",
+                  "url": "/services"
+                },
+                {
+                  "id": "venues",
+                  "label": "Venues",
+                  "url": "/venues"
+                },
+                {
+                  "id": "gallery",
+                  "label": "Gallery",
+                  "url": "/gallery"
+                },
+                {
+                  "id": "blogs",
+                  "label": "Blogs",
+                  "url": "/blogs"
+                },
+                {
+                  "id": "contact",
+                  "label": "Contact",
+                  "url": "/contact"
+                }
+              ],
+              "contactButton": {
+                "text": "Get a Quote",
+                "url": "/contact"
+              }
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "VenueHero1": {
+              "slides": [
+                {
+                  "id": "slide-1",
+                  "image": "/banner/banner1.webp",
+                  "imageAlt": "Creating Unforgettable Moments",
+                  "badge": "WE PLAN. YOU CELEBRATE.",
+                  "title": "Creating Unforgettable",
+                  "titleHighlight": "Moments, Beautifully",
+                  "dividerIcon": "FaRegHeart",
+                  "description": "From elegant venues to extraordinary celebrations, we bring your perfect event to life.",
+                  "primaryBtn": {
+                    "text": "Get a Quote",
+                    "url": "/contact",
+                    "icon": "MdArrowForward"
+                  },
+                  "secondaryBtn": {
+                    "text": "Watch Video",
+                    "url": "#video",
+                    "icon": "FaPlay"
+                  }
+                },
+                {
+                  "id": "slide-2",
+                  "image": "/banner/banner2.webp",
+                  "imageAlt": "Where Every Wedding Becomes a Masterpiece",
+                  "badge": "YOUR DREAM, OUR CRAFT.",
+                  "title": "Where Every Wedding",
+                  "titleHighlight": "Becomes a Masterpiece",
+                  "dividerIcon": "FaRegHeart",
+                  "description": "From floral decor to grand banquets, we craft every detail of your special day with love and precision.",
+                  "primaryBtn": {
+                    "text": "Explore Venues",
+                    "url": "/venues",
+                    "icon": "MdArrowForward"
+                  },
+                  "secondaryBtn": {
+                    "text": "Our Portfolio",
+                    "url": "/gallery",
+                    "icon": "FaPlay"
+                  }
+                },
+                {
+                  "id": "slide-3",
+                  "image": "/banner/banner3.webp",
+                  "imageAlt": "Elevate Your Corporate Events Effortlessly",
+                  "badge": "EVENTS THAT INSPIRE.",
+                  "title": "Elevate Your Corporate",
+                  "titleHighlight": "Events Effortlessly",
+                  "dividerIcon": "FaRegHeart",
+                  "description": "Professional event management for conferences, product launches, and corporate galas — done with elegance.",
+                  "primaryBtn": {
+                    "text": "Plan Your Event",
+                    "url": "/contact",
+                    "icon": "MdArrowForward"
+                  },
+                  "secondaryBtn": {
+                    "text": "Our Services",
+                    "url": "/services",
+                    "icon": "FaPlay"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "VenueAboutUs1": {
+              "badge": "ABOUT US",
+              "title": "Crafting Experiences.",
+              "titleHighlight": "Creating Memories.",
+              "dividerIcon": "FaRegHeart",
+              "description1": "At Venu EV, we believe every celebration is unique and deserves to be extraordinary. With a passion for perfection and an eye for detail, we design and manage events that leave a lasting impression on you and your guests.",
+              "description2": "From elegant venues to flawless planning, we take care of everything so you can enjoy your special moments stress-free.",
+              "buttonText": "Know More About Us",
+              "buttonUrl": "/about",
+              "buttonIcon": "MdArrowForward",
+              "image1": "/about/about1.webp",
+              "image1Alt": "About Venu EV Events",
+              "image2": "/about/about2.webp",
+              "image2Alt": "About Venu EV Celebrations",
+              "decorImage": "/about/about_bg1.webp",
+              "decorImageAlt": "Decorative floral pattern"
+            }
+          }
+        },
+        "WhyChooseUs": {
+          "variants": {
+            "VenueWhyChooseUs1": {
+              "title": "Why Choose Venu EV?",
+              "dividerIcon": "FaRegHeart",
+              "features": [
+                {
+                  "id": "feature-1",
+                  "icon": "FaGem",
+                  "title": "Elegant Designs",
+                  "description": "Thoughtfully designed events that reflect your style."
+                },
+                {
+                  "id": "feature-2",
+                  "icon": "FaUsers",
+                  "title": "Experienced Team",
+                  "description": "Skilled professionals dedicated to making your event perfect."
+                },
+                {
+                  "id": "feature-3",
+                  "icon": "FaClipboardList",
+                  "title": "End-to-End Management",
+                  "description": "From planning to execution, we handle everything seamlessly."
+                },
+                {
+                  "id": "feature-4",
+                  "icon": "FaAward",
+                  "title": "Quality Assurance",
+                  "description": "We ensure the highest standards for a flawless experience."
+                }
+              ],
+              "stats": [
+                {
+                  "id": "stat-1",
+                  "icon": "FaRegCalendarAlt",
+                  "value": "500+",
+                  "label": "Events",
+                  "subtitle": "Successfully Planned"
+                },
+                {
+                  "id": "stat-2",
+                  "icon": "FaRegSmile",
+                  "value": "1000+",
+                  "label": "Happy Clients",
+                  "subtitle": "Across India"
+                },
+                {
+                  "id": "stat-3",
+                  "icon": "FaMapMarkerAlt",
+                  "value": "50+",
+                  "label": "Premium Venues",
+                  "subtitle": "Across Cities"
+                },
+                {
+                  "id": "stat-4",
+                  "icon": "FaUsersCog",
+                  "value": "10+",
+                  "label": "Years of Experience",
+                  "subtitle": "In Event Excellence"
+                }
+              ]
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "VenueServices1": {
+              "badge": "OUR SERVICES",
+              "title": "Every Detail.",
+              "titleHighlight": "Perfectly Planned.",
+              "dividerIcon": "FaRegHeart",
+              "description": "From elegant setups to seamless execution, we offer comprehensive event planning services to make your celebrations truly unforgettable.",
+              "items": [
+                {
+                  "id": "wedding-planning",
+                  "slug": "wedding-planning",
+                  "image": "/banner/banner1.webp",
+                  "imageAlt": "Wedding Planning Setup",
+                  "icon": "FaRing",
+                  "title": "Wedding Planning",
+                  "description": "End-to-end wedding planning services tailored to your style and traditions.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/wedding-planning"
+                },
+                {
+                  "id": "engagement-planning",
+                  "slug": "engagement-planning",
+                  "image": "/banner/banner2.webp",
+                  "imageAlt": "Engagement Planning Decor",
+                  "icon": "FaGem",
+                  "title": "Engagement Planning",
+                  "description": "Beautifully curated engagement events that mark the beginning of your special journey.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/engagement-planning"
+                },
+                {
+                  "id": "reception-planning",
+                  "slug": "reception-planning",
+                  "image": "/banner/banner3.webp",
+                  "imageAlt": "Reception Planning Hall",
+                  "icon": "FaConciergeBell",
+                  "title": "Reception Planning",
+                  "description": "From grand entrances to elegant décor – we make your reception truly memorable.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/reception-planning"
+                },
+                {
+                  "id": "birthday-party-planning",
+                  "slug": "birthday-party-planning",
+                  "image": "/about/about1.webp",
+                  "imageAlt": "Birthday Party Planning Decor",
+                  "icon": "FaBirthdayCake",
+                  "title": "Birthday Party Planning",
+                  "description": "Creative themes, fun setups & perfect arrangements for unforgettable birthdays.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/birthday-party-planning"
+                },
+                {
+                  "id": "corporate-event-planning",
+                  "slug": "corporate-event-planning",
+                  "image": "/about/about2.webp",
+                  "imageAlt": "Corporate Event Planning",
+                  "icon": "FaUsers",
+                  "title": "Corporate Event Planning",
+                  "description": "Professional events, conferences & meetings designed to leave a lasting impact.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/corporate-event-planning"
+                },
+                {
+                  "id": "exhibition-trade-show",
+                  "slug": "exhibition-trade-show",
+                  "image": "/banner/banner1.webp",
+                  "imageAlt": "Exhibition & Trade Show Stall",
+                  "icon": "FaBriefcase",
+                  "title": "Exhibition & Trade Show",
+                  "description": "End-to-end management of exhibitions & trade shows that showcase your brand.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/exhibition-trade-show"
+                },
+                {
+                  "id": "product-launches",
+                  "slug": "product-launches",
+                  "image": "/banner/banner2.webp",
+                  "imageAlt": "Product Launch Stage",
+                  "icon": "FaRocket",
+                  "title": "Product Launches",
+                  "description": "High-impact product launch events that create buzz and build brand value.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/product-launches"
+                },
+                {
+                  "id": "private-parties",
+                  "slug": "private-parties",
+                  "image": "/banner/banner3.webp",
+                  "imageAlt": "Private Parties Gathering",
+                  "icon": "FaGlassCheers",
+                  "title": "Private Parties",
+                  "description": "Intimate gatherings or grand celebrations, we plan parties that reflect you.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/private-parties"
+                }
+              ]
+            }
+          }
+        },
+        "OurValues": {
+          "variants": {
+            "VenueOurValues1": {
+              "badge": "OUR VALUES",
+              "title": "The Values That",
+              "titleHighlight": "Define Us",
+              "dividerIcon": "FaRegHeart",
+              "description": "These values are at the heart of everything we do, guiding us to create exceptional experiences every time.",
+              "items": [
+                {
+                  "id": "excellence",
+                  "icon": "FaAward",
+                  "title": "Excellence",
+                  "description": "We are committed to the highest standards in every detail, ensuring nothing but the best."
+                },
+                {
+                  "id": "creativity",
+                  "icon": "FaLightbulb",
+                  "title": "Creativity",
+                  "description": "We bring fresh ideas and unique concepts to life, making every event truly one of a kind."
+                },
+                {
+                  "id": "integrity",
+                  "icon": "FaHandshake",
+                  "title": "Integrity",
+                  "description": "We believe in honesty, transparency and building trust with our clients and partners."
+                },
+                {
+                  "id": "client-focus",
+                  "icon": "FaUsers",
+                  "title": "Client Focus",
+                  "description": "Our clients are at the heart of everything we do. Your vision is our mission."
+                },
+                {
+                  "id": "reliability",
+                  "icon": "FaClock",
+                  "title": "Reliability",
+                  "description": "We deliver on our promises with precision and ensure a seamless experience from start to finish."
+                },
+                {
+                  "id": "passion",
+                  "icon": "FaShieldAlt",
+                  "title": "Passion",
+                  "description": "We love what we do, and that passion drives us to create memorable celebrations."
+                }
+              ]
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "VenueTestimonials1": {
+              "badge": "TESTIMONIALS",
+              "title": "What Our",
+              "titleHighlight": "Clients",
+              "titleEnd": "Say",
+              "dividerIcon": "FaRegHeart",
+              "description": "Real stories from amazing people who trusted us with their special moments. Their words inspire us to keep creating unforgettable experiences.",
+              "items": [
+                {
+                  "id": "test-1",
+                  "name": "Priya & Arjun",
+                  "role": "Wedding",
+                  "roleIcon": "FaRing",
+                  "rating": 5,
+                  "image": "/banner/banner1.webp",
+                  "imageAlt": "Priya & Arjun Wedding Testimonial",
+                  "quote": "Venu EV made our wedding a dream come true! Every detail was perfect and beyond our expectations."
+                },
+                {
+                  "id": "test-2",
+                  "name": "Rahul Mehta",
+                  "role": "Corporate Event",
+                  "roleIcon": "FaBriefcase",
+                  "rating": 5,
+                  "image": "/banner/banner2.webp",
+                  "imageAlt": "Rahul Mehta Corporate Event Testimonial",
+                  "quote": "A professional and creative team. Our corporate event was a huge success. Highly recommended!"
+                },
+                {
+                  "id": "test-3",
+                  "name": "Ananya Sharma",
+                  "role": "Birthday Party",
+                  "roleIcon": "FaBirthdayCake",
+                  "rating": 5,
+                  "image": "/banner/banner3.webp",
+                  "imageAlt": "Ananya Sharma Birthday Testimonial",
+                  "quote": "From planning to execution, everything was seamless. They truly know how to create magic!"
+                },
+                {
+                  "id": "test-4",
+                  "name": "Kavita & Rohan",
+                  "role": "Reception",
+                  "roleIcon": "FaConciergeBell",
+                  "rating": 5,
+                  "image": "/about/about1.webp",
+                  "imageAlt": "Kavita & Rohan Reception Testimonial",
+                  "quote": "The décor, lighting, and coordination were flawless. All our guests were amazed by the hospitality!"
+                },
+                {
+                  "id": "test-5",
+                  "name": "Vikramaditya Singhania",
+                  "role": "Product Launch",
+                  "roleIcon": "FaRocket",
+                  "rating": 5,
+                  "image": "/about/about2.webp",
+                  "imageAlt": "Vikramaditya Singhania Product Launch Testimonial",
+                  "quote": "Exceptional stage design and audio-visual setup for our product launch. Flawless execution from start to finish."
+                },
+                {
+                  "id": "test-6",
+                  "name": "Sneha & Karan",
+                  "role": "Private Party",
+                  "roleIcon": "FaGlassCheers",
+                  "rating": 5,
+                  "image": "/banner/banner1.webp",
+                  "imageAlt": "Sneha & Karan Private Party Testimonial",
+                  "quote": "Our anniversary party was beyond spectacular. Thank you for making our special day truly unforgettable!"
+                }
+              ]
+            }
+          }
+        },
+        "CTA": {
+          "variants": {
+            "VenueCTA1": {
+              "badge": "READY TO PLAN SOMETHING EXTRAORDINARY?",
+              "title": "Let's Create Moments",
+              "titleHighlight": "That Last Forever.",
+              "description": "Whether it's an intimate gathering or a grand celebration, we're here to bring your vision to life with perfection.",
+              "buttonText": "GET A QUOTE",
+              "buttonUrl": "/contact",
+              "buttonIcon": "MdArrowForward",
+              "phoneLabel": "TALK TO OUR EXPERT",
+              "phoneNumber": "+91 98765 43210",
+              "phoneUrl": "tel:+919876543210",
+              "phoneIcon": "FaPhoneAlt",
+              "bgImage": "/banner/banner1.webp",
+              "bgImageAlt": "Plan something extraordinary venue background"
+            }
+          }
+        },
+        "Blogs": {
+          "variants": {
+            "VenueBlogs1": {
+              "badge": "OUR BLOGS",
+              "title": "Stories That",
+              "titleHighlight": "Inspire",
+              "dividerIcon": "FaRegHeart",
+              "description": "Expert advice, real stories and the latest trends to help you plan unforgettable events.",
+              "viewAllText": "VIEW ALL ARTICLES",
+              "viewAllUrl": "/blogs",
+              "viewAllIcon": "MdArrowForward",
+              "items": [
+                {
+                  "id": "blog-1",
+                  "slug": "10-stunning-wedding-decor-ideas-2024",
+                  "image": "/banner/banner1.webp",
+                  "imageAlt": "10 Stunning Wedding Décor Ideas for 2024",
+                  "icon": "FaCalendarAlt",
+                  "date": "MAY 10, 2024",
+                  "category": "WEDDING PLANNING",
+                  "title": "10 Stunning Wedding Décor Ideas for 2024",
+                  "description": "From elegant minimalism to grand opulence, discover décor trends that will make your wedding truly unforgettable.",
+                  "linkUrl": "/blogs/10-stunning-wedding-decor-ideas-2024"
+                },
+                {
+                  "id": "blog-2",
+                  "slug": "how-to-plan-a-successful-corporate-event",
+                  "image": "/banner/banner2.webp",
+                  "imageAlt": "How to Plan a Successful Corporate Event",
+                  "icon": "FaBriefcase",
+                  "date": "APR 28, 2024",
+                  "category": "CORPORATE EVENTS",
+                  "title": "How to Plan a Successful Corporate Event",
+                  "description": "A step-by-step guide to planning impactful corporate events that engage your audience and deliver results.",
+                  "linkUrl": "/blogs/how-to-plan-a-successful-corporate-event"
+                },
+                {
+                  "id": "blog-3",
+                  "slug": "checklist-for-planning-the-perfect-private-party",
+                  "image": "/banner/banner3.webp",
+                  "imageAlt": "Checklist for Planning the Perfect Private Party",
+                  "icon": "FaLightbulb",
+                  "date": "APR 15, 2024",
+                  "category": "TIPS & GUIDES",
+                  "title": "Checklist for Planning the Perfect Private Party",
+                  "description": "From guest list to final thanks, here's your ultimate checklist to host a flawless celebration.",
+                  "linkUrl": "/blogs/checklist-for-planning-the-perfect-private-party"
+                }
+              ]
+            }
+          }
+        },
+        "Footer": {
+          "variants": {
+            "VenueFooter1": {
+              "logo": "/main logo/logo.webp",
+              "logoAlt": "Venu EV Logo",
+              "description": "We design and deliver exceptional events that inspire, connect and leave a lasting impression.",
+              "socialLinks": [
+                {
+                  "id": "ig",
+                  "icon": "FaInstagram",
+                  "url": "#"
+                },
+                {
+                  "id": "fb",
+                  "icon": "FaFacebookF",
+                  "url": "#"
+                },
+                {
+                  "id": "in",
+                  "icon": "FaLinkedinIn",
+                  "url": "#"
+                },
+                {
+                  "id": "yt",
+                  "icon": "FaYoutube",
+                  "url": "#"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "quick-links",
+                  "title": "QUICK LINKS",
+                  "links": [
+                    { "id": "ql-1", "label": "Home", "url": "/" },
+                    { "id": "ql-2", "label": "About Us", "url": "/about" },
+                    { "id": "ql-3", "label": "Services", "url": "/services" },
+                    { "id": "ql-4", "label": "Our Work", "url": "/gallery" },
+                    { "id": "ql-5", "label": "Blog", "url": "/blogs" },
+                    { "id": "ql-6", "label": "Contact Us", "url": "/contact" }
+                  ]
+                },
+                {
+                  "id": "services",
+                  "title": "SERVICES",
+                  "links": [
+                    { "id": "srv-1", "label": "Corporate Events", "url": "/services/corporate-event-planning" },
+                    { "id": "srv-2", "label": "Weddings", "url": "/services/wedding-planning" },
+                    { "id": "srv-3", "label": "Social Celebrations", "url": "/services/private-parties" },
+                    { "id": "srv-4", "label": "Product Launches", "url": "/services/product-launches" },
+                    { "id": "srv-5", "label": "Experiential Marketing", "url": "/services/exhibition-trade-show" },
+                    { "id": "srv-6", "label": "Conference & Seminars", "url": "/services/corporate-event-planning" }
+                  ]
+                },
+                {
+                  "id": "resources",
+                  "title": "RESOURCES",
+                  "links": [
+                    { "id": "res-1", "label": "Event Planning Guide", "url": "/resources/event-planning-guide" },
+                    { "id": "res-2", "label": "Checklists", "url": "/resources/checklists" },
+                    { "id": "res-3", "label": "Vendor Recommendations", "url": "/resources/vendor-recommendations" },
+                    { "id": "res-4", "label": "Budget Calculator", "url": "/resources/budget-calculator" },
+                    { "id": "res-5", "label": "FAQs", "url": "/faqs" }
+                  ]
+                }
+              ],
+              "contactTitle": "CONTACT US",
+              "contactItems": [
+                {
+                  "id": "addr",
+                  "icon": "FaMapMarkerAlt",
+                  "text": "123, Event Street, Mumbai, Maharashtra 400001"
+                },
+                {
+                  "id": "phone",
+                  "icon": "FaPhoneAlt",
+                  "text": "+91 98765 43210",
+                  "url": "tel:+919876543210"
+                },
+                {
+                  "id": "email",
+                  "icon": "FaEnvelope",
+                  "text": "hello@venuev.com",
+                  "url": "mailto:hello@venuev.com"
+                },
+                {
+                  "id": "hours",
+                  "icon": "FaClock",
+                  "text": "Mon - Sat: 10:00 AM - 7:00 PM"
+                }
+              ],
+              "copyrightText": "© 2026 Venu EV. All Rights Reserved. Lestow",
+              "legalLinks": [
+                { "id": "legal-1", "label": "Privacy Policy", "url": "/privacy" },
+                { "id": "legal-2", "label": "Terms & Conditions", "url": "/terms" }
+              ],
+              "tagline": "Made with passion for unforgettable experiences.",
+              "taglineIcon": "FaRegHeart"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,278 @@
+export interface TopBarData {
+  phone: string;
+  phoneIcon?: string;
+  email: string;
+  emailIcon?: string;
+  socialTitle: string;
+  socialLinks: {
+    id: string;
+    icon: string;
+    url: string;
+  }[];
+}
+
+export interface HeaderData {
+  image: string;
+  imageAlt?: string;
+  navLinks: {
+    id: string;
+    label: string;
+    url: string;
+  }[];
+  contactButton: {
+    text: string;
+    url: string;
+  };
+}
+
+export interface HeroSlide {
+  id: string;
+  image: string;
+  imageAlt?: string;
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description: string;
+  primaryBtn: { text: string; url: string; icon?: string };
+  secondaryBtn: { text: string; url: string; icon?: string };
+}
+
+export interface HeroData {
+  slides: HeroSlide[];
+}
+
+export interface AboutUsData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description1: string;
+  description2: string;
+  buttonText: string;
+  buttonUrl: string;
+  buttonIcon?: string;
+  image1: string;
+  image1Alt?: string;
+  image2: string;
+  image2Alt?: string;
+  decorImage?: string;
+  decorImageAlt?: string;
+}
+
+export interface WhyChooseUsFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface WhyChooseUsStat {
+  id: string;
+  icon: string;
+  value: string;
+  label: string;
+  subtitle: string;
+}
+
+export interface WhyChooseUsData {
+  title: string;
+  dividerIcon?: string;
+  features: WhyChooseUsFeature[];
+  stats: WhyChooseUsStat[];
+}
+
+export interface ServiceCard {
+  id: string;
+  slug: string;
+  image: string;
+  imageAlt?: string;
+  icon: string;
+  title: string;
+  description: string;
+  linkText: string;
+  linkUrl: string;
+}
+
+export interface ServicesData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description: string;
+  items: ServiceCard[];
+}
+
+export interface ValueItem {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface OurValuesData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description: string;
+  items: ValueItem[];
+}
+
+export interface TestimonialItem {
+  id: string;
+  name: string;
+  role: string;
+  roleIcon: string;
+  image: string;
+  imageAlt?: string;
+  rating: number;
+  quote: string;
+}
+
+export interface TestimonialsData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  titleEnd?: string;
+  dividerIcon?: string;
+  description: string;
+  items: TestimonialItem[];
+}
+
+export interface CtaData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  buttonIcon?: string;
+  phoneLabel: string;
+  phoneNumber: string;
+  phoneUrl: string;
+  phoneIcon?: string;
+  bgImage: string;
+  bgImageAlt?: string;
+}
+
+export interface BlogItem {
+  id: string;
+  slug: string;
+  image: string;
+  imageAlt?: string;
+  icon: string;
+  date: string;
+  category: string;
+  title: string;
+  description: string;
+  linkUrl: string;
+}
+
+export interface BlogsData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description: string;
+  items: BlogItem[];
+  viewAllText: string;
+  viewAllUrl: string;
+  viewAllIcon?: string;
+}
+
+export interface FooterLink {
+  id: string;
+  label: string;
+  url: string;
+}
+
+export interface FooterColumn {
+  id: string;
+  title: string;
+  links: FooterLink[];
+}
+
+export interface FooterContactItem {
+  id: string;
+  icon: string;
+  text: string;
+  url?: string;
+}
+
+export interface FooterData {
+  logo: string;
+  logoAlt?: string;
+  description: string;
+  socialLinks: {
+    id: string;
+    icon: string;
+    url: string;
+  }[];
+  columns: FooterColumn[];
+  contactTitle: string;
+  contactItems: FooterContactItem[];
+  copyrightText: string;
+  legalLinks: FooterLink[];
+  tagline: string;
+  taglineIcon?: string;
+}
+
+export interface SectionVariant<T> {
+  variants?: {
+    [key: string]: T;
+  };
+}
+
+export interface VenueCategorySections {
+  TopBar?: SectionVariant<TopBarData>;
+  Header?: SectionVariant<HeaderData>;
+  Hero?: SectionVariant<HeroData>;
+  AboutUs?: SectionVariant<AboutUsData>;
+  WhyChooseUs?: SectionVariant<WhyChooseUsData>;
+  Services?: SectionVariant<ServicesData>;
+  OurValues?: SectionVariant<OurValuesData>;
+  Testimonials?: SectionVariant<TestimonialsData>;
+  CTA?: SectionVariant<CtaData>;
+  Blogs?: SectionVariant<BlogsData>;
+  Footer?: SectionVariant<FooterData>;
+}
+
+export interface TemplateComponentItem {
+  key: string;
+  component: string;
+}
+
+export interface TemplatePageConfig {
+  components: TemplateComponentItem[];
+}
+
+export interface TemplateDefinition {
+  shared?: {
+    Topbar?: string;
+    Header?: string;
+    Footer?: string;
+    [key: string]: string | undefined;
+  };
+  pages?: {
+    [pageName: string]: TemplatePageConfig;
+  };
+}
+
+export interface VenueEfTemplateData {
+  common?: {
+    globalUI?: {
+      loading?: string;
+      notFound?: string;
+    };
+    [key: string]: unknown;
+  };
+  categories?: {
+    Venue?: {
+      templateComponents?: {
+        [templateKey: string]: TemplateDefinition;
+      };
+      sections?: VenueCategorySections;
+    };
+  };
+}
