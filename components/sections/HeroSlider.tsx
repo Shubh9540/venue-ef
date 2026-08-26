@@ -109,7 +109,7 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
             <div className="inline-flex items-center gap-2 border border-accent/60 bg-accent/10 backdrop-blur-sm px-4 py-1.5 rounded-full mb-4 sm:mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-accent" />
               <span className="text-accent text-xs sm:text-sm font-semibold tracking-widest uppercase">
-                {slide.tagline}
+                {slide.badge}
               </span>
             </div>
 
@@ -120,12 +120,12 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
             </h1>
 
             {/* Standard Heart Divider */}
-            {data.dividerIcon && (
+            {slide.dividerIcon && (
               <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
                 <div className="w-1.5 h-1.5 rounded-full bg-accent" />
                 <div className="flex items-center justify-center text-accent text-base">
-                  {renderIcon(data.dividerIcon)}
+                  {renderIcon(slide.dividerIcon)}
                 </div>
                 <div className="w-1.5 h-1.5 rounded-full bg-accent" />
                 <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
