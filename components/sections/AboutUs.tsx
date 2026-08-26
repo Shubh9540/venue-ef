@@ -31,6 +31,7 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
             src={data.decorImage}
             alt={data.decorImageAlt || ''}
             fill
+            sizes="128px"
             className="object-contain"
           />
         </div>
@@ -114,6 +115,7 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
                   src={data.image1}
                   alt={data.image1Alt || data.title}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -124,6 +126,7 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
                   src={data.image2}
                   alt={data.image2Alt || data.titleHighlight}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 30vw"
                   className="object-cover"
                 />
               </div>

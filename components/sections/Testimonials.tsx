@@ -198,6 +198,7 @@ export const Testimonials = ({ data }: { data?: TestimonialsData }) => {
                         src={item.image}
                         alt={item.imageAlt || item.name}
                         fill
+                        sizes="60px"
                         className="object-cover"
                       />
                     </div>

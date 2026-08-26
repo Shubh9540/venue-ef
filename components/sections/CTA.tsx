@@ -31,6 +31,7 @@ export const CTA = ({ data }: { data?: CtaData }) => {
             src={data.bgImage}
             alt={data.bgImageAlt || data.title}
             fill
+            sizes="(max-width: 1360px) 100vw, 1360px"
             className="object-cover object-center"
           />
 

@@ -91,6 +91,7 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
             alt={s.imageAlt || s.title}
             fill
             priority={index === 0}
+            sizes="100vw"
             className="object-cover object-center"
           />
           {/* Dark Overlay Gradient */}
@@ -99,7 +100,7 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
       ))}
 
       {/* Content Container */}
-      <div className="relative z-10 w-full h-full max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+      <div className="relative z-10 w-full h-full max-w-[1360px] mx-auto px-6 sm:px-16 md:px-20 lg:px-28 flex items-center">
         <div className="max-w-2xl lg:max-w-3xl py-12">
           <div
             key={slide.id}
