@@ -24,10 +24,10 @@ const renderIcon = (iconName?: string) => {
 export const HeroSlider = ({ data }: { data?: HeroData }) => {
   const [current, setCurrent] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
-  if (!data || !data.slides || data.slides.length === 0) return null;
-
-  const slides = data.slides;
+  const slides = data?.slides || [];
 
   const goTo = useCallback((index: number) => {
     if (animating) return;
@@ -39,84 +39,118 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
   const prev = () => goTo(current === 0 ? slides.length - 1 : current - 1);
   const next = useCallback(() => goTo(current === slides.length - 1 ? 0 : current + 1), [current, slides.length, goTo]);
 
+  // Autoplay
   useEffect(() => {
+    if (slides.length <= 1) return;
     const timer = setInterval(next, 5000);
     return () => clearInterval(timer);
-  }, [next]);
+  }, [next, slides.length]);
+
+  // Touch Swipe Handlers for Mobile
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+    const distance = touchStartX - touchEndX;
+    if (distance > 40) {
+      next();
+    } else if (distance < -40) {
+      prev();
+    }
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
+  if (!data || slides.length === 0) return null;
 
   const slide = slides[current];
 
   return (
-    <section className="relative w-full h-[90vh] min-h-[600px] overflow-hidden">
+    <section 
+      className="relative w-full h-[85vh] sm:h-[90vh] min-h-[560px] overflow-hidden"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       {/* Background Images */}
-      {slides.map((s, i) => (
+      {slides.map((s, index) => (
         <div
           key={s.id}
-          className={`absolute inset-0 transition-opacity duration-700 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            index === current ? 'opacity-100 scale-100' : 'opacity-0 scale-105 pointer-events-none'
+          } transition-all ease-in-out duration-1000`}
         >
           <Image
             src={s.image}
             alt={s.imageAlt || s.title}
             fill
+            priority={index === 0}
             className="object-cover object-center"
-            priority={i === 0}
           />
+          {/* Dark Overlay Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a0612]/90 via-[#1a0612]/70 to-transparent" />
         </div>
       ))}
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1a0612]/90 via-[#1a0612]/60 to-transparent" />
-
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
-        <div className="w-full max-w-[1280px] mx-auto px-6 lg:px-16 py-20 lg:py-24">
-          <div className="max-w-2xl lg:max-w-3xl">
-
-            {/* Badge */}
-            <div className="flex items-center gap-3 mb-4 lg:mb-5">
-              <span className="h-px w-10 bg-white/50" />
-              <span className="text-white/80 text-xs sm:text-sm tracking-[0.25em] font-medium uppercase">
-                {slide.badge}
+      {/* Content Container */}
+      <div className="relative z-10 w-full h-full max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+        <div className="max-w-2xl lg:max-w-3xl py-12">
+          <div
+            key={slide.id}
+            className="animate-fadeIn"
+          >
+            {/* Tagline Badge */}
+            <div className="inline-flex items-center gap-2 border border-accent/60 bg-accent/10 backdrop-blur-sm px-4 py-1.5 rounded-full mb-4 sm:mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+              <span className="text-accent text-xs sm:text-sm font-semibold tracking-widest uppercase">
+                {slide.tagline}
               </span>
-              <span className="h-px w-10 bg-white/50" />
             </div>
 
-            {/* Heading */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+            {/* Title */}
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] mb-4">
               {slide.title}{' '}
-              <span className="text-accent">{slide.titleHighlight}</span>
+              <span className="text-accent italic font-serif font-normal">{slide.titleHighlight}</span>
             </h1>
 
-            {/* Decorative divider */}
-            {slide.dividerIcon && (
-              <div className="flex items-center gap-2 mb-4 lg:mb-5">
-                <span className="block w-12 sm:w-16 h-0.5 bg-accent shrink-0" />
-                <span className="block w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-                {renderIcon(slide.dividerIcon)}
-                <span className="block w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-                <span className="block w-12 sm:w-16 h-0.5 bg-accent shrink-0" />
+            {/* Standard Heart Divider */}
+            {data.dividerIcon && (
+              <div className="flex items-center gap-2 mb-4 sm:mb-6">
+                <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
+                <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                <div className="flex items-center justify-center text-accent text-base">
+                  {renderIcon(data.dividerIcon)}
+                </div>
+                <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
               </div>
             )}
 
             {/* Description */}
-            <p className="text-white/80 text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 max-w-xl">
+            <p className="text-white/80 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 max-w-xl">
               {slide.description}
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href={slide.primaryBtn.url}
-                className="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-white px-7 py-3.5 rounded-md font-semibold text-base transition-all duration-300 shadow-lg hover:shadow-accent/40 hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-white px-6 sm:px-7 py-3 sm:py-3.5 rounded-md font-semibold text-sm sm:text-base transition-all duration-300 shadow-lg hover:shadow-accent/40 hover:shadow-xl"
               >
                 {slide.primaryBtn.text}
                 {renderIcon(slide.primaryBtn.icon || 'MdArrowForward')}
               </Link>
               <Link
                 href={slide.secondaryBtn.url}
-                className="inline-flex items-center gap-3 border border-white/60 hover:border-white text-white px-7 py-3.5 rounded-md font-semibold text-base transition-all duration-300 backdrop-blur-sm hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-3 border border-white/60 hover:border-white text-white px-6 sm:px-7 py-3 sm:py-3.5 rounded-md font-semibold text-sm sm:text-base transition-all duration-300 backdrop-blur-sm hover:bg-white/10"
               >
-                <span className="w-8 h-8 rounded-full border border-white/60 flex items-center justify-center">
+                <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/60 flex items-center justify-center">
                   {renderIcon(slide.secondaryBtn.icon || 'FaPlay')}
                 </span>
                 {slide.secondaryBtn.text}
@@ -127,32 +161,32 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
         </div>
       </div>
 
-      {/* Arrow Nav */}
+      {/* Arrow Nav (Hidden on mobile/tablet to avoid text overlap, visible on desktop) */}
       <button
         onClick={prev}
-        className="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-white/50 bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/25 transition-all duration-300"
+        className="hidden md:flex absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-white/50 bg-white/10 backdrop-blur-sm items-center justify-center text-white hover:bg-white/25 transition-all duration-300 shadow-md"
         aria-label="Previous slide"
       >
         <FaChevronLeft className="text-sm" />
       </button>
       <button
         onClick={next}
-        className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-white/50 bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/25 transition-all duration-300"
+        className="hidden md:flex absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-white/50 bg-white/10 backdrop-blur-sm items-center justify-center text-white hover:bg-white/25 transition-all duration-300 shadow-md"
         aria-label="Next slide"
       >
         <FaChevronRight className="text-sm" />
       </button>
 
-      {/* Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
+      {/* Dots (Clean navigation for mobile and desktop) */}
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5 sm:gap-3">
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
             className={`transition-all duration-300 rounded-full ${
               i === current
-                ? 'w-8 h-3 bg-accent'
-                : 'w-3 h-3 bg-white/50 hover:bg-white/80'
+                ? 'w-7 sm:w-8 h-2.5 sm:h-3 bg-accent'
+                : 'w-2.5 sm:w-3 h-2.5 sm:h-3 bg-white/50 hover:bg-white/80'
             }`}
             aria-label={`Go to slide ${i + 1}`}
           />
