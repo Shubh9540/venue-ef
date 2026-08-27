@@ -63,14 +63,125 @@
         }
       },
       "sections": {
+        "OurMissionBreadcrumb": {
+          "variants": {
+            "VenueOurMissionBreadcrumb1": {
+              "title": "Our Mission",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Mission"
+                }
+              ]
+            }
+          }
+        },
+        "OurVisionBreadcrumb": {
+          "variants": {
+            "VenueOurVisionBreadcrumb1": {
+              "title": "Our Vision",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Vision"
+                }
+              ]
+            }
+          }
+        },
+        "OurStoryBreadcrumb": {
+          "variants": {
+            "VenueOurStoryBreadcrumb1": {
+              "title": "Our Story",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Story"
+                }
+              ]
+            }
+          }
+        },
+        "OurAwardsBreadcrumb": {
+          "variants": {
+            "VenueOurAwardsBreadcrumb1": {
+              "title": "Our Awards",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Awards"
+                }
+              ]
+            }
+          }
+        },
+        "OurTeamBreadcrumb": {
+          "variants": {
+            "VenueOurTeamBreadcrumb1": {
+              "title": "Our Team",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Team"
+                }
+              ]
+            }
+          }
+        },
+        "TeamDetailBreadcrumb": {
+          "variants": {
+            "VenueTeamDetailBreadcrumb1": {
+              "title": "Team Member",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Team",
+                  "url": "/team"
+                },
+                {
+                  "label": "Team Member"
+                }
+              ]
+            }
+          }
+        },
         "AboutBreadcrumb": {
           "variants": {
             "VenueAboutBreadcrumb1": {
               "id": "about-breadcrumb-1",
               "title": "About Us",
               "paths": [
-                { "label": "Home", "url": "/" },
-                { "label": "About Us" }
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "About Us"
+                }
               ],
               "bgImage": "/banner/banner1.webp"
             }
@@ -460,13 +571,84 @@
             }
           }
         },
+        "AboutMission": {
+          "variants": {
+            "VenueAboutMission1": {
+              "id": "about-mission-1",
+              "badge": "OUR MISSION",
+              "title": "Creating Moments.",
+              "titleHighlight": "Delivering Excellence.",
+              "description1": "Our mission is to turn your ideas into extraordinary experiences that connect people, celebrate moments, and create memories that last a lifetime.",
+              "description2": "We combine creativity, precision, and passion to deliver seamless events that reflect your vision and exceed your expectations—every single time.",
+              "image": "/other/our mission.webp",
+              "imageAlt": "Our Mission",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FaRegLightbulb",
+                  "title": "CREATIVE IDEAS",
+                  "description": "Thoughtful concepts that inspire."
+                },
+                {
+                  "id": "f2",
+                  "icon": "FaBullseye",
+                  "title": "PRECISE EXECUTION",
+                  "description": "Flawless planning with precision."
+                },
+                {
+                  "id": "f3",
+                  "icon": "FaRegHeart",
+                  "title": "LASTING IMPACT",
+                  "description": "Memories that stay forever."
+                }
+              ]
+            }
+          }
+        },
+        "AboutVision": {
+          "variants": {
+            "VenueAboutVision1": {
+              "id": "about-vision-1",
+              "badge": "OUR VISION",
+              "title": "A Vision That",
+              "titleHighlight": "Inspires.",
+              "description1": "To be a leading event management company known for innovation, integrity, and inspiration—setting new benchmarks and creating moments that people cherish for a lifetime.",
+              "description2": "",
+              "image": "/other/our vision.webp",
+              "imageAlt": "Our Vision Banquet Hall",
+              "features": [
+                {
+                  "id": "v1",
+                  "icon": "FaUserTie",
+                  "title": "LEADERSHIP",
+                  "description": "Setting new standards in the events industry."
+                },
+                {
+                  "id": "v2",
+                  "icon": "FaRegLightbulb",
+                  "title": "INNOVATION",
+                  "description": "Constantly evolving with fresh ideas."
+                },
+                {
+                  "id": "v3",
+                  "icon": "FaRegStar",
+                  "title": "INSPIRATION",
+                  "description": "Creating moments that leave a lasting impact."
+                }
+              ]
+            }
+          }
+        },
         "MissionVision": {
           "variants": {
             "VenueMissionVision1": {
               "id": "mv-1",
               "badge": "OUR PURPOSE",
               "title": "Vision That Inspires. Mission That Delivers.",
-              "highlightWords": ["Vision", "Mission"],
+              "highlightWords": [
+                "Vision",
+                "Mission"
+              ],
               "description": "Driven by creativity and guided by passion, we turn ideas into unforgettable experiences.",
               "visionCard": {
                 "icon": "FaRegEye",
@@ -492,37 +674,281 @@
             "VenueCoreValues1": {
               "id": "core-values-1",
               "items": [
-                  {
-                    "id": "passion",
-                    "icon": "FaRegHeart",
-                    "title": "PASSION",
-                    "description": "We love what we do, and it shows in every detail."
-                  },
-                  {
-                    "id": "creativity",
-                    "icon": "FaLightbulb",
-                    "title": "CREATIVITY",
-                    "description": "Fresh ideas and unique concepts for every celebration."
-                  },
-                  {
-                    "id": "integrity",
-                    "icon": "FaShieldAlt",
-                    "title": "INTEGRITY",
-                    "description": "Honest communication and transparent relationships."
-                  },
-                  {
-                    "id": "excellence",
-                    "icon": "FaAward",
-                    "title": "EXCELLENCE",
-                    "description": "We strive for the highest standards in everything we do."
-                  },
-                  {
-                    "id": "client-focus",
-                    "icon": "FaUsers",
-                    "title": "CLIENT FOCUS",
-                    "description": "Your dreams are our priority. Your happiness is our success."
-                  }
+                {
+                  "id": "passion",
+                  "icon": "FaRegHeart",
+                  "title": "PASSION",
+                  "description": "We love what we do, and it shows in every detail."
+                },
+                {
+                  "id": "creativity",
+                  "icon": "FaLightbulb",
+                  "title": "CREATIVITY",
+                  "description": "Fresh ideas and unique concepts for every celebration."
+                },
+                {
+                  "id": "integrity",
+                  "icon": "FaShieldAlt",
+                  "title": "INTEGRITY",
+                  "description": "Honest communication and transparent relationships."
+                },
+                {
+                  "id": "excellence",
+                  "icon": "FaAward",
+                  "title": "EXCELLENCE",
+                  "description": "We strive for the highest standards in everything we do."
+                },
+                {
+                  "id": "client-focus",
+                  "icon": "FaUsers",
+                  "title": "CLIENT FOCUS",
+                  "description": "Your dreams are our priority. Your happiness is our success."
+                }
               ]
+            }
+          }
+        },
+        "Awards": {
+          "variants": {
+            "VenueAwards1": {
+              "id": "awards-1",
+              "badge": "OUR AWARDS",
+              "title": "Recognition",
+              "titleHighlight": "That Inspires",
+              "description": "Every award is a reflection of our passion, creativity and the trust our clients place in us.",
+              "statsValue": "12+",
+              "statsLabel": "AWARDS WON",
+              "items": [
+                {
+                  "id": "aw1",
+                  "year": "2024",
+                  "title": "Best Event Management Company",
+                  "organization": "EVENT EXCELLENCE AWARDS",
+                  "image": "/award/award_1.png",
+                  "imageAlt": "Best Event Management Company"
+                },
+                {
+                  "id": "aw2",
+                  "year": "2023",
+                  "title": "Excellence in Event Innovation",
+                  "organization": "NATIONAL EVENT AWARDS",
+                  "image": "/award/award_2.png",
+                  "imageAlt": "Excellence in Event Innovation"
+                },
+                {
+                  "id": "aw3",
+                  "year": "2023",
+                  "title": "Most Creative Event Design",
+                  "organization": "EVENT DESIGN EXCELLENCE AWARDS",
+                  "image": "/award/award_3.png",
+                  "imageAlt": "Most Creative Event Design"
+                },
+                {
+                  "id": "aw4",
+                  "year": "2022",
+                  "title": "Client Choice Award",
+                  "organization": "VERIFIED BY CLIENTS",
+                  "image": "/award/award_4.png",
+                  "imageAlt": "Client Choice Award"
+                },
+                {
+                  "id": "aw5",
+                  "year": "2021",
+                  "title": "Rising Star in Event Industry",
+                  "organization": "EVENT INDUSTRY RECOGNITION",
+                  "image": "/award/award_1.png",
+                  "imageAlt": "Rising Star in Event Industry"
+                }
+              ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "VenueTeam1": {
+              "id": "team-1",
+              "badge": "OUR TEAM",
+              "title": "The People Behind",
+              "titleHighlight": "Exceptional Experiences",
+              "description": "A passionate team of creatives, strategists, and innovators dedicated to bringing visionary ideas to life.",
+              "members": [
+                {
+                  "id": "tm1",
+                  "slug": "esther-howard",
+                  "name": "Esther Howard",
+                  "role": "MARKETING MANAGER",
+                  "image": "/team/team4.jpg",
+                  "imageAlt": "Esther Howard",
+                  "email": "esther.howard@venuev.com",
+                  "bio": "Esther leads our marketing strategies with creativity and insight. She ensures every brand story we tell resonates, engages, and drives meaningful connections.",
+                  "socials": [
+                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
+                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
+                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
+                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                  ],
+                  "stats": [
+                    {
+                      "icon": "FaGraduationCap",
+                      "title": "Education",
+                      "value1": "MBA in Marketing",
+                      "value2": "University of Mumbai"
+                    },
+                    {
+                      "icon": "FaBriefcase",
+                      "title": "Experience",
+                      "value1": "7+ Years in Brand Strategy",
+                      "value2": "& Marketing"
+                    },
+                    {
+                      "icon": "FaRegStar",
+                      "title": "Expertise",
+                      "value1": "Brand Strategy, Digital Marketing,",
+                      "value2": "Campaign Management"
+                    },
+                    {
+                      "icon": "FaTrophy",
+                      "title": "Focus",
+                      "value1": "Creating Impactful Stories",
+                      "value2": "That Drive Results"
+                    }
+                  ]
+                },
+                {
+                  "id": "tm2",
+                  "slug": "cody-fisher",
+                  "name": "Cody Fisher",
+                  "role": "DIGITAL RESEARCHER",
+                  "image": "/team/team6.jpg",
+                  "imageAlt": "Cody Fisher",
+                  "email": "cody.fisher@venuev.com",
+                  "bio": "Cody leads our digital research with precision and depth. He ensures every brand decision we make is backed by strong data and trends.",
+                  "socials": [
+                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
+                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
+                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
+                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                  ],
+                  "stats": [
+                    {
+                      "icon": "FaGraduationCap",
+                      "title": "Education",
+                      "value1": "MSc in Data Science",
+                      "value2": "Delhi University"
+                    },
+                    {
+                      "icon": "FaBriefcase",
+                      "title": "Experience",
+                      "value1": "5+ Years in Digital Research",
+                      "value2": "& Analytics"
+                    },
+                    {
+                      "icon": "FaRegStar",
+                      "title": "Expertise",
+                      "value1": "Market Analysis, Trend Forecasting,",
+                      "value2": "Data Visualization"
+                    },
+                    {
+                      "icon": "FaTrophy",
+                      "title": "Focus",
+                      "value1": "Uncovering Insights",
+                      "value2": "That Matter"
+                    }
+                  ]
+                },
+                {
+                  "id": "tm3",
+                  "slug": "tony-robbins",
+                  "name": "Tony Robbins",
+                  "role": "SR. SOFTWARE ENGINEER",
+                  "image": "/team/team7.jpg",
+                  "imageAlt": "Tony Robbins",
+                  "email": "tony.robbins@venuev.com",
+                  "bio": "Tony brings our digital experiences to life with robust code and architecture. He ensures our platforms are scalable, fast, and secure.",
+                  "socials": [
+                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
+                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
+                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
+                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                  ],
+                  "stats": [
+                    {
+                      "icon": "FaGraduationCap",
+                      "title": "Education",
+                      "value1": "BTech in Computer Science",
+                      "value2": "IIT Bombay"
+                    },
+                    {
+                      "icon": "FaBriefcase",
+                      "title": "Experience",
+                      "value1": "8+ Years in Software Eng.",
+                      "value2": "& Architecture"
+                    },
+                    {
+                      "icon": "FaRegStar",
+                      "title": "Expertise",
+                      "value1": "Full Stack Development,",
+                      "value2": "Cloud Infrastructure"
+                    },
+                    {
+                      "icon": "FaTrophy",
+                      "title": "Focus",
+                      "value1": "Building Scalable Systems",
+                      "value2": "For Growth"
+                    }
+                  ]
+                },
+                {
+                  "id": "tm4",
+                  "slug": "eric-thomas",
+                  "name": "Eric Thomas",
+                  "role": "SR. SOFTWARE ENGINEER",
+                  "image": "/team/team8.jpg",
+                  "imageAlt": "Eric Thomas",
+                  "email": "eric.thomas@venuev.com",
+                  "bio": "Eric designs intuitive user interfaces and robust backend systems. He bridges the gap between design and technical implementation.",
+                  "socials": [
+                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
+                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
+                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
+                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                  ],
+                  "stats": [
+                    {
+                      "icon": "FaGraduationCap",
+                      "title": "Education",
+                      "value1": "BTech in IT",
+                      "value2": "NIT Delhi"
+                    },
+                    {
+                      "icon": "FaBriefcase",
+                      "title": "Experience",
+                      "value1": "6+ Years in Development",
+                      "value2": "& UI/UX Design"
+                    },
+                    {
+                      "icon": "FaRegStar",
+                      "title": "Expertise",
+                      "value1": "React, Node.js,",
+                      "value2": "System Architecture"
+                    },
+                    {
+                      "icon": "FaTrophy",
+                      "title": "Focus",
+                      "value1": "Creating Seamless",
+                      "value2": "User Experiences"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "TeamDetailPageContent": {
+          "variants": {
+            "VenueTeamDetailPageContent1": {
+              "badge": "MEET OUR TEAM",
+              "title": "Experienced minds. Creative hearts. One vision."
             }
           }
         },
@@ -535,43 +961,43 @@
               "dividerIcon": "FaRegHeart",
               "description": "These values are at the heart of everything we do, guiding us to create exceptional experiences every time.",
               "items": [
-                  {
-                    "id": "excellence",
-                    "icon": "FaAward",
-                    "title": "Excellence",
-                    "description": "We are committed to the highest standards in every detail, ensuring nothing but the best."
-                  },
-                  {
-                    "id": "creativity",
-                    "icon": "FaLightbulb",
-                    "title": "Creativity",
-                    "description": "We bring fresh ideas and unique concepts to life, making every event truly one of a kind."
-                  },
-                  {
-                    "id": "integrity",
-                    "icon": "FaHandshake",
-                    "title": "Integrity",
-                    "description": "We believe in honesty, transparency and building trust with our clients and partners."
-                  },
-                  {
-                    "id": "client-focus",
-                    "icon": "FaUsers",
-                    "title": "Client Focus",
-                    "description": "Our clients are at the heart of everything we do. Your vision is our mission."
-                  },
-                  {
-                    "id": "reliability",
-                    "icon": "FaClock",
-                    "title": "Reliability",
-                    "description": "We deliver on our promises with precision and ensure a seamless experience from start to finish."
-                  },
-                  {
-                    "id": "passion",
-                    "icon": "FaShieldAlt",
-                    "title": "Passion",
-                    "description": "We love what we do, and that passion drives us to create memorable celebrations."
-                  }
-                ]
+                {
+                  "id": "excellence",
+                  "icon": "FaAward",
+                  "title": "Excellence",
+                  "description": "We are committed to the highest standards in every detail, ensuring nothing but the best."
+                },
+                {
+                  "id": "creativity",
+                  "icon": "FaLightbulb",
+                  "title": "Creativity",
+                  "description": "We bring fresh ideas and unique concepts to life, making every event truly one of a kind."
+                },
+                {
+                  "id": "integrity",
+                  "icon": "FaHandshake",
+                  "title": "Integrity",
+                  "description": "We believe in honesty, transparency and building trust with our clients and partners."
+                },
+                {
+                  "id": "client-focus",
+                  "icon": "FaUsers",
+                  "title": "Client Focus",
+                  "description": "Our clients are at the heart of everything we do. Your vision is our mission."
+                },
+                {
+                  "id": "reliability",
+                  "icon": "FaClock",
+                  "title": "Reliability",
+                  "description": "We deliver on our promises with precision and ensure a seamless experience from start to finish."
+                },
+                {
+                  "id": "passion",
+                  "icon": "FaShieldAlt",
+                  "title": "Passion",
+                  "description": "We love what we do, and that passion drives us to create memorable celebrations."
+                }
+              ]
             }
           }
         },
@@ -753,35 +1179,103 @@
                   "id": "quick-links",
                   "title": "QUICK LINKS",
                   "links": [
-                    { "id": "ql-1", "label": "Home", "url": "/" },
-                    { "id": "ql-2", "label": "About Us", "url": "/about" },
-                    { "id": "ql-3", "label": "Services", "url": "/services" },
-                    { "id": "ql-4", "label": "Our Work", "url": "/gallery" },
-                    { "id": "ql-5", "label": "Blog", "url": "/blogs" },
-                    { "id": "ql-6", "label": "Contact Us", "url": "/contact" }
+                    {
+                      "id": "ql-1",
+                      "label": "Home",
+                      "url": "/"
+                    },
+                    {
+                      "id": "ql-2",
+                      "label": "About Us",
+                      "url": "/about"
+                    },
+                    {
+                      "id": "ql-3",
+                      "label": "Services",
+                      "url": "/services"
+                    },
+                    {
+                      "id": "ql-4",
+                      "label": "Our Work",
+                      "url": "/gallery"
+                    },
+                    {
+                      "id": "ql-5",
+                      "label": "Blog",
+                      "url": "/blogs"
+                    },
+                    {
+                      "id": "ql-6",
+                      "label": "Contact Us",
+                      "url": "/contact"
+                    }
                   ]
                 },
                 {
                   "id": "services",
                   "title": "SERVICES",
                   "links": [
-                    { "id": "srv-1", "label": "Corporate Events", "url": "/services/corporate-event-planning" },
-                    { "id": "srv-2", "label": "Weddings", "url": "/services/wedding-planning" },
-                    { "id": "srv-3", "label": "Social Celebrations", "url": "/services/private-parties" },
-                    { "id": "srv-4", "label": "Product Launches", "url": "/services/product-launches" },
-                    { "id": "srv-5", "label": "Experiential Marketing", "url": "/services/exhibition-trade-show" },
-                    { "id": "srv-6", "label": "Conference & Seminars", "url": "/services/corporate-event-planning" }
+                    {
+                      "id": "srv-1",
+                      "label": "Corporate Events",
+                      "url": "/services/corporate-event-planning"
+                    },
+                    {
+                      "id": "srv-2",
+                      "label": "Weddings",
+                      "url": "/services/wedding-planning"
+                    },
+                    {
+                      "id": "srv-3",
+                      "label": "Social Celebrations",
+                      "url": "/services/private-parties"
+                    },
+                    {
+                      "id": "srv-4",
+                      "label": "Product Launches",
+                      "url": "/services/product-launches"
+                    },
+                    {
+                      "id": "srv-5",
+                      "label": "Experiential Marketing",
+                      "url": "/services/exhibition-trade-show"
+                    },
+                    {
+                      "id": "srv-6",
+                      "label": "Conference & Seminars",
+                      "url": "/services/corporate-event-planning"
+                    }
                   ]
                 },
                 {
                   "id": "resources",
                   "title": "RESOURCES",
                   "links": [
-                    { "id": "res-1", "label": "Event Planning Guide", "url": "/resources/event-planning-guide" },
-                    { "id": "res-2", "label": "Checklists", "url": "/resources/checklists" },
-                    { "id": "res-3", "label": "Vendor Recommendations", "url": "/resources/vendor-recommendations" },
-                    { "id": "res-4", "label": "Budget Calculator", "url": "/resources/budget-calculator" },
-                    { "id": "res-5", "label": "FAQs", "url": "/faqs" }
+                    {
+                      "id": "res-1",
+                      "label": "Event Planning Guide",
+                      "url": "/resources/event-planning-guide"
+                    },
+                    {
+                      "id": "res-2",
+                      "label": "Checklists",
+                      "url": "/resources/checklists"
+                    },
+                    {
+                      "id": "res-3",
+                      "label": "Vendor Recommendations",
+                      "url": "/resources/vendor-recommendations"
+                    },
+                    {
+                      "id": "res-4",
+                      "label": "Budget Calculator",
+                      "url": "/resources/budget-calculator"
+                    },
+                    {
+                      "id": "res-5",
+                      "label": "FAQs",
+                      "url": "/faqs"
+                    }
                   ]
                 }
               ],
@@ -812,8 +1306,16 @@
               ],
               "copyrightText": "© 2026 Venu EV. All Rights Reserved. Lestow",
               "legalLinks": [
-                { "id": "legal-1", "label": "Privacy Policy", "url": "/privacy" },
-                { "id": "legal-2", "label": "Terms & Conditions", "url": "/terms" }
+                {
+                  "id": "legal-1",
+                  "label": "Privacy Policy",
+                  "url": "/privacy"
+                },
+                {
+                  "id": "legal-2",
+                  "label": "Terms & Conditions",
+                  "url": "/terms"
+                }
               ],
               "tagline": "Made with passion for unforgettable experiences.",
               "taglineIcon": "FaRegHeart"

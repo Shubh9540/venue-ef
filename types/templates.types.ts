@@ -266,6 +266,25 @@ export interface MissionVisionData {
   missionCard: MissionVisionCard;
 }
 
+export interface MissionFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface AboutMissionData {
+  id: string;
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  description1: string;
+  description2: string;
+  image: string;
+  imageAlt?: string;
+  features: MissionFeature[];
+}
+
 export interface CoreValueItem {
   id: string;
   icon: string;
@@ -276,6 +295,64 @@ export interface CoreValueItem {
 export interface CoreValuesData {
   id: string;
   items: CoreValueItem[];
+}
+
+export interface AwardItem {
+  id: string;
+  year: string;
+  title: string;
+  organization: string;
+  image: string;
+  imageAlt?: string;
+}
+
+export interface AwardsData {
+  id: string;
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  statsValue: string;
+  statsLabel: string;
+  items: AwardItem[];
+}
+
+export interface TeamMemberStat {
+  icon: string;
+  title: string;
+  value1: string;
+  value2?: string;
+}
+
+export interface TeamMember {
+  id: string;
+  slug: string;
+  name: string;
+  role: string;
+  image: string;
+  imageAlt?: string;
+  socials: {
+    platform: string;
+    url: string;
+    icon: string;
+  }[];
+  email?: string;
+  bio?: string;
+  stats?: TeamMemberStat[];
+}
+
+export interface TeamData {
+  id: string;
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  members: TeamMember[];
+}
+
+export interface TeamDetailPageContentData {
+  badge: string;
+  title: string;
 }
 
 export interface BreadcrumbPath {
@@ -307,11 +384,22 @@ export interface VenueCategorySections {
   OurValues?: SectionVariant<OurValuesData>;
   CoreValues?: SectionVariant<CoreValuesData>;
   MissionVision?: SectionVariant<MissionVisionData>;
+  AboutMission?: SectionVariant<AboutMissionData>;
+  AboutVision?: SectionVariant<AboutMissionData>;
+  Awards?: SectionVariant<AwardsData>;
+  Team?: SectionVariant<TeamData>;
+  TeamDetailPageContent?: SectionVariant<TeamDetailPageContentData>;
   Testimonials?: SectionVariant<TestimonialsData>;
   CTA?: SectionVariant<CtaData>;
   Blogs?: SectionVariant<BlogsData>;
   Footer?: SectionVariant<FooterData>;
   AboutBreadcrumb?: SectionVariant<BreadcrumbData>;
+  OurMissionBreadcrumb?: SectionVariant<BreadcrumbData>;
+  OurVisionBreadcrumb?: SectionVariant<BreadcrumbData>;
+  OurStoryBreadcrumb?: SectionVariant<BreadcrumbData>;
+  OurAwardsBreadcrumb?: SectionVariant<BreadcrumbData>;
+  OurTeamBreadcrumb?: SectionVariant<BreadcrumbData>;
+  TeamDetailBreadcrumb?: SectionVariant<BreadcrumbData>;
 }
 
 export interface TemplateComponentItem {

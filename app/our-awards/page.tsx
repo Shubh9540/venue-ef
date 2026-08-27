@@ -4,15 +4,11 @@ import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
 import { Footer } from '@/components/common/Footer';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { OurStory } from '@/components/sections/OurStory';
-import { Counter } from '@/components/sections/Counter';
-import { OurValues } from '@/components/sections/OurValues';
-import { MissionVision } from '@/components/sections/MissionVision';
-import { CoreValues } from '@/components/sections/CoreValues';
+import { Awards } from '@/components/sections/Awards';
 
 export const dynamic = 'force-dynamic';
 
-export default function AboutPage() {
+export default function OurAwardsPage() {
   const templateData: VenueEfTemplateData = rawData;
   const sectionData = templateData?.categories?.Venue?.sections;
 
@@ -25,18 +21,10 @@ export default function AboutPage() {
       <TopBar data={sectionData.TopBar?.variants?.VenueTopBar1} />
       <Header data={sectionData.Header?.variants?.VenueHeader1} />
       
-      <Breadcrumb data={sectionData.AboutBreadcrumb?.variants?.VenueAboutBreadcrumb1} />
-      
-      <OurStory data={sectionData.OurStory?.variants?.VenueOurStory1} />
-      
-      <Counter data={sectionData.Counter?.variants?.VenueCounter1} />
-      
-      <OurValues data={sectionData.OurValues?.variants?.VenueOurValues1} />
-      
-      <MissionVision data={sectionData.MissionVision?.variants?.VenueMissionVision1} />
+      <Breadcrumb data={sectionData.OurAwardsBreadcrumb?.variants?.VenueOurAwardsBreadcrumb1} />
       
       <div className="pb-2.5">
-        <CoreValues data={sectionData.CoreValues?.variants?.VenueCoreValues1} />
+        <Awards data={sectionData.Awards?.variants?.VenueAwards1} />
       </div>
       
       <Footer data={sectionData.Footer?.variants?.VenueFooter1} />
