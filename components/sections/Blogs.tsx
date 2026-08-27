@@ -35,7 +35,7 @@ export const Blogs = ({ data }: { data?: BlogsData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 lg:py-16 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Badge */}

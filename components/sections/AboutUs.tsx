@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { AboutUsData } from '@/types/templates.types';
 import { MdArrowForward } from 'react-icons/md';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { Divider } from '@/components/ui/Divider';
 
 const renderIcon = (iconName?: string) => {
   switch (iconName) {
@@ -22,7 +23,7 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
   if (!data) return null;
 
   return (
-    <section className="relative py-16 lg:py-20 bg-[#faf5f7] overflow-hidden">
+    <section className="relative py-8 bg-[#faf5f7] overflow-hidden">
 
       {/* ── Left: Decorative image from JSON ── */}
       {data.decorImage && (
@@ -59,13 +60,13 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
           {/* Left — Text */}
-          <div className="flex-1 w-full">
+          <div className="flex-1 w-full text-center lg:text-left">
             {/* Badge */}
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-4 justify-center lg:justify-start">
               <span className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">
                 {data.badge}
               </span>
-              <span className="w-16 h-0.5 bg-accent/60" />
+              <span className="w-16 h-0.5 bg-accent opacity-60" />
             </div>
 
             {/* Heading */}
@@ -78,12 +79,8 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
 
             {/* Divider Icon with left & right lines */}
             {data.dividerIcon && (
-              <div className="flex items-center gap-2 mb-6">
-                <span className="block w-12 sm:w-16 h-0.5 bg-accent shrink-0" />
-                <span className="block w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-                {renderIcon(data.dividerIcon)}
-                <span className="block w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-                <span className="block w-12 sm:w-16 h-0.5 bg-accent shrink-0" />
+              <div className="mb-6 flex justify-center lg:justify-start">
+                <Divider className="w-full lg:w-auto" />
               </div>
             )}
 
@@ -96,13 +93,15 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
             </p>
 
             {/* Button */}
-            <Link
-              href={data.buttonUrl}
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-7 py-3.5 rounded-md font-semibold text-base transition-all duration-300 shadow-md"
-            >
-              {data.buttonText}
-              {renderIcon(data.buttonIcon || 'MdArrowForward')}
-            </Link>
+            {data.buttonText && data.buttonUrl && (
+              <Link
+                href={data.buttonUrl}
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-7 py-3.5 rounded-md font-semibold text-base transition-all duration-300 shadow-md"
+              >
+                {data.buttonText}
+                {renderIcon(data.buttonIcon || 'MdArrowForward')}
+              </Link>
+            )}
           </div>
 
           {/* Right — Stacked Images */}

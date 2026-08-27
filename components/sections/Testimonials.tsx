@@ -108,7 +108,7 @@ export const Testimonials = ({ data }: { data?: TestimonialsData }) => {
   if (!data || total === 0) return null;
 
   return (
-    <section className="py-12 lg:py-16 bg-[#fcf9fa] overflow-hidden">
+    <section className="py-8 bg-[#fcf9fa] overflow-hidden">
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Badge */}

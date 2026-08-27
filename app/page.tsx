@@ -20,7 +20,9 @@ export default function Home() {
   const sectionData = templateData?.categories?.Venue?.sections;
   const globalUI = templateData?.common?.globalUI;
 
-  if (!sectionData) return <div>{globalUI?.loading || 'Loading...'}</div>;
+  if (!sectionData) {
+    return <div>{templateData?.common?.globalUI?.loading || 'Loading...'}</div>;
+  }
 
   return (
     <main className="bg-white min-h-screen">

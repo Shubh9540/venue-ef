@@ -125,7 +125,7 @@ export const Footer = ({ data }: { data?: FooterData }) => {
           {/* Col 5: Contact Info */}
           <div className="flex flex-col">
             {/* Header (fixed height for exact alignment) */}
-            <div className="lg:pl-8 h-[76px] flex flex-col justify-start mb-2">
+            <div className="lg:pl-8 h-20 flex flex-col justify-start mb-2">
               <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
                 {data.contactTitle}
               </h4>

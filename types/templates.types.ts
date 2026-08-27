@@ -49,13 +49,31 @@ export interface AboutUsData {
   dividerIcon?: string;
   description1: string;
   description2: string;
-  buttonText: string;
-  buttonUrl: string;
+  buttonText?: string;
+  buttonUrl?: string;
   buttonIcon?: string;
   image1: string;
   image1Alt?: string;
   image2: string;
   image2Alt?: string;
+  decorImage?: string;
+  decorImageAlt?: string;
+}
+
+export interface OurStoryData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  subtitle: string;
+  description1: string;
+  description2: string;
+  image: string;
+  imageAlt?: string;
+  quoteText: string;
+  quoteHighlight: string;
+  quoteFooter: string;
+  quoteFooterIcon?: string;
   decorImage?: string;
   decorImageAlt?: string;
 }
@@ -80,6 +98,17 @@ export interface WhyChooseUsData {
   dividerIcon?: string;
   features: WhyChooseUsFeature[];
   stats: WhyChooseUsStat[];
+}
+
+export interface CounterStat {
+  id: string;
+  icon: string;
+  value: string;
+  label: string;
+}
+
+export interface CounterData {
+  stats: CounterStat[];
 }
 
 export interface ServiceCard {
@@ -218,6 +247,48 @@ export interface FooterData {
   taglineIcon?: string;
 }
 
+export interface MissionVisionCard {
+  icon: string;
+  badge: string;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt?: string;
+}
+
+export interface MissionVisionData {
+  id: string;
+  badge: string;
+  title: string;
+  highlightWords: string[];
+  description: string;
+  visionCard: MissionVisionCard;
+  missionCard: MissionVisionCard;
+}
+
+export interface CoreValueItem {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface CoreValuesData {
+  id: string;
+  items: CoreValueItem[];
+}
+
+export interface BreadcrumbPath {
+  label: string;
+  url?: string;
+}
+
+export interface BreadcrumbData {
+  title: string;
+  paths: BreadcrumbPath[];
+  bgImage: string;
+}
+
 export interface SectionVariant<T> {
   variants?: {
     [key: string]: T;
@@ -229,13 +300,18 @@ export interface VenueCategorySections {
   Header?: SectionVariant<HeaderData>;
   Hero?: SectionVariant<HeroData>;
   AboutUs?: SectionVariant<AboutUsData>;
+  OurStory?: SectionVariant<OurStoryData>;
+  Counter?: SectionVariant<CounterData>;
   WhyChooseUs?: SectionVariant<WhyChooseUsData>;
   Services?: SectionVariant<ServicesData>;
   OurValues?: SectionVariant<OurValuesData>;
+  CoreValues?: SectionVariant<CoreValuesData>;
+  MissionVision?: SectionVariant<MissionVisionData>;
   Testimonials?: SectionVariant<TestimonialsData>;
   CTA?: SectionVariant<CtaData>;
   Blogs?: SectionVariant<BlogsData>;
   Footer?: SectionVariant<FooterData>;
+  AboutBreadcrumb?: SectionVariant<BreadcrumbData>;
 }
 
 export interface TemplateComponentItem {

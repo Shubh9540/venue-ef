@@ -44,7 +44,7 @@ export const WhyChooseUs = ({ data }: { data?: WhyChooseUsData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-8 lg:py-12 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Card Container */}

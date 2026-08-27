@@ -63,6 +63,72 @@
         }
       },
       "sections": {
+        "AboutBreadcrumb": {
+          "variants": {
+            "VenueAboutBreadcrumb1": {
+              "id": "about-breadcrumb-1",
+              "title": "About Us",
+              "paths": [
+                { "label": "Home", "url": "/" },
+                { "label": "About Us" }
+              ],
+              "bgImage": "/banner/banner1.webp"
+            }
+          }
+        },
+        "OurStory": {
+          "variants": {
+            "VenueOurStory1": {
+              "id": "story-1",
+              "badge": "OUR STORY",
+              "title": "Every Celebration",
+              "titleHighlight": "Has a Story.",
+              "dividerIcon": "heart",
+              "subtitle": "Here's Ours.",
+              "description1": "Venu EV was born out of a simple belief – that every event has the power to create lasting memories. What started as a passion for planning beautiful celebrations has grown into a full-service event planning company trusted by clients across weddings, corporate events, and social celebrations.",
+              "description2": "We blend creativity, precision, and heartfelt passion to design experiences that reflect your vision and leave a lasting impression.",
+              "image": "/about/about1.webp",
+              "imageAlt": "Our Story Image",
+              "quoteText": "We don't just plan events, we create moments that stay with you ",
+              "quoteHighlight": "forever.",
+              "quoteFooter": "Your Vision, Our Passion",
+              "quoteFooterIcon": "FaRegHeart"
+            }
+          }
+        },
+        "Counter": {
+          "variants": {
+            "VenueCounter1": {
+              "id": "counter-1",
+              "stats": [
+                {
+                  "id": "stat-1",
+                  "icon": "FaUsers",
+                  "value": "250+",
+                  "label": "Events Planned"
+                },
+                {
+                  "id": "stat-2",
+                  "icon": "FaRegCalendarAlt",
+                  "value": "8+",
+                  "label": "Years of Experience"
+                },
+                {
+                  "id": "stat-3",
+                  "icon": "FaGlobeAmericas",
+                  "value": "50+",
+                  "label": "Cities Served"
+                },
+                {
+                  "id": "stat-4",
+                  "icon": "FaRegHeart",
+                  "value": "100%",
+                  "label": "Client Satisfaction"
+                }
+              ]
+            }
+          }
+        },
         "TopBar": {
           "variants": {
             "VenueTopBar1": {
@@ -394,6 +460,72 @@
             }
           }
         },
+        "MissionVision": {
+          "variants": {
+            "VenueMissionVision1": {
+              "id": "mv-1",
+              "badge": "OUR PURPOSE",
+              "title": "Vision That Inspires. Mission That Delivers.",
+              "highlightWords": ["Vision", "Mission"],
+              "description": "Driven by creativity and guided by passion, we turn ideas into unforgettable experiences.",
+              "visionCard": {
+                "icon": "FaRegEye",
+                "badge": "OUR VISION",
+                "title": "To be the most trusted and admired event planning company.",
+                "description": "We aim to set new benchmarks in the industry by creating extraordinary experiences that inspire and leave a lasting impression.",
+                "image": "/banner/banner1.webp",
+                "imageAlt": "Our Vision"
+              },
+              "missionCard": {
+                "icon": "FaBullseye",
+                "badge": "OUR MISSION",
+                "title": "To turn ideas into unforgettable experiences.",
+                "description": "We combine creativity, innovation, and flawless execution to deliver events that exceed expectations and build meaningful connections.",
+                "image": "/banner/banner2.webp",
+                "imageAlt": "Our Mission"
+              }
+            }
+          }
+        },
+        "CoreValues": {
+          "variants": {
+            "VenueCoreValues1": {
+              "id": "core-values-1",
+              "items": [
+                  {
+                    "id": "passion",
+                    "icon": "FaRegHeart",
+                    "title": "PASSION",
+                    "description": "We love what we do, and it shows in every detail."
+                  },
+                  {
+                    "id": "creativity",
+                    "icon": "FaLightbulb",
+                    "title": "CREATIVITY",
+                    "description": "Fresh ideas and unique concepts for every celebration."
+                  },
+                  {
+                    "id": "integrity",
+                    "icon": "FaShieldAlt",
+                    "title": "INTEGRITY",
+                    "description": "Honest communication and transparent relationships."
+                  },
+                  {
+                    "id": "excellence",
+                    "icon": "FaAward",
+                    "title": "EXCELLENCE",
+                    "description": "We strive for the highest standards in everything we do."
+                  },
+                  {
+                    "id": "client-focus",
+                    "icon": "FaUsers",
+                    "title": "CLIENT FOCUS",
+                    "description": "Your dreams are our priority. Your happiness is our success."
+                  }
+              ]
+            }
+          }
+        },
         "OurValues": {
           "variants": {
             "VenueOurValues1": {
@@ -403,43 +535,43 @@
               "dividerIcon": "FaRegHeart",
               "description": "These values are at the heart of everything we do, guiding us to create exceptional experiences every time.",
               "items": [
-                {
-                  "id": "excellence",
-                  "icon": "FaAward",
-                  "title": "Excellence",
-                  "description": "We are committed to the highest standards in every detail, ensuring nothing but the best."
-                },
-                {
-                  "id": "creativity",
-                  "icon": "FaLightbulb",
-                  "title": "Creativity",
-                  "description": "We bring fresh ideas and unique concepts to life, making every event truly one of a kind."
-                },
-                {
-                  "id": "integrity",
-                  "icon": "FaHandshake",
-                  "title": "Integrity",
-                  "description": "We believe in honesty, transparency and building trust with our clients and partners."
-                },
-                {
-                  "id": "client-focus",
-                  "icon": "FaUsers",
-                  "title": "Client Focus",
-                  "description": "Our clients are at the heart of everything we do. Your vision is our mission."
-                },
-                {
-                  "id": "reliability",
-                  "icon": "FaClock",
-                  "title": "Reliability",
-                  "description": "We deliver on our promises with precision and ensure a seamless experience from start to finish."
-                },
-                {
-                  "id": "passion",
-                  "icon": "FaShieldAlt",
-                  "title": "Passion",
-                  "description": "We love what we do, and that passion drives us to create memorable celebrations."
-                }
-              ]
+                  {
+                    "id": "excellence",
+                    "icon": "FaAward",
+                    "title": "Excellence",
+                    "description": "We are committed to the highest standards in every detail, ensuring nothing but the best."
+                  },
+                  {
+                    "id": "creativity",
+                    "icon": "FaLightbulb",
+                    "title": "Creativity",
+                    "description": "We bring fresh ideas and unique concepts to life, making every event truly one of a kind."
+                  },
+                  {
+                    "id": "integrity",
+                    "icon": "FaHandshake",
+                    "title": "Integrity",
+                    "description": "We believe in honesty, transparency and building trust with our clients and partners."
+                  },
+                  {
+                    "id": "client-focus",
+                    "icon": "FaUsers",
+                    "title": "Client Focus",
+                    "description": "Our clients are at the heart of everything we do. Your vision is our mission."
+                  },
+                  {
+                    "id": "reliability",
+                    "icon": "FaClock",
+                    "title": "Reliability",
+                    "description": "We deliver on our promises with precision and ensure a seamless experience from start to finish."
+                  },
+                  {
+                    "id": "passion",
+                    "icon": "FaShieldAlt",
+                    "title": "Passion",
+                    "description": "We love what we do, and that passion drives us to create memorable celebrations."
+                  }
+                ]
             }
           }
         },
