@@ -169,6 +169,615 @@
             }
           }
         },
+        "WhyChooseUsBreadcrumb": {
+          "variants": {
+            "VenueWhyChooseUsBreadcrumb1": {
+              "title": "Why Choose Us",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Why Choose Us"
+                }
+              ]
+            }
+          }
+        },
+        "OurServicesBreadcrumb": {
+          "variants": {
+            "VenueOurServicesBreadcrumb1": {
+              "title": "Our Services",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services"
+                }
+              ]
+            }
+          }
+        },
+        "ServiceDetailBreadcrumb": {
+          "variants": {
+            "corporate-event-planning": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Service Details"
+                }
+              ]
+            },
+            "wedding-planning": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Wedding Planning"
+                }
+              ]
+            },
+            "engagement-planning": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Engagement Planning"
+                }
+              ]
+            },
+            "reception-planning": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Reception Planning"
+                }
+              ]
+            },
+            "birthday-party-planning": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Birthday Party Planning"
+                }
+              ]
+            },
+            "exhibition-trade-show": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Exhibition Trade Show"
+                }
+              ]
+            },
+            "product-launches": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Product Launches"
+                }
+              ]
+            },
+            "private-parties": {
+              "title": "Service Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Services",
+                  "url": "/services"
+                },
+                {
+                  "label": "Private Parties"
+                }
+              ]
+            }
+          }
+        },
+        "ServiceDetailPageContent": {
+          "variants": {
+            "corporate-event-planning": {
+              "badge": "OUR SERVICE",
+              "title": "Corporate Events",
+              "description": "Professional events that inspire, engage, and drive meaningful business outcomes.",
+              "image": "/banner/banner3.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From product launches and conferences to seminars and award nights, we design and execute corporate events that reflect your brand, communicate your message, and leave a lasting impression on your audience.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Event Strategy & Planning",
+                  "description": "We understand your objectives and craft a strategic plan tailored to your brand and goals."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection & Management",
+                  "description": "We help you choose the perfect venue and manage everything to ensure a smooth experience."
+                },
+                {
+                  "id": "3",
+                  "title": "Production & Technical Support",
+                  "description": "From AV setup to lighting and staging, we handle all technical aspects with precision and professionalism."
+                },
+                {
+                  "id": "4",
+                  "title": "Branding & Design",
+                  "description": "We create branded experiences that reflect your identity and engage your audience."
+                },
+                {
+                  "id": "5",
+                  "title": "Hospitality & Catering",
+                  "description": "Delicious cuisine and seamless hospitality that leave your guests delighted."
+                },
+                {
+                  "id": "6",
+                  "title": "On-site Management",
+                  "description": "Our experienced team manages every detail on the ground so you can focus on your guests."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            },
+            "wedding-planning": {
+              "badge": "OUR SERVICE",
+              "title": "Wedding Planning",
+              "description": "Magical weddings tailored to your dream.",
+              "image": "/banner/banner1.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From venue selection to decor and catering, we handle every detail of your special day.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Theme & Decor",
+                  "description": "Bespoke decorations and floral arrangements."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection",
+                  "description": "Finding the perfect backdrop for your big day."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            },
+            "engagement-planning": {
+              "badge": "OUR SERVICE",
+              "title": "Engagement Planning",
+              "description": "Professional events that inspire, engage, and drive meaningful business outcomes.",
+              "image": "/banner/banner3.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From product launches and conferences to seminars and award nights, we design and execute corporate events that reflect your brand, communicate your message, and leave a lasting impression on your audience.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Event Strategy & Planning",
+                  "description": "We understand your objectives and craft a strategic plan tailored to your brand and goals."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection & Management",
+                  "description": "We help you choose the perfect venue and manage everything to ensure a smooth experience."
+                },
+                {
+                  "id": "3",
+                  "title": "Production & Technical Support",
+                  "description": "From AV setup to lighting and staging, we handle all technical aspects with precision and professionalism."
+                },
+                {
+                  "id": "4",
+                  "title": "Branding & Design",
+                  "description": "We create branded experiences that reflect your identity and engage your audience."
+                },
+                {
+                  "id": "5",
+                  "title": "Hospitality & Catering",
+                  "description": "Delicious cuisine and seamless hospitality that leave your guests delighted."
+                },
+                {
+                  "id": "6",
+                  "title": "On-site Management",
+                  "description": "Our experienced team manages every detail on the ground so you can focus on your guests."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            },
+            "reception-planning": {
+              "badge": "OUR SERVICE",
+              "title": "Reception Planning",
+              "description": "Professional events that inspire, engage, and drive meaningful business outcomes.",
+              "image": "/banner/banner3.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From product launches and conferences to seminars and award nights, we design and execute corporate events that reflect your brand, communicate your message, and leave a lasting impression on your audience.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Event Strategy & Planning",
+                  "description": "We understand your objectives and craft a strategic plan tailored to your brand and goals."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection & Management",
+                  "description": "We help you choose the perfect venue and manage everything to ensure a smooth experience."
+                },
+                {
+                  "id": "3",
+                  "title": "Production & Technical Support",
+                  "description": "From AV setup to lighting and staging, we handle all technical aspects with precision and professionalism."
+                },
+                {
+                  "id": "4",
+                  "title": "Branding & Design",
+                  "description": "We create branded experiences that reflect your identity and engage your audience."
+                },
+                {
+                  "id": "5",
+                  "title": "Hospitality & Catering",
+                  "description": "Delicious cuisine and seamless hospitality that leave your guests delighted."
+                },
+                {
+                  "id": "6",
+                  "title": "On-site Management",
+                  "description": "Our experienced team manages every detail on the ground so you can focus on your guests."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            },
+            "birthday-party-planning": {
+              "badge": "OUR SERVICE",
+              "title": "Birthday Party Planning",
+              "description": "Professional events that inspire, engage, and drive meaningful business outcomes.",
+              "image": "/banner/banner3.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From product launches and conferences to seminars and award nights, we design and execute corporate events that reflect your brand, communicate your message, and leave a lasting impression on your audience.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Event Strategy & Planning",
+                  "description": "We understand your objectives and craft a strategic plan tailored to your brand and goals."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection & Management",
+                  "description": "We help you choose the perfect venue and manage everything to ensure a smooth experience."
+                },
+                {
+                  "id": "3",
+                  "title": "Production & Technical Support",
+                  "description": "From AV setup to lighting and staging, we handle all technical aspects with precision and professionalism."
+                },
+                {
+                  "id": "4",
+                  "title": "Branding & Design",
+                  "description": "We create branded experiences that reflect your identity and engage your audience."
+                },
+                {
+                  "id": "5",
+                  "title": "Hospitality & Catering",
+                  "description": "Delicious cuisine and seamless hospitality that leave your guests delighted."
+                },
+                {
+                  "id": "6",
+                  "title": "On-site Management",
+                  "description": "Our experienced team manages every detail on the ground so you can focus on your guests."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            },
+            "exhibition-trade-show": {
+              "badge": "OUR SERVICE",
+              "title": "Exhibition Trade Show",
+              "description": "Professional events that inspire, engage, and drive meaningful business outcomes.",
+              "image": "/banner/banner3.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From product launches and conferences to seminars and award nights, we design and execute corporate events that reflect your brand, communicate your message, and leave a lasting impression on your audience.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Event Strategy & Planning",
+                  "description": "We understand your objectives and craft a strategic plan tailored to your brand and goals."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection & Management",
+                  "description": "We help you choose the perfect venue and manage everything to ensure a smooth experience."
+                },
+                {
+                  "id": "3",
+                  "title": "Production & Technical Support",
+                  "description": "From AV setup to lighting and staging, we handle all technical aspects with precision and professionalism."
+                },
+                {
+                  "id": "4",
+                  "title": "Branding & Design",
+                  "description": "We create branded experiences that reflect your identity and engage your audience."
+                },
+                {
+                  "id": "5",
+                  "title": "Hospitality & Catering",
+                  "description": "Delicious cuisine and seamless hospitality that leave your guests delighted."
+                },
+                {
+                  "id": "6",
+                  "title": "On-site Management",
+                  "description": "Our experienced team manages every detail on the ground so you can focus on your guests."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            },
+            "product-launches": {
+              "badge": "OUR SERVICE",
+              "title": "Product Launches",
+              "description": "Professional events that inspire, engage, and drive meaningful business outcomes.",
+              "image": "/banner/banner3.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From product launches and conferences to seminars and award nights, we design and execute corporate events that reflect your brand, communicate your message, and leave a lasting impression on your audience.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Event Strategy & Planning",
+                  "description": "We understand your objectives and craft a strategic plan tailored to your brand and goals."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection & Management",
+                  "description": "We help you choose the perfect venue and manage everything to ensure a smooth experience."
+                },
+                {
+                  "id": "3",
+                  "title": "Production & Technical Support",
+                  "description": "From AV setup to lighting and staging, we handle all technical aspects with precision and professionalism."
+                },
+                {
+                  "id": "4",
+                  "title": "Branding & Design",
+                  "description": "We create branded experiences that reflect your identity and engage your audience."
+                },
+                {
+                  "id": "5",
+                  "title": "Hospitality & Catering",
+                  "description": "Delicious cuisine and seamless hospitality that leave your guests delighted."
+                },
+                {
+                  "id": "6",
+                  "title": "On-site Management",
+                  "description": "Our experienced team manages every detail on the ground so you can focus on your guests."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            },
+            "private-parties": {
+              "badge": "OUR SERVICE",
+              "title": "Private Parties",
+              "description": "Professional events that inspire, engage, and drive meaningful business outcomes.",
+              "image": "/banner/banner3.webp",
+              "overviewBadge": "OVERVIEW",
+              "overview": "From product launches and conferences to seminars and award nights, we design and execute corporate events that reflect your brand, communicate your message, and leave a lasting impression on your audience.",
+              "offerBadge": "WHAT WE OFFER",
+              "offers": [
+                {
+                  "id": "1",
+                  "title": "Event Strategy & Planning",
+                  "description": "We understand your objectives and craft a strategic plan tailored to your brand and goals."
+                },
+                {
+                  "id": "2",
+                  "title": "Venue Selection & Management",
+                  "description": "We help you choose the perfect venue and manage everything to ensure a smooth experience."
+                },
+                {
+                  "id": "3",
+                  "title": "Production & Technical Support",
+                  "description": "From AV setup to lighting and staging, we handle all technical aspects with precision and professionalism."
+                },
+                {
+                  "id": "4",
+                  "title": "Branding & Design",
+                  "description": "We create branded experiences that reflect your identity and engage your audience."
+                },
+                {
+                  "id": "5",
+                  "title": "Hospitality & Catering",
+                  "description": "Delicious cuisine and seamless hospitality that leave your guests delighted."
+                },
+                {
+                  "id": "6",
+                  "title": "On-site Management",
+                  "description": "Our experienced team manages every detail on the ground so you can focus on your guests."
+                }
+              ],
+              "sidebar": {
+                "formTitle": "REQUEST A QUOTE",
+                "helpTitle": "NEED HELP?",
+                "helpText": "Talk to our event expert today.",
+                "phone": "+91 98765 43210",
+                "email": "hello@venueev.com",
+                "hours": "Mon - Sat: 10:00 AM - 7:00 PM"
+              }
+            }
+          }
+        },
+        "WhyChooseUsPageContent": {
+          "variants": {
+            "VenueWhyChooseUsPage1": {
+              "badge": "WHY CHOOSE US",
+              "title": "Because Your Event",
+              "titleHighlight": "Deserves The Best",
+              "dividerIcon": "star",
+              "description": "From corporate meets and grand weddings to seminars and social celebrations, we deliver seamless experiences with attention to every detail. Quality service, creative solutions, and your satisfaction are what we stand for.",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FaChalkboardTeacher",
+                  "title": "We All Time Provide Intelligent Speaker",
+                  "description": "Engaging and experienced speakers to elevate your event experience."
+                },
+                {
+                  "id": "f2",
+                  "icon": "FaMicrophone",
+                  "title": "A Good Answer Will Best Knowledge",
+                  "description": "Get the right answers and expert guidance for every question you have."
+                },
+                {
+                  "id": "f3",
+                  "icon": "FaUserTie",
+                  "title": "We Are Always Dedicated Our Guest",
+                  "description": "Your satisfaction is our priority. We are dedicated to making every event memorable."
+                },
+                {
+                  "id": "f4",
+                  "icon": "FaUserFriends",
+                  "title": "We Are Provide Friendly Environment",
+                  "description": "Enjoy a warm, welcoming, and comfortable atmosphere at every event."
+                }
+              ],
+              "bottomItems": [
+                {
+                  "id": "b1",
+                  "icon": "FaCertificate",
+                  "text": "Free Certificate"
+                },
+                {
+                  "id": "b2",
+                  "icon": "FaConciergeBell",
+                  "text": "Conference Lunch"
+                },
+                {
+                  "id": "b3",
+                  "icon": "FaHeadset",
+                  "text": "24/7 Support"
+                },
+                {
+                  "id": "b4",
+                  "icon": "FaRegCalendarCheck",
+                  "text": "All Type Event"
+                }
+              ]
+            }
+          }
+        },
         "AboutBreadcrumb": {
           "variants": {
             "VenueAboutBreadcrumb1": {
@@ -782,10 +1391,26 @@
                   "email": "esther.howard@venuev.com",
                   "bio": "Esther leads our marketing strategies with creativity and insight. She ensures every brand story we tell resonates, engages, and drives meaningful connections.",
                   "socials": [
-                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
-                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
-                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
-                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                    {
+                      "platform": "facebook",
+                      "url": "#",
+                      "icon": "FaFacebookF"
+                    },
+                    {
+                      "platform": "twitter",
+                      "url": "#",
+                      "icon": "FaXTwitter"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "url": "#",
+                      "icon": "FaLinkedinIn"
+                    },
+                    {
+                      "platform": "instagram",
+                      "url": "#",
+                      "icon": "FaInstagram"
+                    }
                   ],
                   "stats": [
                     {
@@ -824,10 +1449,26 @@
                   "email": "cody.fisher@venuev.com",
                   "bio": "Cody leads our digital research with precision and depth. He ensures every brand decision we make is backed by strong data and trends.",
                   "socials": [
-                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
-                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
-                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
-                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                    {
+                      "platform": "facebook",
+                      "url": "#",
+                      "icon": "FaFacebookF"
+                    },
+                    {
+                      "platform": "twitter",
+                      "url": "#",
+                      "icon": "FaXTwitter"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "url": "#",
+                      "icon": "FaLinkedinIn"
+                    },
+                    {
+                      "platform": "instagram",
+                      "url": "#",
+                      "icon": "FaInstagram"
+                    }
                   ],
                   "stats": [
                     {
@@ -866,10 +1507,26 @@
                   "email": "tony.robbins@venuev.com",
                   "bio": "Tony brings our digital experiences to life with robust code and architecture. He ensures our platforms are scalable, fast, and secure.",
                   "socials": [
-                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
-                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
-                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
-                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                    {
+                      "platform": "facebook",
+                      "url": "#",
+                      "icon": "FaFacebookF"
+                    },
+                    {
+                      "platform": "twitter",
+                      "url": "#",
+                      "icon": "FaXTwitter"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "url": "#",
+                      "icon": "FaLinkedinIn"
+                    },
+                    {
+                      "platform": "instagram",
+                      "url": "#",
+                      "icon": "FaInstagram"
+                    }
                   ],
                   "stats": [
                     {
@@ -908,10 +1565,26 @@
                   "email": "eric.thomas@venuev.com",
                   "bio": "Eric designs intuitive user interfaces and robust backend systems. He bridges the gap between design and technical implementation.",
                   "socials": [
-                    { "platform": "facebook", "url": "#", "icon": "FaFacebookF" },
-                    { "platform": "twitter", "url": "#", "icon": "FaXTwitter" },
-                    { "platform": "linkedin", "url": "#", "icon": "FaLinkedinIn" },
-                    { "platform": "instagram", "url": "#", "icon": "FaInstagram" }
+                    {
+                      "platform": "facebook",
+                      "url": "#",
+                      "icon": "FaFacebookF"
+                    },
+                    {
+                      "platform": "twitter",
+                      "url": "#",
+                      "icon": "FaXTwitter"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "url": "#",
+                      "icon": "FaLinkedinIn"
+                    },
+                    {
+                      "platform": "instagram",
+                      "url": "#",
+                      "icon": "FaInstagram"
+                    }
                   ],
                   "stats": [
                     {
@@ -1321,8 +1994,741 @@
               "taglineIcon": "FaRegHeart"
             }
           }
+        },
+        "EventsBreadcrumb": {
+          "variants": {
+            "VenueEventsBreadcrumb1": {
+              "title": "Our Events",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Events"
+                }
+              ]
+            }
+          }
+        },
+        "EventsPageContent": {
+          "variants": {
+            "VenueEventsPage1": {
+              "badge": "OUR EVENTS",
+              "title": "Events That Inspire.",
+              "titleHighlight": "Moments That Last.",
+              "description": "From corporate gatherings to grand celebrations, we create experiences that connect people and leave a lasting impression.",
+              "items": [
+                {
+                  "id": "1",
+                  "slug": "corporate-events",
+                  "title": "Corporate Events",
+                  "description": "Conferences, seminars, product launches and business meetings that drive impact.",
+                  "image": "/about/about1.webp"
+                },
+                {
+                  "id": "2",
+                  "slug": "weddings",
+                  "title": "Weddings",
+                  "description": "Beautifully planned weddings that celebrate love with elegance and style.",
+                  "image": "/about/about2.webp"
+                },
+                {
+                  "id": "3",
+                  "slug": "social-celebrations",
+                  "title": "Social Celebrations",
+                  "description": "Birthdays, anniversaries and private parties crafted with creativity and care.",
+                  "image": "/about/about2.webp"
+                },
+                {
+                  "id": "4",
+                  "slug": "exhibitions",
+                  "title": "Exhibitions & Trade Shows",
+                  "description": "Engaging booths and immersive experiences that showcase your brand brilliantly.",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "5",
+                  "slug": "seminars",
+                  "title": "Seminars & Workshops",
+                  "description": "Knowledge-driven events that inform, engage and inspire your audience.",
+                  "image": "/banner/banner2.webp"
+                },
+                {
+                  "id": "6",
+                  "slug": "entertainment",
+                  "title": "Entertainment Events",
+                  "description": "Live shows, concerts and entertainment nights that create unforgettable memories.",
+                  "image": "/banner/banner3.webp"
+                }
+              ],
+              "cta": {
+                "title": "Have an Event in Mind?",
+                "subtitle": "Let's create something extraordinary together.",
+                "buttonText": "LET'S PLAN YOUR EVENT",
+                "buttonUrl": "/contact"
+              }
+            }
+          }
+        },
+        "EventDetailBreadcrumb": {
+          "variants": {
+            "corporate-events": {
+              "title": "Event Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Events",
+                  "url": "/events"
+                },
+                {
+                  "label": "Event Details"
+                }
+              ]
+            },
+            "weddings": {
+              "title": "Event Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Events",
+                  "url": "/events"
+                },
+                {
+                  "label": "Event Details"
+                }
+              ]
+            },
+            "social-celebrations": {
+              "title": "Event Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Events",
+                  "url": "/events"
+                },
+                {
+                  "label": "Event Details"
+                }
+              ]
+            },
+            "exhibitions": {
+              "title": "Event Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Events",
+                  "url": "/events"
+                },
+                {
+                  "label": "Event Details"
+                }
+              ]
+            },
+            "seminars": {
+              "title": "Event Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Events",
+                  "url": "/events"
+                },
+                {
+                  "label": "Event Details"
+                }
+              ]
+            },
+            "entertainment": {
+              "title": "Event Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Our Events",
+                  "url": "/events"
+                },
+                {
+                  "label": "Event Details"
+                }
+              ]
+            }
+          }
+        },
+        "EventDetailPageContent": {
+          "variants": {
+            "corporate-events": {
+              "title": "Proactive Transformation Requires Embrace Of Technology",
+              "image": "/banner/banner1.webp",
+              "aboutTitle": "About This Event",
+              "aboutDesc1": "In today's fast-paced digital world, transformation is no longer optional—it's essential. This event brings together industry leaders, innovators, and technologists for a powerful day of discussions, real-life case cases, and strategies to embrace technology and drive meaningful change.",
+              "aboutDesc2": "Join us for insightful keynotes, panel discussions, and networking opportunities that will help you stay ahead and build a future-ready organization.",
+              "learnTitle": "What You'll Learn",
+              "learnPoints": [
+                "How to build a future-ready business through technology",
+                "Strategies to integrate innovation in your organization",
+                "Real-world case studies and success stories",
+                "Tools and frameworks for digital transformation",
+                "Networking with industry leaders and experts"
+              ],
+              "scheduleTitle": "Event Schedule",
+              "schedule": [
+                {
+                  "id": "s1",
+                  "time": "9:00 AM - 10:00 AM",
+                  "title": "Registration & Networking",
+                  "description": "Check-in and networking over coffee"
+                },
+                {
+                  "id": "s2",
+                  "time": "10:00 AM - 11:30 AM",
+                  "title": "Opening Keynote",
+                  "description": "The Future of Work in a Digital World"
+                },
+                {
+                  "id": "s3",
+                  "time": "11:45 AM - 01:15 PM",
+                  "title": "Panel Discussion",
+                  "description": "Technology Trends Driving Business Transformation"
+                },
+                {
+                  "id": "s4",
+                  "time": "01:30 PM - 02:30 PM",
+                  "title": "Lunch & Networking",
+                  "description": "Refreshments and connect with fellow attendees"
+                },
+                {
+                  "id": "s5",
+                  "time": "02:30 PM - 04:00 PM",
+                  "title": "Closing Keynote",
+                  "description": "Building a Resilient and Innovative Organization"
+                }
+              ],
+              "sidebar": {
+                "date": "January 25, 2025",
+                "time": "10:00 AM - 05:00 PM",
+                "location": "Broadway, New York, USA",
+                "organizer": "VenueEv Team",
+                "eventType": "Business Conference",
+                "bookBtnText": "Book Your Seat",
+                "bookBtnUrl": "#book",
+                "helpTitle": "Need Help?",
+                "helpText": "Have questions about this event? We're here to help!",
+                "phone": "+1 234 567 8900",
+                "email": "hello@venueev.com"
+              }
+            },
+            "weddings": {
+              "title": "Proactive Transformation Requires Embrace Of Technology",
+              "image": "/banner/banner1.webp",
+              "aboutTitle": "About This Event",
+              "aboutDesc1": "In today's fast-paced digital world, transformation is no longer optional—it's essential. This event brings together industry leaders, innovators, and technologists for a powerful day of discussions, real-life case cases, and strategies to embrace technology and drive meaningful change.",
+              "aboutDesc2": "Join us for insightful keynotes, panel discussions, and networking opportunities that will help you stay ahead and build a future-ready organization.",
+              "learnTitle": "What You'll Learn",
+              "learnPoints": [
+                "How to build a future-ready business through technology",
+                "Strategies to integrate innovation in your organization",
+                "Real-world case studies and success stories",
+                "Tools and frameworks for digital transformation",
+                "Networking with industry leaders and experts"
+              ],
+              "scheduleTitle": "Event Schedule",
+              "schedule": [
+                {
+                  "id": "s1",
+                  "time": "9:00 AM - 10:00 AM",
+                  "title": "Registration & Networking",
+                  "description": "Check-in and networking over coffee"
+                },
+                {
+                  "id": "s2",
+                  "time": "10:00 AM - 11:30 AM",
+                  "title": "Opening Keynote",
+                  "description": "The Future of Work in a Digital World"
+                },
+                {
+                  "id": "s3",
+                  "time": "11:45 AM - 01:15 PM",
+                  "title": "Panel Discussion",
+                  "description": "Technology Trends Driving Business Transformation"
+                },
+                {
+                  "id": "s4",
+                  "time": "01:30 PM - 02:30 PM",
+                  "title": "Lunch & Networking",
+                  "description": "Refreshments and connect with fellow attendees"
+                },
+                {
+                  "id": "s5",
+                  "time": "02:30 PM - 04:00 PM",
+                  "title": "Closing Keynote",
+                  "description": "Building a Resilient and Innovative Organization"
+                }
+              ],
+              "sidebar": {
+                "date": "January 25, 2025",
+                "time": "10:00 AM - 05:00 PM",
+                "location": "Broadway, New York, USA",
+                "organizer": "VenueEv Team",
+                "eventType": "Business Conference",
+                "bookBtnText": "Book Your Seat",
+                "bookBtnUrl": "#book",
+                "helpTitle": "Need Help?",
+                "helpText": "Have questions about this event? We're here to help!",
+                "phone": "+1 234 567 8900",
+                "email": "hello@venueev.com"
+              }
+            },
+            "social-celebrations": {
+              "title": "Proactive Transformation Requires Embrace Of Technology",
+              "image": "/banner/banner1.webp",
+              "aboutTitle": "About This Event",
+              "aboutDesc1": "In today's fast-paced digital world, transformation is no longer optional—it's essential. This event brings together industry leaders, innovators, and technologists for a powerful day of discussions, real-life case cases, and strategies to embrace technology and drive meaningful change.",
+              "aboutDesc2": "Join us for insightful keynotes, panel discussions, and networking opportunities that will help you stay ahead and build a future-ready organization.",
+              "learnTitle": "What You'll Learn",
+              "learnPoints": [
+                "How to build a future-ready business through technology",
+                "Strategies to integrate innovation in your organization",
+                "Real-world case studies and success stories",
+                "Tools and frameworks for digital transformation",
+                "Networking with industry leaders and experts"
+              ],
+              "scheduleTitle": "Event Schedule",
+              "schedule": [
+                {
+                  "id": "s1",
+                  "time": "9:00 AM - 10:00 AM",
+                  "title": "Registration & Networking",
+                  "description": "Check-in and networking over coffee"
+                },
+                {
+                  "id": "s2",
+                  "time": "10:00 AM - 11:30 AM",
+                  "title": "Opening Keynote",
+                  "description": "The Future of Work in a Digital World"
+                },
+                {
+                  "id": "s3",
+                  "time": "11:45 AM - 01:15 PM",
+                  "title": "Panel Discussion",
+                  "description": "Technology Trends Driving Business Transformation"
+                },
+                {
+                  "id": "s4",
+                  "time": "01:30 PM - 02:30 PM",
+                  "title": "Lunch & Networking",
+                  "description": "Refreshments and connect with fellow attendees"
+                },
+                {
+                  "id": "s5",
+                  "time": "02:30 PM - 04:00 PM",
+                  "title": "Closing Keynote",
+                  "description": "Building a Resilient and Innovative Organization"
+                }
+              ],
+              "sidebar": {
+                "date": "January 25, 2025",
+                "time": "10:00 AM - 05:00 PM",
+                "location": "Broadway, New York, USA",
+                "organizer": "VenueEv Team",
+                "eventType": "Business Conference",
+                "bookBtnText": "Book Your Seat",
+                "bookBtnUrl": "#book",
+                "helpTitle": "Need Help?",
+                "helpText": "Have questions about this event? We're here to help!",
+                "phone": "+1 234 567 8900",
+                "email": "hello@venueev.com"
+              }
+            },
+            "exhibitions": {
+              "title": "Proactive Transformation Requires Embrace Of Technology",
+              "image": "/banner/banner1.webp",
+              "aboutTitle": "About This Event",
+              "aboutDesc1": "In today's fast-paced digital world, transformation is no longer optional—it's essential. This event brings together industry leaders, innovators, and technologists for a powerful day of discussions, real-life case cases, and strategies to embrace technology and drive meaningful change.",
+              "aboutDesc2": "Join us for insightful keynotes, panel discussions, and networking opportunities that will help you stay ahead and build a future-ready organization.",
+              "learnTitle": "What You'll Learn",
+              "learnPoints": [
+                "How to build a future-ready business through technology",
+                "Strategies to integrate innovation in your organization",
+                "Real-world case studies and success stories",
+                "Tools and frameworks for digital transformation",
+                "Networking with industry leaders and experts"
+              ],
+              "scheduleTitle": "Event Schedule",
+              "schedule": [
+                {
+                  "id": "s1",
+                  "time": "9:00 AM - 10:00 AM",
+                  "title": "Registration & Networking",
+                  "description": "Check-in and networking over coffee"
+                },
+                {
+                  "id": "s2",
+                  "time": "10:00 AM - 11:30 AM",
+                  "title": "Opening Keynote",
+                  "description": "The Future of Work in a Digital World"
+                },
+                {
+                  "id": "s3",
+                  "time": "11:45 AM - 01:15 PM",
+                  "title": "Panel Discussion",
+                  "description": "Technology Trends Driving Business Transformation"
+                },
+                {
+                  "id": "s4",
+                  "time": "01:30 PM - 02:30 PM",
+                  "title": "Lunch & Networking",
+                  "description": "Refreshments and connect with fellow attendees"
+                },
+                {
+                  "id": "s5",
+                  "time": "02:30 PM - 04:00 PM",
+                  "title": "Closing Keynote",
+                  "description": "Building a Resilient and Innovative Organization"
+                }
+              ],
+              "sidebar": {
+                "date": "January 25, 2025",
+                "time": "10:00 AM - 05:00 PM",
+                "location": "Broadway, New York, USA",
+                "organizer": "VenueEv Team",
+                "eventType": "Business Conference",
+                "bookBtnText": "Book Your Seat",
+                "bookBtnUrl": "#book",
+                "helpTitle": "Need Help?",
+                "helpText": "Have questions about this event? We're here to help!",
+                "phone": "+1 234 567 8900",
+                "email": "hello@venueev.com"
+              }
+            },
+            "seminars": {
+              "title": "Proactive Transformation Requires Embrace Of Technology",
+              "image": "/banner/banner1.webp",
+              "aboutTitle": "About This Event",
+              "aboutDesc1": "In today's fast-paced digital world, transformation is no longer optional—it's essential. This event brings together industry leaders, innovators, and technologists for a powerful day of discussions, real-life case cases, and strategies to embrace technology and drive meaningful change.",
+              "aboutDesc2": "Join us for insightful keynotes, panel discussions, and networking opportunities that will help you stay ahead and build a future-ready organization.",
+              "learnTitle": "What You'll Learn",
+              "learnPoints": [
+                "How to build a future-ready business through technology",
+                "Strategies to integrate innovation in your organization",
+                "Real-world case studies and success stories",
+                "Tools and frameworks for digital transformation",
+                "Networking with industry leaders and experts"
+              ],
+              "scheduleTitle": "Event Schedule",
+              "schedule": [
+                {
+                  "id": "s1",
+                  "time": "9:00 AM - 10:00 AM",
+                  "title": "Registration & Networking",
+                  "description": "Check-in and networking over coffee"
+                },
+                {
+                  "id": "s2",
+                  "time": "10:00 AM - 11:30 AM",
+                  "title": "Opening Keynote",
+                  "description": "The Future of Work in a Digital World"
+                },
+                {
+                  "id": "s3",
+                  "time": "11:45 AM - 01:15 PM",
+                  "title": "Panel Discussion",
+                  "description": "Technology Trends Driving Business Transformation"
+                },
+                {
+                  "id": "s4",
+                  "time": "01:30 PM - 02:30 PM",
+                  "title": "Lunch & Networking",
+                  "description": "Refreshments and connect with fellow attendees"
+                },
+                {
+                  "id": "s5",
+                  "time": "02:30 PM - 04:00 PM",
+                  "title": "Closing Keynote",
+                  "description": "Building a Resilient and Innovative Organization"
+                }
+              ],
+              "sidebar": {
+                "date": "January 25, 2025",
+                "time": "10:00 AM - 05:00 PM",
+                "location": "Broadway, New York, USA",
+                "organizer": "VenueEv Team",
+                "eventType": "Business Conference",
+                "bookBtnText": "Book Your Seat",
+                "bookBtnUrl": "#book",
+                "helpTitle": "Need Help?",
+                "helpText": "Have questions about this event? We're here to help!",
+                "phone": "+1 234 567 8900",
+                "email": "hello@venueev.com"
+              }
+            },
+            "entertainment": {
+              "title": "Proactive Transformation Requires Embrace Of Technology",
+              "image": "/banner/banner1.webp",
+              "aboutTitle": "About This Event",
+              "aboutDesc1": "In today's fast-paced digital world, transformation is no longer optional—it's essential. This event brings together industry leaders, innovators, and technologists for a powerful day of discussions, real-life case cases, and strategies to embrace technology and drive meaningful change.",
+              "aboutDesc2": "Join us for insightful keynotes, panel discussions, and networking opportunities that will help you stay ahead and build a future-ready organization.",
+              "learnTitle": "What You'll Learn",
+              "learnPoints": [
+                "How to build a future-ready business through technology",
+                "Strategies to integrate innovation in your organization",
+                "Real-world case studies and success stories",
+                "Tools and frameworks for digital transformation",
+                "Networking with industry leaders and experts"
+              ],
+              "scheduleTitle": "Event Schedule",
+              "schedule": [
+                {
+                  "id": "s1",
+                  "time": "9:00 AM - 10:00 AM",
+                  "title": "Registration & Networking",
+                  "description": "Check-in and networking over coffee"
+                },
+                {
+                  "id": "s2",
+                  "time": "10:00 AM - 11:30 AM",
+                  "title": "Opening Keynote",
+                  "description": "The Future of Work in a Digital World"
+                },
+                {
+                  "id": "s3",
+                  "time": "11:45 AM - 01:15 PM",
+                  "title": "Panel Discussion",
+                  "description": "Technology Trends Driving Business Transformation"
+                },
+                {
+                  "id": "s4",
+                  "time": "01:30 PM - 02:30 PM",
+                  "title": "Lunch & Networking",
+                  "description": "Refreshments and connect with fellow attendees"
+                },
+                {
+                  "id": "s5",
+                  "time": "02:30 PM - 04:00 PM",
+                  "title": "Closing Keynote",
+                  "description": "Building a Resilient and Innovative Organization"
+                }
+              ],
+              "sidebar": {
+                "date": "January 25, 2025",
+                "time": "10:00 AM - 05:00 PM",
+                "location": "Broadway, New York, USA",
+                "organizer": "VenueEv Team",
+                "eventType": "Business Conference",
+                "bookBtnText": "Book Your Seat",
+                "bookBtnUrl": "#book",
+                "helpTitle": "Need Help?",
+                "helpText": "Have questions about this event? We're here to help!",
+                "phone": "+1 234 567 8900",
+                "email": "hello@venueev.com"
+              }
+            }
+          }
+        },
+        "ContactBreadcrumb": {
+          "variants": {
+            "VenueContactBreadcrumb1": {
+              "title": "Contact Us",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Contact Us"
+                }
+              ]
+            }
+          }
+        },
+        "ContactPageContent": {
+          "variants": {
+            "VenueContactPage1": {
+              "formTitle": "Send Us A Message",
+              "formSubmitText": "SEND MESSAGE",
+              "infoTitle": "Contact Information",
+              "infoItems": [
+                {
+                  "id": "email",
+                  "icon": "FaEnvelope",
+                  "title": "Email Us",
+                  "details": [
+                    "hello@venueev.com"
+                  ]
+                },
+                {
+                  "id": "phone",
+                  "icon": "FaPhoneAlt",
+                  "title": "Call Us",
+                  "details": [
+                    "+91 98765 43210"
+                  ]
+                },
+                {
+                  "id": "location",
+                  "icon": "FaMapMarkerAlt",
+                  "title": "Visit Us",
+                  "details": [
+                    "Connaught Place,",
+                    "New Delhi, 110001,",
+                    "India"
+                  ]
+                },
+                {
+                  "id": "hours",
+                  "icon": "FaRegClock",
+                  "title": "Business Hours",
+                  "details": [
+                    "Mon - Sat: 10:00 AM - 7:00 PM",
+                    "Sunday: Closed"
+                  ]
+                }
+              ],
+              "mapIframeUrl": "https://maps.google.com/maps?q=Connaught+Place,+New+Delhi,+India&t=&z=13&ie=UTF8&iwloc=&output=embed",
+              "mapOverlayTitle": "VENU EV",
+              "mapOverlayAddress": [
+                "Connaught Place,",
+                "New Delhi, 110001,",
+                "India"
+              ]
+            }
+          }
+        },
+        "GalleryBreadcrumb": {
+          "variants": {
+            "VenueGalleryBreadcrumb1": {
+              "title": "Our Gallery",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Gallery"
+                }
+              ]
+            }
+          }
+        },
+        "GalleryPageContent": {
+          "variants": {
+            "VenueGalleryPage1": {
+              "imageSectionTitle": "IMAGE",
+              "imageSectionTitleHighlight": "GALLERY",
+              "imageSectionDesc": "A glimpse of the spectacular events we've designed and executed with passion, creativity, and precision.",
+              "images": [
+                {
+                  "id": "img-1",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "img-2",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "img-3",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "img-4",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "img-5",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "img-6",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "img-7",
+                  "image": "/banner/banner1.webp"
+                },
+                {
+                  "id": "img-8",
+                  "image": "/banner/banner1.webp"
+                }
+              ],
+              "videoSectionTitle": "VIDEO",
+              "videoSectionTitleHighlight": "GALLERY",
+              "videoSectionDesc": "Watch the highlights and relive the energy, emotion, and unforgettable moments from our events.",
+              "videos": [
+                {
+                  "id": "vid-1",
+                  "thumbnail": "/banner/banner1.webp",
+                  "url": "https://www.youtube.com/embed/LXb3EKWsInQ",
+                  "title": "Corporate Annual Meet 2024",
+                  "duration": "02:45"
+                },
+                {
+                  "id": "vid-2",
+                  "thumbnail": "/banner/banner1.webp",
+                  "url": "https://www.youtube.com/embed/tgbNymZ7vqY",
+                  "title": "Dream Wedding Celebration",
+                  "duration": "03:18"
+                },
+                {
+                  "id": "vid-3",
+                  "thumbnail": "/banner/banner1.webp",
+                  "url": "https://www.youtube.com/embed/LXb3EKWsInQ",
+                  "title": "Business Conference 2024",
+                  "duration": "04:02"
+                },
+                {
+                  "id": "vid-4",
+                  "thumbnail": "/banner/banner1.webp",
+                  "url": "https://www.youtube.com/embed/tgbNymZ7vqY",
+                  "title": "Product Launch Event",
+                  "duration": "02:30"
+                }
+              ]
+            }
+          }
+        },
+      "TestimonialsBreadcrumb": {
+        "variants": {
+          "VenueTestimonialsBreadcrumb1": {
+            "title": "Testimonials",
+            "bgImage": "/banner/banner1.webp",
+            "paths": [
+              {
+                "label": "Home",
+                "url": "/"
+              },
+              {
+                "label": "Testimonials"
+              }
+            ]
+          }
         }
       }
     }
   }
+}
 }

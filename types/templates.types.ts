@@ -100,6 +100,29 @@ export interface WhyChooseUsData {
   stats: WhyChooseUsStat[];
 }
 
+export interface WhyChooseUsPageFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface WhyChooseUsPageBottomItem {
+  id: string;
+  icon: string;
+  text: string;
+}
+
+export interface WhyChooseUsPageData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description: string;
+  features: WhyChooseUsPageFeature[];
+  bottomItems: WhyChooseUsPageBottomItem[];
+}
+
 export interface CounterStat {
   id: string;
   icon: string;
@@ -130,6 +153,137 @@ export interface ServicesData {
   dividerIcon?: string;
   description: string;
   items: ServiceCard[];
+}
+
+export interface ServiceDetailOffer {
+  id: string;
+  title: string;
+  description: string;
+}
+
+export interface ServiceDetailSidebarData {
+  formTitle: string;
+  helpTitle: string;
+  helpText: string;
+  phone: string;
+  email: string;
+  hours: string;
+}
+
+export interface ServiceDetailPageData {
+  badge: string;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt?: string;
+  overviewBadge: string;
+  overview: string;
+  offerBadge: string;
+  offers: ServiceDetailOffer[];
+  sidebar: ServiceDetailSidebarData;
+}
+
+export interface EventCard {
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt?: string;
+}
+
+export interface EventsPageData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description: string;
+  items: EventCard[];
+  cta: {
+    title: string;
+    subtitle: string;
+    buttonText: string;
+    buttonUrl: string;
+  };
+}
+
+export interface EventDetailScheduleItem {
+  id: string;
+  time: string;
+  title: string;
+  description: string;
+}
+
+export interface EventDetailSidebarData {
+  date: string;
+  time: string;
+  location: string;
+  organizer: string;
+  eventType: string;
+  bookBtnText: string;
+  bookBtnUrl: string;
+  helpTitle: string;
+  helpText: string;
+  phone: string;
+  email: string;
+}
+
+export interface EventDetailPageData {
+  title: string;
+  image: string;
+  imageAlt?: string;
+  aboutTitle: string;
+  aboutDesc1: string;
+  aboutDesc2: string;
+  learnTitle: string;
+  learnPoints: string[];
+  scheduleTitle: string;
+  schedule: EventDetailScheduleItem[];
+  sidebar: EventDetailSidebarData;
+}
+
+export interface ContactInfoItem {
+  id: string;
+  icon: string;
+  title: string;
+  details: string[];
+}
+
+export interface ContactPageData {
+  formTitle: string;
+  formSubmitText: string;
+  infoTitle: string;
+  infoItems: ContactInfoItem[];
+  mapIframeUrl: string;
+  mapOverlayTitle: string;
+  mapOverlayAddress: string[];
+}
+
+export interface ImageGalleryItem {
+  id: string;
+  image: string;
+  imageAlt?: string;
+}
+
+export interface VideoGalleryItem {
+  id: string;
+  thumbnail: string;
+  thumbnailAlt?: string;
+  url: string; // YouTube embed URL
+  title: string;
+  duration: string;
+}
+
+export interface GalleryPageData {
+  imageSectionTitle: string;
+  imageSectionTitleHighlight?: string;
+  imageSectionDesc: string;
+  images: ImageGalleryItem[];
+  
+  videoSectionTitle: string;
+  videoSectionTitleHighlight?: string;
+  videoSectionDesc: string;
+  videos: VideoGalleryItem[];
 }
 
 export interface ValueItem {
@@ -400,6 +554,20 @@ export interface VenueCategorySections {
   OurAwardsBreadcrumb?: SectionVariant<BreadcrumbData>;
   OurTeamBreadcrumb?: SectionVariant<BreadcrumbData>;
   TeamDetailBreadcrumb?: SectionVariant<BreadcrumbData>;
+  WhyChooseUsBreadcrumb?: SectionVariant<BreadcrumbData>;
+  OurServicesBreadcrumb?: SectionVariant<BreadcrumbData>;
+  ServiceDetailBreadcrumb?: SectionVariant<BreadcrumbData>;
+  WhyChooseUsPageContent?: SectionVariant<WhyChooseUsPageData>;
+  ServiceDetailPageContent?: SectionVariant<ServiceDetailPageData>;
+  EventsBreadcrumb?: SectionVariant<BreadcrumbData>;
+  EventDetailBreadcrumb?: SectionVariant<BreadcrumbData>;
+  EventsPageContent?: SectionVariant<EventsPageData>;
+  EventDetailPageContent?: SectionVariant<EventDetailPageData>;
+  ContactBreadcrumb?: SectionVariant<BreadcrumbData>;
+  ContactPageContent?: SectionVariant<ContactPageData>;
+  GalleryBreadcrumb?: SectionVariant<BreadcrumbData>;
+  GalleryPageContent?: SectionVariant<GalleryPageData>;
+  TestimonialsBreadcrumb?: SectionVariant<BreadcrumbData>;
 }
 
 export interface TemplateComponentItem {
