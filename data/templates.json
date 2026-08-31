@@ -884,39 +884,247 @@
               "imageAlt": "Venu EV Logo",
               "navLinks": [
                 {
-                  "id": "home",
+                  "id": "nav-home",
                   "label": "Home",
                   "url": "/"
                 },
                 {
-                  "id": "about",
-                  "label": "About",
-                  "url": "/about"
+                  "id": "nav-about",
+                  "label": "About Us",
+                  "subLinks": [
+                    {
+                      "id": "about-1",
+                      "label": "About Us",
+                      "url": "/about"
+                    },
+                    {
+                      "id": "about-2",
+                      "label": "Our Story",
+                      "url": "/our-story"
+                    },
+                    {
+                      "id": "about-3",
+                      "label": "Our Mission",
+                      "url": "/our-mission"
+                    },
+                    {
+                      "id": "about-4",
+                      "label": "Our Vision",
+                      "url": "/our-vision"
+                    },
+                    {
+                      "id": "about-5",
+                      "label": "Our Awards",
+                      "url": "/our-awards"
+                    },
+                    {
+                      "id": "about-6",
+                      "label": "Testimonials",
+                      "url": "/testimonials"
+                    },
+                    {
+                      "id": "about-7",
+                      "label": "Why Choose Us",
+                      "url": "/why-choose-us"
+                    }
+                  ]
                 },
                 {
-                  "id": "services",
+                  "id": "nav-services",
                   "label": "Services",
-                  "url": "/services"
+                  "subLinks": [
+                    {
+                      "id": "serv-1",
+                      "label": "All Services",
+                      "url": "/services"
+                    },
+                    {
+                      "id": "serv-2",
+                      "label": "Corporate Event Planning",
+                      "url": "/services/corporate-event-planning"
+                    },
+                    {
+                      "id": "serv-3",
+                      "label": "Wedding Planning",
+                      "url": "/services/wedding-planning"
+                    },
+                    {
+                      "id": "serv-4",
+                      "label": "Engagement Planning",
+                      "url": "/services/engagement-planning"
+                    },
+                    {
+                      "id": "serv-5",
+                      "label": "Private Parties",
+                      "url": "/services/private-parties"
+                    },
+                    {
+                      "id": "serv-6",
+                      "label": "Product Launches",
+                      "url": "/services/product-launches"
+                    }
+                  ]
                 },
                 {
-                  "id": "venues",
-                  "label": "Venues",
-                  "url": "/venues"
+                  "id": "nav-events",
+                  "label": "Events",
+                  "subLinks": [
+                    {
+                      "id": "event-1",
+                      "label": "All Events",
+                      "url": "/events"
+                    },
+                    {
+                      "id": "event-2",
+                      "label": "Corporate Events",
+                      "url": "/events/corporate-events"
+                    },
+                    {
+                      "id": "event-3",
+                      "label": "Weddings",
+                      "url": "/events/weddings"
+                    },
+                    {
+                      "id": "event-4",
+                      "label": "Social Celebrations",
+                      "url": "/events/social-celebrations"
+                    },
+                    {
+                      "id": "event-5",
+                      "label": "Exhibitions",
+                      "url": "/events/exhibitions"
+                    },
+                    {
+                      "id": "event-6",
+                      "label": "Seminars",
+                      "url": "/events/seminars"
+                    },
+                    {
+                      "id": "event-7",
+                      "label": "Entertainment",
+                      "url": "/events/entertainment"
+                    }
+                  ]
                 },
                 {
-                  "id": "gallery",
-                  "label": "Gallery",
-                  "url": "/gallery"
+                  "id": "nav-work-team",
+                  "label": "Our Work & Team",
+                  "subLinks": [
+                    {
+                      "id": "work-1",
+                      "label": "Gallery Overview",
+                      "url": "/gallery"
+                    },
+                    {
+                      "id": "team-1",
+                      "label": "Our Team",
+                      "url": "/team"
+                    },
+                    {
+                      "id": "team-2",
+                      "label": "Team Detail",
+                      "url": "/team/tm2"
+                    }
+                  ]
                 },
                 {
-                  "id": "blogs",
+                  "id": "nav-careers",
+                  "label": "Careers",
+                  "subLinks": [
+                    {
+                      "id": "car-1",
+                      "label": "Careers Overview",
+                      "url": "/careers"
+                    },
+                    {
+                      "id": "car-2",
+                      "label": "Career Detail",
+                      "url": "/careers/event-manager"
+                    }
+                  ]
+                },
+                {
+                  "id": "nav-blogs",
                   "label": "Blogs",
-                  "url": "/blogs"
+                  "subLinks": [
+                    {
+                      "id": "blog-1",
+                      "label": "All Blogs",
+                      "url": "/blogs"
+                    },
+                    {
+                      "id": "blog-2",
+                      "label": "Event Planning Tips",
+                      "url": "/blogs/planning-tips"
+                    },
+                    {
+                      "id": "blog-3",
+                      "label": "Industry Insights",
+                      "url": "/blogs/industry-insights"
+                    }
+                  ]
                 },
                 {
-                  "id": "contact",
+                  "id": "nav-contact",
                   "label": "Contact",
-                  "url": "/contact"
+                  "subLinks": [
+                    {
+                      "id": "con-1",
+                      "label": "Get in Touch",
+                      "url": "/contact"
+                    },
+                    {
+                      "id": "con-2",
+                      "label": "Get a Quote",
+                      "url": "/get-a-quote"
+                    },
+                    {
+                      "id": "con-3",
+                      "label": "FAQ",
+                      "url": "/faq"
+                    }
+                  ]
+                },
+                {
+                  "id": "nav-utility",
+                  "label": "Utility Pages",
+                  "subLinks": [
+                    {
+                      "id": "ut-1",
+                      "label": "404 Page",
+                      "url": "/broken-link"
+                    },
+                    {
+                      "id": "ut-2",
+                      "label": "Terms & Conditions",
+                      "url": "/terms-conditions"
+                    },
+                    {
+                      "id": "ut-3",
+                      "label": "Privacy Policy",
+                      "url": "/privacy-policy"
+                    },
+                    {
+                      "id": "ut-4",
+                      "label": "Cookies Policy",
+                      "url": "/cookies-policy"
+                    },
+                    {
+                      "id": "ut-5",
+                      "label": "Disclaimer",
+                      "url": "/disclaimer"
+                    },
+                    {
+                      "id": "ut-6",
+                      "label": "Refund Policy",
+                      "url": "/refund-policy"
+                    },
+                    {
+                      "id": "ut-7",
+                      "label": "Sitemap",
+                      "url": "/sitemap"
+                    }
+                  ]
                 }
               ],
               "contactButton": {
@@ -2711,24 +2919,1685 @@
             }
           }
         },
-      "TestimonialsBreadcrumb": {
-        "variants": {
-          "VenueTestimonialsBreadcrumb1": {
-            "title": "Testimonials",
-            "bgImage": "/banner/banner1.webp",
-            "paths": [
-              {
-                "label": "Home",
-                "url": "/"
-              },
-              {
-                "label": "Testimonials"
+        "TestimonialsBreadcrumb": {
+          "variants": {
+            "VenueTestimonialsBreadcrumb1": {
+              "title": "Testimonials",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Testimonials"
+                }
+              ]
+            }
+          }
+        },
+        "PartnersBreadcrumb": {
+          "variants": {
+            "VenuePartnersBreadcrumb1": {
+              "title": "Our Partners",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Partners"
+                }
+              ]
+            }
+          }
+        },
+        "PartnersPageContent": {
+          "variants": {
+            "VenuePartnersPage1": {
+              "badge": "OUR PARTNERS",
+              "title": "Trusted Collaborations.",
+              "titleHighlight": "Exceptional Results.",
+              "dividerIcon": "FaRegHeart",
+              "description": "We partner with leading global brands and innovative companies to create impactful experiences and lasting success.",
+              "categories": [
+                {
+                  "id": "platinum",
+                  "title": "PLATINUM PARTNERS",
+                  "dividerIcon": "FaRegHeart",
+                  "logos": [
+                    {
+                      "id": "p1",
+                      "image": "/partner/dlf.png",
+                      "name": "DLF"
+                    },
+                    {
+                      "id": "p2",
+                      "image": "/partner/godrej.png",
+                      "name": "Godrej"
+                    },
+                    {
+                      "id": "p3",
+                      "image": "/partner/mahindra.png",
+                      "name": "Mahindra"
+                    },
+                    {
+                      "id": "p4",
+                      "image": "/partner/prestige.png",
+                      "name": "Prestige"
+                    }
+                  ]
+                },
+                {
+                  "id": "gold",
+                  "title": "GOLD PARTNERS",
+                  "dividerIcon": "FaRegHeart",
+                  "logos": [
+                    {
+                      "id": "g1",
+                      "image": "/partner/dlf.png",
+                      "name": "DLF"
+                    },
+                    {
+                      "id": "g2",
+                      "image": "/partner/godrej.png",
+                      "name": "Godrej"
+                    },
+                    {
+                      "id": "g3",
+                      "image": "/partner/mahindra.png",
+                      "name": "Mahindra"
+                    },
+                    {
+                      "id": "g4",
+                      "image": "/partner/prestige.png",
+                      "name": "Prestige"
+                    },
+                    {
+                      "id": "gold5",
+                      "image": "/partner/dlf.png",
+                      "name": "DLF"
+                    },
+                    {
+                      "id": "gold6",
+                      "image": "/partner/godrej.png",
+                      "name": "Godrej"
+                    }
+                  ]
+                },
+                {
+                  "id": "silver",
+                  "title": "SILVER PARTNERS",
+                  "dividerIcon": "FaRegHeart",
+                  "logos": [
+                    {
+                      "id": "s1",
+                      "image": "/partner/dlf.png",
+                      "name": "DLF"
+                    },
+                    {
+                      "id": "s2",
+                      "image": "/partner/godrej.png",
+                      "name": "Godrej"
+                    },
+                    {
+                      "id": "s3",
+                      "image": "/partner/mahindra.png",
+                      "name": "Mahindra"
+                    },
+                    {
+                      "id": "s4",
+                      "image": "/partner/prestige.png",
+                      "name": "Prestige"
+                    },
+                    {
+                      "id": "silver5",
+                      "image": "/partner/dlf.png",
+                      "name": "DLF"
+                    },
+                    {
+                      "id": "silver6",
+                      "image": "/partner/godrej.png",
+                      "name": "Godrej"
+                    }
+                  ]
+                },
+                {
+                  "id": "supporting",
+                  "title": "SUPPORTING PARTNERS",
+                  "dividerIcon": "FaRegHeart",
+                  "logos": [
+                    {
+                      "id": "sp1",
+                      "image": "/partner/dlf.png",
+                      "name": "DLF"
+                    },
+                    {
+                      "id": "sp2",
+                      "image": "/partner/godrej.png",
+                      "name": "Godrej"
+                    },
+                    {
+                      "id": "sp3",
+                      "image": "/partner/mahindra.png",
+                      "name": "Mahindra"
+                    },
+                    {
+                      "id": "sp4",
+                      "image": "/partner/prestige.png",
+                      "name": "Prestige"
+                    },
+                    {
+                      "id": "supporting5",
+                      "image": "/partner/dlf.png",
+                      "name": "DLF"
+                    },
+                    {
+                      "id": "supporting6",
+                      "image": "/partner/godrej.png",
+                      "name": "Godrej"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "FAQBreadcrumb": {
+          "variants": {
+            "VenueFAQBreadcrumb1": {
+              "title": "FAQS",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "FAQS"
+                }
+              ]
+            }
+          }
+        },
+        "FAQPageContent": {
+          "variants": {
+            "VenueFAQPage1": {
+              "badge": "FAQS",
+              "title": "Frequently Asked Questions",
+              "dividerIcon": "star",
+              "description": "Find answers to common questions about our services, process, and everything you need to know.",
+              "faqs": [
+                {
+                  "id": "faq1",
+                  "question": "What types of events do you organize?",
+                  "answer": "We specialize in corporate events, conferences, product launches, weddings, private parties, and social celebrations. Every event is tailored to match your goals, style, and vision."
+                },
+                {
+                  "id": "faq2",
+                  "question": "How early should I book your services?",
+                  "answer": "We recommend booking at least 3-6 months in advance for corporate events and weddings, but we can often accommodate shorter timelines depending on our availability."
+                },
+                {
+                  "id": "faq3",
+                  "question": "Can you help with venue selection and vendor management?",
+                  "answer": "Yes, we handle everything from finding the perfect venue to sourcing and managing all necessary vendors."
+                },
+                {
+                  "id": "faq4",
+                  "question": "Do you offer end-to-end event planning?",
+                  "answer": "Absolutely. We offer comprehensive event planning services covering every detail from start to finish."
+                },
+                {
+                  "id": "faq5",
+                  "question": "What is your pricing structure?",
+                  "answer": "Our pricing depends on the scale and complexity of the event. We offer customized packages after a thorough consultation."
+                },
+                {
+                  "id": "faq6",
+                  "question": "Can you customize events based on our theme or preferences?",
+                  "answer": "Yes! Creating customized, theme-based events tailored to your unique preferences is our specialty."
+                },
+                {
+                  "id": "faq7",
+                  "question": "What is your cancellation or rescheduling policy?",
+                  "answer": "Our policies are outlined in our contracts. Generally, deposits are non-refundable, but we try to be as flexible as possible with rescheduling."
+                }
+              ],
+              "sidebar": {
+                "icon": "FaHeadset",
+                "title": "Still Have Questions?",
+                "description": "We're here to help! Reach out to our team for personalised support.",
+                "contactItems": [
+                  {
+                    "icon": "FaEnvelope",
+                    "title": "Email Us",
+                    "details": [
+                      "hello@venueev.com"
+                    ]
+                  },
+                  {
+                    "icon": "FaPhoneAlt",
+                    "title": "Call Us",
+                    "details": [
+                      "+91 98765 43210"
+                    ]
+                  },
+                  {
+                    "icon": "FaMapMarkerAlt",
+                    "title": "Visit Us",
+                    "details": [
+                      "123 Event Avenue,",
+                      "Manhattan, New York,",
+                      "NY 10001, USA"
+                    ]
+                  }
+                ],
+                "buttonText": "CONTACT US →",
+                "buttonUrl": "/contact"
               }
-            ]
+            }
+          }
+        },
+        "LegalBreadcrumb": {
+          "variants": {
+            "VenueTermsBreadcrumb1": {
+              "title": "Terms & Conditions",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Terms & Conditions"
+                }
+              ]
+            },
+            "VenuePrivacyBreadcrumb1": {
+              "title": "Privacy Policy",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Privacy Policy"
+                }
+              ]
+            },
+            "VenueDisclaimerBreadcrumb1": {
+              "title": "Disclaimer",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Disclaimer"
+                }
+              ]
+            },
+            "VenueRefundBreadcrumb1": {
+              "title": "Refund / Cancellation Policy",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Refund Policy"
+                }
+              ]
+            },
+            "VenueCookiesBreadcrumb1": {
+              "title": "Cookies Policy",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Cookies Policy"
+                }
+              ]
+            }
+          }
+        },
+        "LegalPageContent": {
+          "variants": {
+            "VenueTermsPage": {
+              "title": "Terms & Conditions",
+              "lastUpdated": "January 1, 2024",
+              "sections": [
+                {
+                  "id": "t1",
+                  "title": "1. Acceptance of Terms",
+                  "content": "By accessing our website or using our services, you agree to be bound by these Terms and Conditions and all applicable laws and regulations."
+                },
+                {
+                  "id": "t2",
+                  "title": "2. About Venue EF",
+                  "content": "Venue EF is a premium event planning and management company. We specialize in creating and executing exceptional events tailored to our clients' unique needs."
+                },
+                {
+                  "id": "t3",
+                  "title": "3. Services",
+                  "content": "We provide end-to-end event planning, design, coordination, and execution services. The scope of our services will be outlined in individual proposals or agreements."
+                },
+                {
+                  "id": "t4",
+                  "title": "4. User Responsibilities",
+                  "content": "You agree to provide accurate information when requesting a quote or using our services and to cooperate with our team for seamless event execution."
+                },
+                {
+                  "id": "t5",
+                  "title": "5. Intellectual Property",
+                  "content": "All content on this website, including text, graphics, logos, and images, is the property of Venue EF and is protected by copyright laws. Unauthorized use is prohibited."
+                },
+                {
+                  "id": "t6",
+                  "title": "6. Payments and Fees",
+                  "content": "Fees and payment terms will be outlined in the proposal or contract. A deposit may be required to secure your booking."
+                },
+                {
+                  "id": "t7",
+                  "title": "7. Cancellations and Refunds",
+                  "content": "Cancellations are subject to the terms outlined in your contract. Refunds, if applicable, will be processed as per the agreed policy."
+                },
+                {
+                  "id": "t8",
+                  "title": "8. Limitation of Liability",
+                  "content": "Venue EF is not liable for any indirect, incidental, or consequential damages arising from the use of our services or website."
+                }
+              ]
+            },
+            "VenuePrivacyPage": {
+              "title": "Privacy Policy",
+              "lastUpdated": "January 1, 2024",
+              "sections": [
+                {
+                  "id": "p1",
+                  "title": "1. Information We Collect",
+                  "content": "We collect personal information such as your name, email address, phone number, and event details when you contact us or use our services."
+                },
+                {
+                  "id": "p2",
+                  "title": "2. How We Use Information",
+                  "content": "We use your information to communicate with you, process bookings, provide personalized event services, and improve our website."
+                },
+                {
+                  "id": "p3",
+                  "title": "3. Information Sharing",
+                  "content": "We do not sell your personal data. We may share necessary details with trusted vendors strictly for the purpose of executing your event."
+                },
+                {
+                  "id": "p4",
+                  "title": "4. Data Security",
+                  "content": "We implement robust security measures to protect your personal information from unauthorized access or disclosure."
+                },
+                {
+                  "id": "p5",
+                  "title": "5. Your Rights",
+                  "content": "You have the right to access, modify, or request deletion of your personal data stored in our systems."
+                }
+              ]
+            },
+            "VenueDisclaimerPage": {
+              "title": "Disclaimer",
+              "lastUpdated": "January 1, 2024",
+              "sections": [
+                {
+                  "id": "d1",
+                  "title": "1. General Information",
+                  "content": "The information provided on this website is for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind."
+                },
+                {
+                  "id": "d2",
+                  "title": "2. Event Outcomes",
+                  "content": "Venue EF does not guarantee specific outcomes or success metrics for your event, as they depend on various external factors beyond our control."
+                },
+                {
+                  "id": "d3",
+                  "title": "3. Third-Party Links",
+                  "content": "Our website may contain links to external websites. We are not responsible for the content or privacy practices of these third-party sites."
+                }
+              ]
+            },
+            "VenueRefundPage": {
+              "title": "Refund / Cancellation Policy",
+              "lastUpdated": "January 1, 2024",
+              "sections": [
+                {
+                  "id": "r1",
+                  "title": "1. General Policy",
+                  "content": "Due to the extensive planning and reservation of resources required for events, all initial deposits are generally non-refundable unless stated otherwise in your contract."
+                },
+                {
+                  "id": "r2",
+                  "title": "2. Cancellation by Client",
+                  "content": "If you cancel your event, you must notify us in writing. Cancellation fees will apply based on the timeline specified in your individual contract."
+                },
+                {
+                  "id": "r3",
+                  "title": "3. Rescheduling",
+                  "content": "We understand that unforeseen circumstances arise. We will work with you to reschedule your event to an alternative date, subject to venue and vendor availability."
+                },
+                {
+                  "id": "r4",
+                  "title": "4. Processing Refunds",
+                  "content": "Approved refunds will be processed within 14-21 business days via the original method of payment."
+                }
+              ]
+            },
+            "VenueCookiesPage": {
+              "title": "Cookies Policy",
+              "lastUpdated": "January 1, 2024",
+              "sections": [
+                {
+                  "id": "c1",
+                  "title": "1. What Are Cookies?",
+                  "content": "Cookies are small text files placed on your device by websites that you visit. They are widely used to make websites work more efficiently and provide a better user experience."
+                },
+                {
+                  "id": "c2",
+                  "title": "2. How We Use Cookies",
+                  "content": "We use cookies to analyze traffic, remember your preferences, and optimize our website performance."
+                },
+                {
+                  "id": "c3",
+                  "title": "3. Types of Cookies We Use",
+                  "content": "We use strictly necessary cookies for website functionality, and analytics cookies to understand how visitors interact with our site."
+                },
+                {
+                  "id": "c4",
+                  "title": "4. Managing Cookies",
+                  "content": "You can control and manage cookies through your browser settings. However, disabling certain cookies may affect the functionality of our website."
+                }
+              ]
+            }
+          }
+        },
+        "BlogDetailBreadcrumb": {
+          "variants": {
+            "creating-unforgettable-corporate-events": {
+              "title": "Blog Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Blogs",
+                  "url": "/blogs"
+                },
+                {
+                  "label": "Creating Unforgettable Corporate Events"
+                }
+              ]
+            },
+            "10-stunning-wedding-decor-ideas-2024": {
+              "title": "Blog Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Blogs",
+                  "url": "/blogs"
+                },
+                {
+                  "label": "10 Stunning Wedding Decor Ideas 2024"
+                }
+              ]
+            },
+            "how-to-plan-a-successful-corporate-event": {
+              "title": "Blog Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Blogs",
+                  "url": "/blogs"
+                },
+                {
+                  "label": "How To Plan A Successful Corporate Event"
+                }
+              ]
+            },
+            "checklist-for-planning-the-perfect-private-party": {
+              "title": "Blog Details",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Blogs",
+                  "url": "/blogs"
+                },
+                {
+                  "label": "Checklist For Planning The Perfect Private Party"
+                }
+              ]
+            }
+          }
+        },
+        "BlogDetailPageContent": {
+          "variants": {
+            "creating-unforgettable-corporate-events": {
+              "badge": "EVENT PLANNING",
+              "title": "Creating Unforgettable Corporate Events: A Complete Guide",
+              "date": "May 20, 2025",
+              "readTime": "8 min read",
+              "author": "By Venue EF Team",
+              "image": "/banner/banner1.webp",
+              "contentSections": [
+                {
+                  "type": "text",
+                  "content": "Corporate events are more than just dates on a calendar—they're opportunities to inspire, connect, and create lasting impressions. Whether it's a product launch, annual conference, or team celebration, a well-planned event reflects your brand's values and leaves a meaningful impact on your audience.\n\nIn this guide, we'll walk you through the key steps to planning a corporate event that's seamless, engaging, and truly unforgettable."
+                },
+                {
+                  "type": "heading",
+                  "content": "1. Define Your Objectives"
+                },
+                {
+                  "type": "text",
+                  "content": "Start with a clear purpose. Are you launching a new product, building team engagement, or strengthening client relationships? Defining your objectives will shape every decision—from the venue and agenda to the experiences you create."
+                },
+                {
+                  "type": "quote",
+                  "content": "A clear objective turns an event from good to great."
+                },
+                {
+                  "type": "heading",
+                  "content": "2. Know Your Audience"
+                },
+                {
+                  "type": "text",
+                  "content": "Understanding your audience helps you design an experience that resonates with them. Consider their preferences, expectations, and what will provide real value."
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "What motivates them?",
+                    "What kind of experience will engage them?",
+                    "What key message do you want them to take away?"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "content": "3. Choose the Right Venue"
+                },
+                {
+                  "type": "text",
+                  "content": "The venue sets the tone for your event. Look for a space that aligns with your brand image, accommodates your guest list, and offers the right amenities and ambience."
+                }
+              ],
+              "sidebar": {
+                "relatedPosts": [
+                  {
+                    "id": "rp1",
+                    "image": "/banner/banner1.webp",
+                    "title": "10 Corporate Event Trends to Watch in 2025",
+                    "date": "May 15, 2025",
+                    "url": "/blogs/10-corporate-event-trends"
+                  },
+                  {
+                    "id": "rp2",
+                    "image": "/banner/banner1.webp",
+                    "title": "How to Plan a Successful Product Launch Event",
+                    "date": "May 08, 2025",
+                    "url": "/blogs/plan-product-launch"
+                  },
+                  {
+                    "id": "rp3",
+                    "image": "/banner/banner1.webp",
+                    "title": "Team Building Events That Inspire and Engage",
+                    "date": "Apr 30, 2025",
+                    "url": "/blogs/team-building-events"
+                  },
+                  {
+                    "id": "rp4",
+                    "image": "/banner/banner1.webp",
+                    "title": "Checklist for Planning a Flawless Event",
+                    "date": "Apr 22, 2025",
+                    "url": "/blogs/checklist-planning-event"
+                  }
+                ],
+                "categories": [
+                  {
+                    "id": "c1",
+                    "name": "Event Planning",
+                    "count": 12,
+                    "icon": "FaCalendarAlt"
+                  },
+                  {
+                    "id": "c2",
+                    "name": "Corporate Events",
+                    "count": 9,
+                    "icon": "FaBriefcase"
+                  },
+                  {
+                    "id": "c3",
+                    "name": "Trends & Insights",
+                    "count": 7,
+                    "icon": "FaLightbulb"
+                  },
+                  {
+                    "id": "c4",
+                    "name": "Tips & Guides",
+                    "count": 10,
+                    "icon": "FaInfoCircle"
+                  },
+                  {
+                    "id": "c5",
+                    "name": "Venue & Design",
+                    "count": 6,
+                    "icon": "FaBuilding"
+                  }
+                ]
+              }
+            },
+            "10-stunning-wedding-decor-ideas-2024": {
+              "badge": "EVENT PLANNING",
+              "title": "10 Stunning Wedding Decor Ideas 2024",
+              "date": "May 20, 2025",
+              "readTime": "8 min read",
+              "author": "By Venue EF Team",
+              "image": "/banner/banner1.webp",
+              "contentSections": [
+                {
+                  "type": "text",
+                  "content": "Corporate events are more than just dates on a calendar—they're opportunities to inspire, connect, and create lasting impressions. Whether it's a product launch, annual conference, or team celebration, a well-planned event reflects your brand's values and leaves a meaningful impact on your audience.\n\nIn this guide, we'll walk you through the key steps to planning a corporate event that's seamless, engaging, and truly unforgettable."
+                },
+                {
+                  "type": "heading",
+                  "content": "1. Define Your Objectives"
+                },
+                {
+                  "type": "text",
+                  "content": "Start with a clear purpose. Are you launching a new product, building team engagement, or strengthening client relationships? Defining your objectives will shape every decision—from the venue and agenda to the experiences you create."
+                },
+                {
+                  "type": "quote",
+                  "content": "A clear objective turns an event from good to great."
+                },
+                {
+                  "type": "heading",
+                  "content": "2. Know Your Audience"
+                },
+                {
+                  "type": "text",
+                  "content": "Understanding your audience helps you design an experience that resonates with them. Consider their preferences, expectations, and what will provide real value."
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "What motivates them?",
+                    "What kind of experience will engage them?",
+                    "What key message do you want them to take away?"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "content": "3. Choose the Right Venue"
+                },
+                {
+                  "type": "text",
+                  "content": "The venue sets the tone for your event. Look for a space that aligns with your brand image, accommodates your guest list, and offers the right amenities and ambience."
+                }
+              ],
+              "sidebar": {
+                "relatedPosts": [
+                  {
+                    "id": "rp1",
+                    "image": "/banner/banner1.webp",
+                    "title": "10 Corporate Event Trends to Watch in 2025",
+                    "date": "May 15, 2025",
+                    "url": "/blogs/10-corporate-event-trends"
+                  },
+                  {
+                    "id": "rp2",
+                    "image": "/banner/banner1.webp",
+                    "title": "How to Plan a Successful Product Launch Event",
+                    "date": "May 08, 2025",
+                    "url": "/blogs/plan-product-launch"
+                  },
+                  {
+                    "id": "rp3",
+                    "image": "/banner/banner1.webp",
+                    "title": "Team Building Events That Inspire and Engage",
+                    "date": "Apr 30, 2025",
+                    "url": "/blogs/team-building-events"
+                  },
+                  {
+                    "id": "rp4",
+                    "image": "/banner/banner1.webp",
+                    "title": "Checklist for Planning a Flawless Event",
+                    "date": "Apr 22, 2025",
+                    "url": "/blogs/checklist-planning-event"
+                  }
+                ],
+                "categories": [
+                  {
+                    "id": "c1",
+                    "name": "Event Planning",
+                    "count": 12,
+                    "icon": "FaCalendarAlt"
+                  },
+                  {
+                    "id": "c2",
+                    "name": "Corporate Events",
+                    "count": 9,
+                    "icon": "FaBriefcase"
+                  },
+                  {
+                    "id": "c3",
+                    "name": "Trends & Insights",
+                    "count": 7,
+                    "icon": "FaLightbulb"
+                  },
+                  {
+                    "id": "c4",
+                    "name": "Tips & Guides",
+                    "count": 10,
+                    "icon": "FaInfoCircle"
+                  },
+                  {
+                    "id": "c5",
+                    "name": "Venue & Design",
+                    "count": 6,
+                    "icon": "FaBuilding"
+                  }
+                ]
+              }
+            },
+            "how-to-plan-a-successful-corporate-event": {
+              "badge": "EVENT PLANNING",
+              "title": "How To Plan A Successful Corporate Event",
+              "date": "May 20, 2025",
+              "readTime": "8 min read",
+              "author": "By Venue EF Team",
+              "image": "/banner/banner1.webp",
+              "contentSections": [
+                {
+                  "type": "text",
+                  "content": "Corporate events are more than just dates on a calendar—they're opportunities to inspire, connect, and create lasting impressions. Whether it's a product launch, annual conference, or team celebration, a well-planned event reflects your brand's values and leaves a meaningful impact on your audience.\n\nIn this guide, we'll walk you through the key steps to planning a corporate event that's seamless, engaging, and truly unforgettable."
+                },
+                {
+                  "type": "heading",
+                  "content": "1. Define Your Objectives"
+                },
+                {
+                  "type": "text",
+                  "content": "Start with a clear purpose. Are you launching a new product, building team engagement, or strengthening client relationships? Defining your objectives will shape every decision—from the venue and agenda to the experiences you create."
+                },
+                {
+                  "type": "quote",
+                  "content": "A clear objective turns an event from good to great."
+                },
+                {
+                  "type": "heading",
+                  "content": "2. Know Your Audience"
+                },
+                {
+                  "type": "text",
+                  "content": "Understanding your audience helps you design an experience that resonates with them. Consider their preferences, expectations, and what will provide real value."
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "What motivates them?",
+                    "What kind of experience will engage them?",
+                    "What key message do you want them to take away?"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "content": "3. Choose the Right Venue"
+                },
+                {
+                  "type": "text",
+                  "content": "The venue sets the tone for your event. Look for a space that aligns with your brand image, accommodates your guest list, and offers the right amenities and ambience."
+                }
+              ],
+              "sidebar": {
+                "relatedPosts": [
+                  {
+                    "id": "rp1",
+                    "image": "/banner/banner1.webp",
+                    "title": "10 Corporate Event Trends to Watch in 2025",
+                    "date": "May 15, 2025",
+                    "url": "/blogs/10-corporate-event-trends"
+                  },
+                  {
+                    "id": "rp2",
+                    "image": "/banner/banner1.webp",
+                    "title": "How to Plan a Successful Product Launch Event",
+                    "date": "May 08, 2025",
+                    "url": "/blogs/plan-product-launch"
+                  },
+                  {
+                    "id": "rp3",
+                    "image": "/banner/banner1.webp",
+                    "title": "Team Building Events That Inspire and Engage",
+                    "date": "Apr 30, 2025",
+                    "url": "/blogs/team-building-events"
+                  },
+                  {
+                    "id": "rp4",
+                    "image": "/banner/banner1.webp",
+                    "title": "Checklist for Planning a Flawless Event",
+                    "date": "Apr 22, 2025",
+                    "url": "/blogs/checklist-planning-event"
+                  }
+                ],
+                "categories": [
+                  {
+                    "id": "c1",
+                    "name": "Event Planning",
+                    "count": 12,
+                    "icon": "FaCalendarAlt"
+                  },
+                  {
+                    "id": "c2",
+                    "name": "Corporate Events",
+                    "count": 9,
+                    "icon": "FaBriefcase"
+                  },
+                  {
+                    "id": "c3",
+                    "name": "Trends & Insights",
+                    "count": 7,
+                    "icon": "FaLightbulb"
+                  },
+                  {
+                    "id": "c4",
+                    "name": "Tips & Guides",
+                    "count": 10,
+                    "icon": "FaInfoCircle"
+                  },
+                  {
+                    "id": "c5",
+                    "name": "Venue & Design",
+                    "count": 6,
+                    "icon": "FaBuilding"
+                  }
+                ]
+              }
+            },
+            "checklist-for-planning-the-perfect-private-party": {
+              "badge": "EVENT PLANNING",
+              "title": "Checklist For Planning The Perfect Private Party",
+              "date": "May 20, 2025",
+              "readTime": "8 min read",
+              "author": "By Venue EF Team",
+              "image": "/banner/banner1.webp",
+              "contentSections": [
+                {
+                  "type": "text",
+                  "content": "Corporate events are more than just dates on a calendar—they're opportunities to inspire, connect, and create lasting impressions. Whether it's a product launch, annual conference, or team celebration, a well-planned event reflects your brand's values and leaves a meaningful impact on your audience.\n\nIn this guide, we'll walk you through the key steps to planning a corporate event that's seamless, engaging, and truly unforgettable."
+                },
+                {
+                  "type": "heading",
+                  "content": "1. Define Your Objectives"
+                },
+                {
+                  "type": "text",
+                  "content": "Start with a clear purpose. Are you launching a new product, building team engagement, or strengthening client relationships? Defining your objectives will shape every decision—from the venue and agenda to the experiences you create."
+                },
+                {
+                  "type": "quote",
+                  "content": "A clear objective turns an event from good to great."
+                },
+                {
+                  "type": "heading",
+                  "content": "2. Know Your Audience"
+                },
+                {
+                  "type": "text",
+                  "content": "Understanding your audience helps you design an experience that resonates with them. Consider their preferences, expectations, and what will provide real value."
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "What motivates them?",
+                    "What kind of experience will engage them?",
+                    "What key message do you want them to take away?"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "content": "3. Choose the Right Venue"
+                },
+                {
+                  "type": "text",
+                  "content": "The venue sets the tone for your event. Look for a space that aligns with your brand image, accommodates your guest list, and offers the right amenities and ambience."
+                }
+              ],
+              "sidebar": {
+                "relatedPosts": [
+                  {
+                    "id": "rp1",
+                    "image": "/banner/banner1.webp",
+                    "title": "10 Corporate Event Trends to Watch in 2025",
+                    "date": "May 15, 2025",
+                    "url": "/blogs/10-corporate-event-trends"
+                  },
+                  {
+                    "id": "rp2",
+                    "image": "/banner/banner1.webp",
+                    "title": "How to Plan a Successful Product Launch Event",
+                    "date": "May 08, 2025",
+                    "url": "/blogs/plan-product-launch"
+                  },
+                  {
+                    "id": "rp3",
+                    "image": "/banner/banner1.webp",
+                    "title": "Team Building Events That Inspire and Engage",
+                    "date": "Apr 30, 2025",
+                    "url": "/blogs/team-building-events"
+                  },
+                  {
+                    "id": "rp4",
+                    "image": "/banner/banner1.webp",
+                    "title": "Checklist for Planning a Flawless Event",
+                    "date": "Apr 22, 2025",
+                    "url": "/blogs/checklist-planning-event"
+                  }
+                ],
+                "categories": [
+                  {
+                    "id": "c1",
+                    "name": "Event Planning",
+                    "count": 12,
+                    "icon": "FaCalendarAlt"
+                  },
+                  {
+                    "id": "c2",
+                    "name": "Corporate Events",
+                    "count": 9,
+                    "icon": "FaBriefcase"
+                  },
+                  {
+                    "id": "c3",
+                    "name": "Trends & Insights",
+                    "count": 7,
+                    "icon": "FaLightbulb"
+                  },
+                  {
+                    "id": "c4",
+                    "name": "Tips & Guides",
+                    "count": 10,
+                    "icon": "FaInfoCircle"
+                  },
+                  {
+                    "id": "c5",
+                    "name": "Venue & Design",
+                    "count": 6,
+                    "icon": "FaBuilding"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "BlogsBreadcrumb": {
+          "variants": {
+            "VenueBlogsBreadcrumb1": {
+              "title": "Our Blogs",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Blogs"
+                }
+              ]
+            }
+          }
+        },
+        "QuoteBreadcrumb": {
+          "variants": {
+            "VenueQuoteBreadcrumb1": {
+              "title": "Get A Quote",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Get a Quote"
+                }
+              ]
+            }
+          }
+        },
+        "QuotePageContent": {
+          "variants": {
+            "VenueQuotePage1": {
+              "badge": "GET A QUOTE",
+              "title": "Let's Plan Something",
+              "titleHighlight": "Extraordinary",
+              "description": "Share your event details with us and our team will get back to you with a customized quote tailored to your needs.",
+              "features": [
+                {
+                  "id": "f1",
+                  "title": "Personalized Solutions",
+                  "description": "Custom packages designed for your unique event.",
+                  "icon": "FaCalendarAlt"
+                },
+                {
+                  "id": "f2",
+                  "title": "Expert Guidance",
+                  "description": "Our event experts are here to help you every step.",
+                  "icon": "FaUsers"
+                },
+                {
+                  "id": "f3",
+                  "title": "Best Value",
+                  "description": "Premium services that fit your budget perfectly.",
+                  "icon": "FaShieldAlt"
+                }
+              ],
+              "image": "/banner/banner1.webp",
+              "form": {
+                "icon": "FaClipboardList",
+                "title": "Tell us about your event",
+                "subtitle": "Fill out the details and we'll get back to you shortly.",
+                "buttonText": "Get My Quote",
+                "footerText": "Your information is safe with us. We respect your privacy."
+              }
+            }
+          }
+        },
+        "CareersBreadcrumb": {
+          "variants": {
+            "VenueCareersBreadcrumb1": {
+              "title": "Careers",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Careers"
+                }
+              ]
+            }
+          }
+        },
+        "CareersPageContent": {
+          "variants": {
+            "VenueCareersPage1": {
+              "overviewBadge": "OVERVIEW",
+              "overviewTitle": "Where Passion Meets Purpose",
+              "overviewDescription": "We're a team of dreamers, doers, and detail-lovers who thrive on creating unforgettable experiences. Here, your ideas matter, your growth is supported, and your work makes an impact.",
+              "values": [
+                {
+                  "id": "v1",
+                  "icon": "FaUsers",
+                  "title": "People First",
+                  "description": "We value respect, collaboration, and a culture of inclusivity where everyone belongs."
+                },
+                {
+                  "id": "v2",
+                  "icon": "FaLightbulb",
+                  "title": "Creative Freedom",
+                  "description": "You'll have the space to think bold, share ideas, and bring your creativity to life."
+                },
+                {
+                  "id": "v3",
+                  "icon": "FaChartLine",
+                  "title": "Growth & Learning",
+                  "description": "We invest in your growth with learning opportunities and real career advancement."
+                },
+                {
+                  "id": "v4",
+                  "icon": "FaHeart",
+                  "title": "Work That Matters",
+                  "description": "Be part of meaningful events that inspire people and create lasting memories."
+                },
+                {
+                  "id": "v5",
+                  "icon": "FaGift",
+                  "title": "Celebrate Together",
+                  "description": "We celebrate wins, big and small—because great culture creates great results."
+                }
+              ],
+              "positionsBadge": "OPEN POSITIONS",
+              "positionsTitle": "Explore Current Opportunities",
+              "positionsDescription": "Join us in shaping extraordinary events and growing your career with a team that's as passionate as you are.",
+              "positions": [
+                {
+                  "id": "event-manager",
+                  "title": "Event Manager",
+                  "description": "Lead and manage end-to-end event planning and execution to deliver exceptional experiences.",
+                  "department": "Event Management",
+                  "location": "Mumbai, India",
+                  "type": "Full-time"
+                },
+                {
+                  "id": "senior-event-planner",
+                  "title": "Senior Event Planner",
+                  "description": "Design creative concepts and manage logistics for corporate, social, and destination events.",
+                  "department": "Event Planning",
+                  "location": "Delhi, India",
+                  "type": "Full-time"
+                }
+              ]
+            }
+          }
+        },
+        "CareerDetailBreadcrumb": {
+          "variants": {
+            "event-manager": {
+              "title": "Event Manager",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Careers",
+                  "url": "/careers"
+                },
+                {
+                  "label": "Event Manager"
+                }
+              ]
+            },
+            "senior-event-planner": {
+              "title": "Senior Event Planner",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Careers",
+                  "url": "/careers"
+                },
+                {
+                  "label": "Senior Event Planner"
+                }
+              ]
+            }
+          }
+        },
+        "CareerDetailPageContent": {
+          "variants": {
+            "event-manager": {
+              "title": "Event Manager",
+              "aboutRole": "As an Event Manager at Venu EV, you will be responsible for planning, coordinating, and executing a wide range of corporate, social, and private events. You will work closely with clients, vendors, and internal teams to ensure every event is delivered seamlessly, on time, and within budget.",
+              "responsibilities": [
+                "Manage end-to-end planning and execution of events from concept to completion.",
+                "Understand client goals and create event strategies that align with their vision.",
+                "Coordinate with vendors, venues, and partners to ensure smooth operations.",
+                "Lead and manage the event team to deliver exceptional guest experiences.",
+                "Oversee budgets, timelines, logistics, and resources for each event.",
+                "Troubleshoot issues on-site and ensure risk management protocols are followed.",
+                "Gather post-event feedback and prepare detailed reports."
+              ],
+              "requirements": [
+                "Bachelor's degree in Event Management, Hospitality, Marketing, or related field.",
+                "3-5 years of experience in event planning or management.",
+                "Strong organizational, negotiation, and problem-solving skills.",
+                "Excellent communication and interpersonal abilities.",
+                "Ability to work under pressure and manage multiple events simultaneously.",
+                "Proficiency in event management tools and MS Office."
+              ],
+              "benefits": [
+                {
+                  "id": "b1",
+                  "icon": "FaChartLine",
+                  "title": "Career Growth",
+                  "description": "Opportunities"
+                },
+                {
+                  "id": "b2",
+                  "icon": "FaBookReader",
+                  "title": "Learning &",
+                  "description": "Development"
+                },
+                {
+                  "id": "b3",
+                  "icon": "FaHeartbeat",
+                  "title": "Health & Wellness",
+                  "description": "Programs"
+                },
+                {
+                  "id": "b4",
+                  "icon": "FaCalendarCheck",
+                  "title": "Flexible Work",
+                  "description": "Environment"
+                },
+                {
+                  "id": "b5",
+                  "icon": "FaUsers",
+                  "title": "Collaborative",
+                  "description": "Culture"
+                }
+              ],
+              "stats": [
+                {
+                  "icon": "FaUsers",
+                  "title": "50+",
+                  "subtitle": "Passionate Professionals"
+                },
+                {
+                  "icon": "FaStar",
+                  "title": "500+",
+                  "subtitle": "Successful Events"
+                },
+                {
+                  "icon": "FaGlobe",
+                  "title": "10+",
+                  "subtitle": "Cities Worldwide"
+                },
+                {
+                  "icon": "FaSmile",
+                  "title": "95%",
+                  "subtitle": "Employee Satisfaction"
+                },
+                {
+                  "icon": "FaTrophy",
+                  "title": "Award-Winning",
+                  "subtitle": "Event Management Company"
+                }
+              ]
+            },
+            "senior-event-planner": {
+              "title": "Senior Event Planner",
+              "aboutRole": "As an Event Manager at Venu EV, you will be responsible for planning, coordinating, and executing a wide range of corporate, social, and private events. You will work closely with clients, vendors, and internal teams to ensure every event is delivered seamlessly, on time, and within budget.",
+              "responsibilities": [
+                "Manage end-to-end planning and execution of events from concept to completion.",
+                "Understand client goals and create event strategies that align with their vision.",
+                "Coordinate with vendors, venues, and partners to ensure smooth operations.",
+                "Lead and manage the event team to deliver exceptional guest experiences.",
+                "Oversee budgets, timelines, logistics, and resources for each event.",
+                "Troubleshoot issues on-site and ensure risk management protocols are followed.",
+                "Gather post-event feedback and prepare detailed reports."
+              ],
+              "requirements": [
+                "Bachelor's degree in Event Management, Hospitality, Marketing, or related field.",
+                "3-5 years of experience in event planning or management.",
+                "Strong organizational, negotiation, and problem-solving skills.",
+                "Excellent communication and interpersonal abilities.",
+                "Ability to work under pressure and manage multiple events simultaneously.",
+                "Proficiency in event management tools and MS Office."
+              ],
+              "benefits": [
+                {
+                  "id": "b1",
+                  "icon": "FaChartLine",
+                  "title": "Career Growth",
+                  "description": "Opportunities"
+                },
+                {
+                  "id": "b2",
+                  "icon": "FaBookReader",
+                  "title": "Learning &",
+                  "description": "Development"
+                },
+                {
+                  "id": "b3",
+                  "icon": "FaHeartbeat",
+                  "title": "Health & Wellness",
+                  "description": "Programs"
+                },
+                {
+                  "id": "b4",
+                  "icon": "FaCalendarCheck",
+                  "title": "Flexible Work",
+                  "description": "Environment"
+                },
+                {
+                  "id": "b5",
+                  "icon": "FaUsers",
+                  "title": "Collaborative",
+                  "description": "Culture"
+                }
+              ],
+              "stats": [
+                {
+                  "icon": "FaUsers",
+                  "title": "50+",
+                  "subtitle": "Passionate Professionals"
+                },
+                {
+                  "icon": "FaStar",
+                  "title": "500+",
+                  "subtitle": "Successful Events"
+                },
+                {
+                  "icon": "FaGlobe",
+                  "title": "10+",
+                  "subtitle": "Cities Worldwide"
+                },
+                {
+                  "icon": "FaSmile",
+                  "title": "95%",
+                  "subtitle": "Employee Satisfaction"
+                },
+                {
+                  "icon": "FaTrophy",
+                  "title": "Award-Winning",
+                  "subtitle": "Event Management Company"
+                }
+              ]
+            }
+          }
+        },
+        "NotFoundPageContent": {
+          "variants": {
+            "VenueNotFound1": {
+              "backgroundImage": "/banner/ban1.jpg",
+              "errorCode": "404",
+              "title": "Oops! This Page\nWent on an Adventure.",
+              "description": "Looks like the page you're looking for\nhas wandered off the map.",
+              "buttonText": "BACK TO HOMEPAGE",
+              "buttonUrl": "/",
+              "helpfulTitle": "Explore Something Helpful",
+              "helpfulLinks": [
+                {
+                  "id": "h1",
+                  "icon": "FaUserFriends",
+                  "title": "About Us",
+                  "url": "/about"
+                },
+                {
+                  "id": "h2",
+                  "icon": "FaClipboardList",
+                  "title": "What We Do",
+                  "url": "/services"
+                },
+                {
+                  "id": "h3",
+                  "icon": "FaBriefcase",
+                  "title": "Our Work",
+                  "url": "/gallery"
+                },
+                {
+                  "id": "h4",
+                  "icon": "FaUsers",
+                  "title": "Our Team",
+                  "url": "/team"
+                },
+                {
+                  "id": "h5",
+                  "icon": "FaEnvelope",
+                  "title": "Contact Us",
+                  "url": "/contact"
+                }
+              ]
+            }
+          }
+        },
+        "SitemapBreadcrumb": {
+          "variants": {
+            "VenueSitemapBreadcrumb1": {
+              "title": "Sitemap",
+              "bgImage": "/banner/banner1.webp",
+              "paths": [
+                {
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "label": "Sitemap"
+                }
+              ]
+            }
+          }
+        },
+        "SitemapPageContent": {
+          "variants": {
+            "VenueSitemap1": {
+              "title": "Sitemap",
+              "subtitle": "An overview of our website structure and content hierarchy.",
+              "categories": [
+                {
+                  "title": "HOME",
+                  "links": [
+                    {
+                      "label": "Homepage",
+                      "url": "/"
+                    }
+                  ]
+                },
+                {
+                  "title": "ABOUT US",
+                  "links": [
+                    {
+                      "label": "About Us",
+                      "url": "/about"
+                    },
+                    {
+                      "label": "Our Story",
+                      "url": "/our-story"
+                    },
+                    {
+                      "label": "Our Mission",
+                      "url": "/our-mission"
+                    },
+                    {
+                      "label": "Our Vision",
+                      "url": "/our-vision"
+                    },
+                    {
+                      "label": "Our Awards",
+                      "url": "/our-awards"
+                    },
+                    {
+                      "label": "Testimonials",
+                      "url": "/testimonials"
+                    },
+                    {
+                      "label": "Why Choose Us",
+                      "url": "/why-choose-us"
+                    }
+                  ]
+                },
+                {
+                  "title": "SERVICES",
+                  "links": [
+                    {
+                      "label": "All Services",
+                      "url": "/services"
+                    },
+                    {
+                      "label": "Corporate Event Planning",
+                      "url": "/services/corporate-event-planning"
+                    },
+                    {
+                      "label": "Wedding Planning",
+                      "url": "/services/wedding-planning"
+                    },
+                    {
+                      "label": "Engagement Planning",
+                      "url": "/services/engagement-planning"
+                    },
+                    {
+                      "label": "Private Parties",
+                      "url": "/services/private-parties"
+                    },
+                    {
+                      "label": "Product Launches",
+                      "url": "/services/product-launches"
+                    }
+                  ]
+                },
+                {
+                  "title": "EVENTS",
+                  "links": [
+                    {
+                      "label": "All Events",
+                      "url": "/events"
+                    },
+                    {
+                      "label": "Corporate Events",
+                      "url": "/events/corporate-events"
+                    },
+                    {
+                      "label": "Weddings",
+                      "url": "/events/weddings"
+                    },
+                    {
+                      "label": "Social Celebrations",
+                      "url": "/events/social-celebrations"
+                    },
+                    {
+                      "label": "Exhibitions",
+                      "url": "/events/exhibitions"
+                    },
+                    {
+                      "label": "Seminars",
+                      "url": "/events/seminars"
+                    },
+                    {
+                      "label": "Entertainment",
+                      "url": "/events/entertainment"
+                    }
+                  ]
+                },
+                {
+                  "title": "OUR WORK",
+                  "links": [
+                    {
+                      "label": "Gallery Overview",
+                      "url": "/gallery"
+                    }
+                  ]
+                },
+                {
+                  "title": "TEAM",
+                  "links": [
+                    {
+                      "label": "Our Team",
+                      "url": "/team"
+                    },
+                    {
+                      "label": "Team Detail",
+                      "url": "/team/tm2"
+                    }
+                  ]
+                },
+                {
+                  "title": "CAREERS",
+                  "links": [
+                    {
+                      "label": "Careers Overview",
+                      "url": "/careers"
+                    },
+                    {
+                      "label": "Career Detail",
+                      "url": "/careers/event-manager"
+                    }
+                  ]
+                },
+                {
+                  "title": "BLOGS",
+                  "links": [
+                    {
+                      "label": "All Blogs",
+                      "url": "/blogs"
+                    },
+                    {
+                      "label": "Event Planning Tips",
+                      "url": "/blogs/planning-tips"
+                    },
+                    {
+                      "label": "Industry Insights",
+                      "url": "/blogs/industry-insights"
+                    }
+                  ]
+                },
+                {
+                  "title": "CONTACT",
+                  "links": [
+                    {
+                      "label": "Get in Touch",
+                      "url": "/contact"
+                    },
+                    {
+                      "label": "Office Locations",
+                      "url": "/contact#locations"
+                    }
+                  ]
+                },
+                {
+                  "title": "LET'S CONNECT",
+                  "links": [
+                    {
+                      "label": "Facebook",
+                      "url": "#"
+                    },
+                    {
+                      "label": "Instagram",
+                      "url": "#"
+                    },
+                    {
+                      "label": "LinkedIn",
+                      "url": "#"
+                    }
+                  ]
+                }
+              ],
+              "utilityTitle": "UTILITY PAGES",
+              "utilityLinks": [
+                {
+                  "label": "404 Page",
+                  "url": "/some-random-404"
+                },
+                {
+                  "label": "Terms & Conditions",
+                  "url": "/terms-conditions"
+                },
+                {
+                  "label": "Privacy Policy",
+                  "url": "/privacy-policy"
+                },
+                {
+                  "label": "Cookies Policy",
+                  "url": "/cookies-policy"
+                },
+                {
+                  "label": "Disclaimer",
+                  "url": "/disclaimer"
+                },
+                {
+                  "label": "Refund Policy",
+                  "url": "/refund-policy"
+                },
+                {
+                  "label": "Sitemap",
+                  "url": "/sitemap"
+                }
+              ]
+            }
           }
         }
       }
     }
   }
-}
 }

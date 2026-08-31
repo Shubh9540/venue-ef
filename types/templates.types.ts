@@ -11,14 +11,21 @@ export interface TopBarData {
   }[];
 }
 
-export interface HeaderData {
-  image: string;
-  imageAlt?: string;
-  navLinks: {
+export interface HeaderNavLink {
+  id: string;
+  label: string;
+  url?: string;
+  subLinks?: {
     id: string;
     label: string;
     url: string;
   }[];
+}
+
+export interface HeaderData {
+  image: string;
+  imageAlt?: string;
+  navLinks: HeaderNavLink[];
   contactButton: {
     text: string;
     url: string;
@@ -286,6 +293,195 @@ export interface GalleryPageData {
   videos: VideoGalleryItem[];
 }
 
+export interface PartnerLogo {
+  id: string;
+  image: string;
+  name: string;
+}
+
+export interface PartnerCategory {
+  id: string;
+  title: string;
+  dividerIcon?: string;
+  logos: PartnerLogo[];
+}
+
+export interface PartnersPageData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  dividerIcon?: string;
+  description: string;
+  categories: PartnerCategory[];
+}
+
+export interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface FAQContactInfo {
+  icon: string;
+  title: string;
+  details: string[];
+}
+
+export interface FAQSidebar {
+  icon: string;
+  title: string;
+  description: string;
+  contactItems: FAQContactInfo[];
+  buttonText: string;
+  buttonUrl: string;
+}
+
+export interface FAQPageData {
+  badge: string;
+  title: string;
+  dividerIcon?: string;
+  description: string;
+  faqs: FAQItem[];
+  sidebar: FAQSidebar;
+}
+
+export interface LegalSection {
+  id: string;
+  title: string;
+  content: string;
+}
+
+export interface LegalPageData {
+  title: string;
+  lastUpdated?: string;
+  sections: LegalSection[];
+}
+
+export interface BlogContentSection {
+  type: string; // 'text' | 'heading' | 'quote' | 'list'
+  content: string | string[]; // string array for lists
+}
+
+export interface RelatedPost {
+  id: string;
+  image: string;
+  title: string;
+  date: string;
+  url: string;
+}
+
+export interface BlogCategoryInfo {
+  id: string;
+  name: string;
+  count: number;
+  icon: string;
+}
+
+export interface BlogDetailSidebarData {
+  relatedPosts: RelatedPost[];
+  categories: BlogCategoryInfo[];
+}
+
+export interface BlogDetailData {
+  badge: string;
+  title: string;
+  date: string;
+  readTime: string;
+  author: string;
+  image: string;
+  contentSections: BlogContentSection[];
+  sidebar: BlogDetailSidebarData;
+}
+
+export interface QuoteFeature {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface QuoteFormData {
+  icon: string;
+  title: string;
+  subtitle: string;
+  buttonText: string;
+  footerText: string;
+}
+
+export interface JobPosition {
+  id: string; // Used as slug
+  title: string;
+  description: string;
+  department: string;
+  location: string;
+  type: string;
+}
+
+export interface CareersPageData {
+  overviewBadge: string;
+  overviewTitle: string;
+  overviewDescription: string;
+  values: ValueItem[];
+  positionsBadge: string;
+  positionsTitle: string;
+  positionsDescription: string;
+  positions: JobPosition[];
+}
+
+export interface CareerDetailData {
+  title: string;
+  aboutRole: string;
+  responsibilities: string[];
+  requirements: string[];
+  benefits: ValueItem[];
+  stats: { icon: string; title: string; subtitle: string }[];
+}
+
+export interface NotFoundHelpfulLink {
+  id: string;
+  icon: string;
+  title: string;
+  url: string;
+}
+
+export interface NotFoundPageData {
+  backgroundImage: string;
+  errorCode: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  helpfulTitle: string;
+  helpfulLinks: NotFoundHelpfulLink[];
+}
+
+export interface SitemapLink {
+  label: string;
+  url: string;
+}
+
+export interface SitemapCategory {
+  title: string;
+  links: SitemapLink[];
+}
+
+export interface SitemapPageData {
+  title: string;
+  subtitle: string;
+  categories: SitemapCategory[];
+  utilityTitle: string;
+  utilityLinks: SitemapLink[];
+}
+
+export interface QuotePageData {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  features: QuoteFeature[];
+  image: string;
+  form: QuoteFormData;
+}
 export interface ValueItem {
   id: string;
   icon: string;
@@ -359,8 +555,8 @@ export interface BlogsData {
   dividerIcon?: string;
   description: string;
   items: BlogItem[];
-  viewAllText: string;
-  viewAllUrl: string;
+  viewAllText?: string;
+  viewAllUrl?: string;
   viewAllIcon?: string;
 }
 
@@ -545,6 +741,7 @@ export interface VenueCategorySections {
   TeamDetailPageContent?: SectionVariant<TeamDetailPageContentData>;
   Testimonials?: SectionVariant<TestimonialsData>;
   CTA?: SectionVariant<CtaData>;
+  BlogsBreadcrumb?: SectionVariant<BreadcrumbData>;
   Blogs?: SectionVariant<BlogsData>;
   Footer?: SectionVariant<FooterData>;
   AboutBreadcrumb?: SectionVariant<BreadcrumbData>;
@@ -568,6 +765,23 @@ export interface VenueCategorySections {
   GalleryBreadcrumb?: SectionVariant<BreadcrumbData>;
   GalleryPageContent?: SectionVariant<GalleryPageData>;
   TestimonialsBreadcrumb?: SectionVariant<BreadcrumbData>;
+  PartnersBreadcrumb?: SectionVariant<BreadcrumbData>;
+  PartnersPageContent?: SectionVariant<PartnersPageData>;
+  FAQBreadcrumb?: SectionVariant<BreadcrumbData>;
+  FAQPageContent?: SectionVariant<FAQPageData>;
+  LegalBreadcrumb?: SectionVariant<BreadcrumbData>;
+  LegalPageContent?: SectionVariant<LegalPageData>;
+  BlogDetailBreadcrumb?: SectionVariant<BreadcrumbData>;
+  BlogDetailPageContent?: SectionVariant<BlogDetailData>;
+  QuoteBreadcrumb?: SectionVariant<BreadcrumbData>;
+  QuotePageContent?: SectionVariant<QuotePageData>;
+  CareersBreadcrumb?: SectionVariant<BreadcrumbData>;
+  CareersPageContent?: SectionVariant<CareersPageData>;
+  CareerDetailBreadcrumb?: SectionVariant<BreadcrumbData>;
+  CareerDetailPageContent?: SectionVariant<CareerDetailData>;
+  NotFoundPageContent?: SectionVariant<NotFoundPageData>;
+  SitemapBreadcrumb?: SectionVariant<BreadcrumbData>;
+  SitemapPageContent?: SectionVariant<SitemapPageData>;
 }
 
 export interface TemplateComponentItem {

@@ -142,15 +142,17 @@ export const Blogs = ({ data }: { data?: BlogsData }) => {
         </div>
 
         {/* View All Articles Button */}
-        <div className="flex justify-center mt-12">
-          <Link
-            href={data.viewAllUrl}
-            className="bg-primary hover:bg-primary/90 text-white font-bold text-xs uppercase tracking-widest px-8 py-3.5 rounded-md inline-flex items-center gap-2 transition-all duration-300 shadow-md hover:shadow-lg"
-          >
-            <span>{data.viewAllText}</span>
-            <MdArrowForward className="text-base" />
-          </Link>
-        </div>
+        {data.viewAllUrl && data.viewAllText && (
+          <div className="flex justify-center mt-12">
+            <Link
+              href={data.viewAllUrl}
+              className="bg-primary hover:bg-primary/90 text-white font-bold text-xs uppercase tracking-widest px-8 py-3.5 rounded-md inline-flex items-center gap-2 transition-all duration-300 shadow-md hover:shadow-lg"
+            >
+              <span>{data.viewAllText}</span>
+              <MdArrowForward className="text-base" />
+            </Link>
+          </div>
+        )}
 
       </div>
     </section>
