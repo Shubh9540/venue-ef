@@ -20,27 +20,27 @@ export const ServiceDetailSidebar = ({ data }: { data?: ServiceDetailSidebarData
         <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold text-primary">Full Name <span className="text-accent">*</span></label>
-            <input type="text" placeholder="Enter your name" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" required />
+            <input type="text" placeholder="Enter your name" className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" required />
           </div>
           
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold text-primary">Email Address <span className="text-accent">*</span></label>
-            <input type="email" placeholder="Enter your email" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" required />
+            <input type="email" placeholder="Enter your email" className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" required />
           </div>
 
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold text-primary">Phone Number <span className="text-accent">*</span></label>
-            <input type="tel" placeholder="Enter your phone number" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" required />
+            <input type="tel" placeholder="Enter your phone number" className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" required />
           </div>
 
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold text-primary">Company Name</label>
-            <input type="text" placeholder="Enter company name" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" />
+            <input type="text" placeholder="Enter company name" className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors" />
           </div>
 
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold text-primary">Event Type <span className="text-accent">*</span></label>
-            <select defaultValue="" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-gray-500" required>
+            <select defaultValue="" className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-gray-500" required>
               <option value="" disabled>Select event type</option>
               <option value="corporate">Corporate Event</option>
               <option value="wedding">Wedding</option>
@@ -50,15 +50,15 @@ export const ServiceDetailSidebar = ({ data }: { data?: ServiceDetailSidebarData
 
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold text-primary">Event Date</label>
-            <input type="date" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-gray-500" />
+            <input type="date" className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-gray-500" />
           </div>
 
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold text-primary">Message / Requirements</label>
-            <textarea placeholder="Tell us about your event..." rows={4} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors resize-none"></textarea>
+            <textarea placeholder="Tell us about your event..." rows={4} className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors resize-none"></textarea>
           </div>
 
-          <button type="submit" className="w-full py-4 bg-[#4a152e] hover:bg-primary transition-colors text-white font-bold text-sm tracking-wider uppercase rounded-md mt-2">
+          <button type="submit" className="w-full py-8 bg-[#4a152e] hover:bg-primary transition-colors text-white font-bold text-sm tracking-wider uppercase rounded-md mt-2">
             SUBMIT REQUEST
           </button>
         </form>

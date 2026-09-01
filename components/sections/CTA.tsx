@@ -66,7 +66,7 @@ export const CTA = ({ data }: { data?: CtaData }) => {
               {/* Primary Pill Button */}
               <Link
                 href={data.buttonUrl}
-                className="bg-[#fcdde6] hover:bg-white text-primary font-bold tracking-wider text-xs sm:text-sm uppercase pl-6 pr-2 py-2 rounded-full inline-flex items-center gap-3 transition-all duration-300 shadow-md group"
+                className="bg-[#fcdde6] hover:bg-white text-primary font-bold tracking-wider text-xs sm:text-sm uppercase pl-6 pr-2 py-8 rounded-full inline-flex items-center gap-3 transition-all duration-300 shadow-md group"
               >
                 <span>{data.buttonText}</span>
                 <span className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center group-hover:scale-105 transition-transform">

@@ -96,7 +96,7 @@ export const AboutUs = ({ data }: { data?: AboutUsData }) => {
             {data.buttonText && data.buttonUrl && (
               <Link
                 href={data.buttonUrl}
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-7 py-3.5 rounded-md font-semibold text-base transition-all duration-300 shadow-md"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-7 py-8.5 rounded-md font-semibold text-base transition-all duration-300 shadow-md"
               >
                 {data.buttonText}
                 {renderIcon(data.buttonIcon || 'MdArrowForward')}

@@ -41,7 +41,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ id:
       
       {breadcrumbData && <Breadcrumb data={breadcrumbData} />}
       
-      <section className="py-12 lg:py-20 bg-white relative">
+      <section className="py-8 bg-white relative">
         <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">

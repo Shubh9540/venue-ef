@@ -19,7 +19,7 @@ export const Team = ({ data }: { data?: TeamData }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-[#fcfafb] py-8 lg:py-12 overflow-hidden">
+    <section className="bg-[#fcfafb] py-8 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
         
         {/* Header Section */}

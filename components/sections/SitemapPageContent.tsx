@@ -6,7 +6,7 @@ export const SitemapPageContent = ({ data }: { data?: SitemapPageData }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-12 lg:py-20 px-4 sm:px-6">
+    <section className="bg-white py-8 px-4 sm:px-6">
       <div className="max-w-[1400px] mx-auto">
         
         {/* Header Section */}
@@ -44,7 +44,7 @@ export const SitemapPageContent = ({ data }: { data?: SitemapPageData }) => {
         </div>
 
         {/* Utility Pages Footer */}
-        <div className="border-t border-b border-gray-100 py-6">
+        <div className="border-t border-b border-gray-100 py-8">
           <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12">
             
             <h3 className="text-[#5a102a] font-bold text-xs lg:text-sm tracking-wide uppercase whitespace-nowrap">

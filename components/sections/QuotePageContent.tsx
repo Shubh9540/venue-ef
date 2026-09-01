@@ -29,7 +29,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 lg:py-20 relative bg-[#fcfaf9]">
+    <section className="py-8 relative bg-[#fcfaf9]">
       {/* Background pattern placeholder - using simple radial gradient to mimic dotted pattern */}
       <div 
         className="absolute inset-0 z-0 opacity-40 pointer-events-none" 
@@ -133,7 +133,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                       <input 
                         type="text" 
                         placeholder="Enter your full name" 
-                        className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                        className="w-full pl-10 pr-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       />
                     </div>
                   </div>
@@ -150,7 +150,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                       <input 
                         type="email" 
                         placeholder="Enter your email" 
-                        className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                        className="w-full pl-10 pr-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       />
                     </div>
                   </div>
@@ -167,7 +167,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                       <input 
                         type="tel" 
                         placeholder="Enter your phone number" 
-                        className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                        className="w-full pl-10 pr-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       />
                     </div>
                   </div>
@@ -181,7 +181,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-text-light/60">
                         <FaCalendarAlt className="text-sm" />
                       </div>
-                      <select className="w-full pl-10 pr-10 py-3 bg-white border border-gray-200 rounded-lg text-sm text-text-light focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent appearance-none transition-colors">
+                      <select className="w-full pl-10 pr-10 py-8 bg-white border border-gray-200 rounded-lg text-sm text-text-light focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent appearance-none transition-colors">
                         <option value="">Select event type</option>
                         <option value="corporate">Corporate Event</option>
                         <option value="wedding">Wedding</option>
@@ -201,7 +201,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                       </div>
                       <input 
                         type="date" 
-                        className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg text-sm text-text-light focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                        className="w-full pl-10 pr-4 py-8 bg-white border border-gray-200 rounded-lg text-sm text-text-light focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       />
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                       <input 
                         type="text" 
                         placeholder="Enter event location" 
-                        className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                        className="w-full pl-10 pr-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       />
                     </div>
                   </div>
@@ -236,7 +236,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                     <input 
                       type="number" 
                       placeholder="Enter estimated guest count" 
-                      className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full pl-10 pr-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                     />
                   </div>
                 </div>
@@ -256,7 +256,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                 {/* Submit Button */}
                 <button 
                   type="button" 
-                  className="w-full bg-[#3d0a21] hover:bg-[#861d43] text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-md mt-4"
+                  className="w-full bg-[#3d0a21] hover:bg-[#861d43] text-white font-bold py-8 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-md mt-4"
                 >
                   <FaPaperPlane className="text-sm" />
                   <span>{data.form.buttonText}</span>

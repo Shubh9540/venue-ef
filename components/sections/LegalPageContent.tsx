@@ -5,7 +5,7 @@ export const LegalPageContent = ({ data }: { data?: LegalPageData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 lg:py-20 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="mb-12">

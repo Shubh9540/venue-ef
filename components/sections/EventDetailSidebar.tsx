@@ -71,7 +71,7 @@ export const EventDetailSidebar = ({ data }: { data?: EventDetailSidebarData }) 
 
         <Link 
           href={data.bookBtnUrl}
-          className="w-full py-4 bg-[#4a152e] hover:bg-primary transition-colors text-white font-bold text-sm tracking-wider uppercase rounded-md flex items-center justify-center gap-3"
+          className="w-full py-8 bg-[#4a152e] hover:bg-primary transition-colors text-white font-bold text-sm tracking-wider uppercase rounded-md flex items-center justify-center gap-3"
         >
           <FaCalendarAlt />
           {data.bookBtnText}
@@ -106,7 +106,7 @@ export const EventDetailSidebar = ({ data }: { data?: EventDetailSidebarData }) 
 
         <Link 
           href="/contact"
-          className="mt-6 w-full py-3 bg-white border border-gray-200 hover:border-accent text-primary hover:text-accent transition-all font-bold text-sm tracking-wider rounded-md flex items-center justify-center gap-3"
+          className="mt-6 w-full py-8 bg-white border border-gray-200 hover:border-accent text-primary hover:text-accent transition-all font-bold text-sm tracking-wider rounded-md flex items-center justify-center gap-3"
         >
           <FaHeadset />
           Contact Us

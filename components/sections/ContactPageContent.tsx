@@ -19,7 +19,7 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 lg:py-20 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Section: Form and Info */}
@@ -41,13 +41,13 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
                   type="text" 
                   placeholder="Full Name *" 
                   required
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                  className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
                 />
                 <input 
                   type="email" 
                   placeholder="Email Address *" 
                   required
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                  className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
                 />
               </div>
 
@@ -56,11 +56,11 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
                   type="tel" 
                   placeholder="Phone Number *" 
                   required
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                  className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
                 />
                 <div className="relative">
                   <select 
-                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light appearance-none"
+                    className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light appearance-none"
                     defaultValue=""
                   >
                     <option value="" disabled>Event Type</option>
@@ -80,20 +80,20 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
                 type="text" 
                 placeholder="Subject *" 
                 required
-                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
               />
 
               <textarea 
                 placeholder="Message / Requirements *" 
                 rows={5}
                 required
-                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400 resize-none"
+                className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400 resize-none"
               ></textarea>
 
               <div>
                 <button 
                   type="submit"
-                  className="bg-[#5a102a] hover:bg-primary transition-colors text-white text-xs font-bold tracking-[0.15em] uppercase py-4 px-8 rounded flex items-center gap-2"
+                  className="bg-[#5a102a] hover:bg-primary transition-colors text-white text-xs font-bold tracking-[0.15em] uppercase py-8 px-8 rounded flex items-center gap-2"
                 >
                   {data.formSubmitText}
                   <span>→</span>
@@ -113,7 +113,7 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
               {data.infoItems.map((item, index) => (
                 <div 
                   key={item.id} 
-                  className={`flex gap-5 py-6 ${index !== 0 ? 'border-t border-gray-100' : ''}`}
+                  className={`flex gap-5 py-8 ${index !== 0 ? 'border-t border-gray-100' : ''}`}
                 >
                   {/* Icon */}
                   <div className="w-12 h-12 rounded-full bg-[#fdf5f7] flex items-center justify-center text-[#7b2440] shrink-0">
@@ -144,11 +144,10 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
             src={data.mapIframeUrl} 
             width="100%" 
             height="100%" 
-            style={{ border: 0 }} 
+            className="border-0 absolute inset-0 grayscale contrast-125 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
             allowFullScreen={false} 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            className="absolute inset-0 grayscale contrast-125 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
           ></iframe>
           
           {/* Overlay Card */}

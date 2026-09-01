@@ -29,7 +29,7 @@ export const Counter = ({ data }: { data?: CounterData }) => {
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
         
         {/* Main Counter Container */}
-        <div className="relative bg-[#fef6f8] rounded-2xl p-8 lg:py-12 lg:px-6 overflow-hidden">
+        <div className="relative bg-[#fef6f8] rounded-2xl p-8 lg:py-8 lg:px-6 overflow-hidden">
           
           {/* Decorative Corner SVG - Right Only (3 Arc lines) */}
           <div className="absolute bottom-0 right-0 w-[200px] h-[200px] text-[#db9fb0] pointer-events-none opacity-40 translate-x-1/4 translate-y-1/4">
@@ -53,7 +53,7 @@ export const Counter = ({ data }: { data?: CounterData }) => {
 
                   {/* Text Content */}
                   <div className="flex flex-col items-center sm:items-start text-center sm:text-left mt-2 sm:mt-0">
-                    <h3 className="text-3xl sm:text-4xl lg:text-[42px] text-[#1c1218] font-heading mb-0.5 tracking-normal" style={{ fontWeight: 500 }}>
+                    <h3 className="text-3xl sm:text-4xl lg:text-[42px] text-[#1c1218] font-heading mb-0.5 tracking-normal font-medium">
                       {stat.value}
                     </h3>
                     <p className="text-[11px] sm:text-[13px] font-medium text-gray-700 mb-2 tracking-wide">

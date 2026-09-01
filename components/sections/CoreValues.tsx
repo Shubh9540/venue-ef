@@ -23,7 +23,7 @@ export const CoreValues = ({ data }: { data?: CoreValuesData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 lg:py-16 bg-[#faf5f7] overflow-hidden border-y border-rose-100">
+    <section className="py-8 bg-[#faf5f7] overflow-hidden border-y border-rose-100">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-10 sm:gap-y-12">
           {data.items.map((item, index) => {

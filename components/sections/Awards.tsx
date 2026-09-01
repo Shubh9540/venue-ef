@@ -7,7 +7,7 @@ export const Awards = ({ data }: { data?: AwardsData }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-[#fdfbfb] py-8 lg:py-12 overflow-hidden">
+    <section className="bg-[#fdfbfb] py-8 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
         
         {/* Header Section */}
@@ -45,7 +45,7 @@ export const Awards = ({ data }: { data?: AwardsData }) => {
           <div className="flex items-center">
             {/* Vertical Divider with Sparkle */}
             <div className="relative border-l border-gray-300 h-24 mr-8 lg:mr-12 hidden md:block">
-              <div className="absolute top-1/2 -left-[9px] -translate-y-1/2 bg-[#fdfbfb] text-[#7b2440] py-2">
+              <div className="absolute top-1/2 -left-[9px] -translate-y-1/2 bg-[#fdfbfb] text-[#7b2440] py-8">
                 <BsStars className="text-[16px]" />
               </div>
             </div>
@@ -80,7 +80,7 @@ export const Awards = ({ data }: { data?: AwardsData }) => {
               </div>
               
               {/* Text Container */}
-              <div className="flex flex-col border-l border-gray-200 pl-6 py-2 ml-4">
+              <div className="flex flex-col border-l border-gray-200 pl-6 py-8 ml-4">
                 <div className="text-[#7b2440] font-bold text-[16px] mb-2">{item.year}</div>
                 <div className="w-6 h-px bg-[#7b2440] mb-4"></div>
                 <h4 className="text-[18px] lg:text-[20px] text-[#2d2228] font-heading leading-snug mb-3 pr-4">

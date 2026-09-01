@@ -76,7 +76,7 @@ export const WhyChooseUs = ({ data }: { data?: WhyChooseUsData }) => {
               {data.features.map((item, idx) => (
                 <div 
                   key={item.id} 
-                  className={`flex flex-col items-center text-center px-2 py-2 relative ${
+                  className={`flex flex-col items-center text-center px-2 py-8 relative ${
                     idx !== data.features.length - 1 ? 'sm:after:content-[\'\'] sm:after:absolute sm:after:right-0 sm:after:top-3 sm:after:bottom-3 sm:after:w-px sm:after:bg-[#edd0dc]' : ''
                   }`}
                 >
@@ -107,7 +107,7 @@ export const WhyChooseUs = ({ data }: { data?: WhyChooseUsData }) => {
               {data.stats.map((item, idx) => (
                 <div 
                   key={item.id} 
-                  className={`flex flex-col items-center text-center px-2 py-2 relative ${
+                  className={`flex flex-col items-center text-center px-2 py-8 relative ${
                     idx !== data.stats.length - 1 ? 'sm:after:content-[\'\'] sm:after:absolute sm:after:right-0 sm:after:top-3 sm:after:bottom-3 sm:after:w-px sm:after:bg-[#edd0dc]' : ''
                   }`}
                 >

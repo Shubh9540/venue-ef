@@ -31,7 +31,7 @@ export const TeamDetailContent = ({
   if (!member) return null;
 
   return (
-    <section className="bg-[#fcfafb] py-8 lg:py-12 overflow-hidden">
+    <section className="bg-[#fcfafb] py-8 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
         
         {/* Page Header */}
@@ -82,7 +82,7 @@ export const TeamDetailContent = ({
           </div>
 
           {/* Right: Content */}
-          <div className="flex-1 flex flex-col justify-center py-6 pr-6 relative">
+          <div className="flex-1 flex flex-col justify-center py-8 pr-6 relative">
             
             {/* Large Quote Mark Background */}
             <div className="absolute top-4 right-4 lg:top-8 lg:right-8 opacity-[0.04] pointer-events-none">

@@ -32,7 +32,7 @@ export default function EventsPage() {
       
       <Breadcrumb data={sectionData.EventsBreadcrumb?.variants?.VenueEventsBreadcrumb1} />
       
-      <section className="py-12 lg:py-20 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Header Section */}

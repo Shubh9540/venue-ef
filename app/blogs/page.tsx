@@ -29,7 +29,7 @@ export default function BlogsPage() {
       <Breadcrumb data={sectionData.BlogsBreadcrumb?.variants?.VenueBlogsBreadcrumb1} />
       
       {/* We reuse the Blogs component from the homepage as requested, but hide the button */}
-      <div className="py-12">
+      <div className="py-8">
         <Blogs 
           data={sectionData.Blogs?.variants?.VenueBlogs1 ? {
             ...sectionData.Blogs.variants.VenueBlogs1,

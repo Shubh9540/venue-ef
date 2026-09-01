@@ -16,7 +16,7 @@ export const AboutMission = ({ data }: { data?: AboutMissionData }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-[#fdfbfb] py-8 lg:py-12 overflow-hidden">
+    <section className="bg-[#fdfbfb] py-8 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
           

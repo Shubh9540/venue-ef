@@ -76,7 +76,7 @@ export const ServiceDetailContent = ({ data }: { data?: ServiceDetailPageData })
           {data.offers.map((offer, index) => (
             <div 
               key={offer.id} 
-              className={`py-6 flex flex-col sm:flex-row gap-4 sm:gap-6 ${
+              className={`py-8 flex flex-col sm:flex-row gap-4 sm:gap-6 ${
                 index !== 0 ? 'border-t border-gray-100' : 'border-t border-gray-100'
               }`}
             >

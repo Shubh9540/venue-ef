@@ -26,7 +26,7 @@ export default async function GalleryPage() {
       <Breadcrumb data={sectionData.GalleryBreadcrumb?.variants?.VenueGalleryBreadcrumb1} />
       
       <div className="flex-grow">
-        <section className="py-12 lg:py-20 bg-white">
+        <section className="py-8 bg-white">
           <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8">
             <GalleryImageSection data={sectionData.GalleryPageContent?.variants?.VenueGalleryPage1} />
             

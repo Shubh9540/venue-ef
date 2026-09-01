@@ -22,7 +22,7 @@ export const FAQ = ({ data }: { data?: FAQPageData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 lg:py-20 bg-[#fafafa]">
+    <section className="py-8 bg-[#fafafa]">
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
@@ -55,7 +55,7 @@ export const FAQ = ({ data }: { data?: FAQPageData }) => {
                 >
                   <button
                     onClick={() => setOpenId(isOpen ? null : faq.id)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
+                    className="w-full px-6 py-8 flex items-center justify-between text-left focus:outline-none"
                   >
                     <div className="flex items-center gap-6">
                       <span className={`text-sm font-bold ${isOpen ? 'text-accent' : 'text-primary/70'}`}>
@@ -116,7 +116,7 @@ export const FAQ = ({ data }: { data?: FAQPageData }) => {
 
               <Link 
                 href={data.sidebar.buttonUrl}
-                className="w-full block text-center bg-primary text-white font-semibold py-4 rounded hover:bg-primary/90 transition-colors"
+                className="w-full block text-center bg-primary text-white font-semibold py-8 rounded hover:bg-primary/90 transition-colors"
               >
                 {data.sidebar.buttonText}
               </Link>

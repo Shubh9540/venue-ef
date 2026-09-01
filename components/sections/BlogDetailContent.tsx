@@ -8,7 +8,7 @@ export const BlogDetailContent = ({ data }: { data: BlogDetailData }) => {
     <article className="w-full">
       {/* Meta Badge */}
       <div className="mb-4">
-        <span className="inline-block bg-[#fdfaf6] text-[#861d43] px-3 py-1 text-xs font-bold uppercase tracking-wider rounded">
+        <span className="inline-block bg-[#fdfaf6] text-[#861d43] px-3 py-8 text-xs font-bold uppercase tracking-wider rounded">
           {data.badge}
         </span>
       </div>

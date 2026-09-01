@@ -33,7 +33,7 @@ export const NotFoundPageContent = ({ data }: { data?: NotFoundPageData }) => {
     <section className="relative w-full min-h-screen bg-[#fcfaf9] flex flex-col">
       
       {/* Hero Section (Fills remaining space before helpful links) */}
-      <div className="relative flex-1 flex flex-col items-center justify-center py-20 px-4 z-10 overflow-hidden min-h-[600px]">
+      <div className="relative flex-1 flex flex-col items-center justify-center py-8 px-4 z-10 overflow-hidden min-h-[600px]">
         
         {/* Background Image (faded bottom) */}
         {data.backgroundImage && (
@@ -78,7 +78,7 @@ export const NotFoundPageContent = ({ data }: { data?: NotFoundPageData }) => {
 
           <Link 
             href={data.buttonUrl} 
-            className="inline-flex items-center justify-center gap-2 bg-[#5a102a] text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-md hover:bg-[#3d0a21] transition-colors shadow-md"
+            className="inline-flex items-center justify-center gap-2 bg-[#5a102a] text-white font-bold text-xs uppercase tracking-widest px-8 py-8 rounded-md hover:bg-[#3d0a21] transition-colors shadow-md"
           >
             <span>{data.buttonText}</span>
             <FaArrowRight />
@@ -87,7 +87,7 @@ export const NotFoundPageContent = ({ data }: { data?: NotFoundPageData }) => {
       </div>
 
       {/* Explore Something Helpful Section */}
-      <div className="relative z-20 bg-[#fcfaf9] py-12 px-4 border-t border-gray-100">
+      <div className="relative z-20 bg-[#fcfaf9] py-8 px-4 border-t border-gray-100">
         <div className="max-w-[1100px] mx-auto">
           
           <div className="text-center mb-10">

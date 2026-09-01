@@ -17,7 +17,7 @@ export const Partners = ({ data }: { data?: PartnersPageData }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 lg:py-20 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
