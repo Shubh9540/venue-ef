@@ -55,7 +55,7 @@ export default function EventsPage() {
             {sectionData.EventsPageContent?.variants?.VenueEventsPage1?.items.map((item: EventCard) => (
               <Link
                 key={item.id}
-                href={`/events/${item.slug}`}
+                href={`/events/${item.id}`}
                 className="group flex flex-col sm:flex-row bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
               >
                 {/* Image Container */}

@@ -11,15 +11,17 @@ export const dynamic = 'force-dynamic';
 
 export default async function CareerDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
-  const slug = resolvedParams.id;
+  const id = resolvedParams.id;
   
   const templateData: VenueEfTemplateData = rawData as any;
   const sectionData = templateData.categories?.Venue?.sections;
 
   if (!sectionData) return null;
 
-  const breadcrumbData = sectionData.CareerDetailBreadcrumb?.variants?.[slug];
-  const pageData = sectionData.CareerDetailPageContent?.variants?.[slug];
+  // We map the dynamic route ID to the JSON variant key.
+  // E.g., URL /careers/frontend-developer -> key "frontend-developer"
+  const breadcrumbData = sectionData.CareerDetailBreadcrumb?.variants?.[id];
+  const pageData = sectionData.CareerDetailPageContent?.variants?.[id];
 
   if (!pageData) {
     return (
