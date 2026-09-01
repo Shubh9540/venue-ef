@@ -173,7 +173,7 @@ export const Testimonials = ({ data }: { data?: TestimonialsData }) => {
                     <span className="text-accent text-3xl sm:text-4xl font-serif leading-none select-none">
                       “
                     </span>
-                    <div className="bg-primary text-white text-[10px] px-2.5 py-8 rounded-sm flex items-center gap-1 shadow-sm">
+                    <div className="bg-primary text-white text-[10px] px-2.5 py-1 rounded-sm flex items-center gap-1 shadow-sm">
                       {Array.from({ length: item.rating || 5 }).map((_, s) => (
                         <FaStar key={s} className="text-[10px] text-white" />
                       ))}

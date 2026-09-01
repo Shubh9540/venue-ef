@@ -256,7 +256,7 @@ export const QuotePageContent = ({ data }: { data?: QuotePageData }) => {
                 {/* Submit Button */}
                 <button 
                   type="button" 
-                  className="w-full bg-[#3d0a21] hover:bg-[#861d43] text-white font-bold py-8 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-md mt-4"
+                  className="w-full bg-[#3d0a21] hover:bg-[#861d43] text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-md mt-4"
                 >
                   <FaPaperPlane className="text-sm" />
                   <span>{data.form.buttonText}</span>

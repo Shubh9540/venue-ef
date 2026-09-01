@@ -29,7 +29,7 @@ export const Counter = ({ data }: { data?: CounterData }) => {
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
         
         {/* Main Counter Container */}
-        <div className="relative bg-[#fef6f8] rounded-2xl p-8 lg:py-8 lg:px-6 overflow-hidden">
+        <div className="relative bg-[#fef6f8] rounded-2xl p-8 lg:py-12 lg:px-6 overflow-hidden">
           
           {/* Decorative Corner SVG - Right Only (3 Arc lines) */}
           <div className="absolute bottom-0 right-0 w-[200px] h-[200px] text-[#db9fb0] pointer-events-none opacity-40 translate-x-1/4 translate-y-1/4">

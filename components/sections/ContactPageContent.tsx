@@ -41,13 +41,13 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
                   type="text" 
                   placeholder="Full Name *" 
                   required
-                  className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
                 />
                 <input 
                   type="email" 
                   placeholder="Email Address *" 
                   required
-                  className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
                 />
               </div>
 
@@ -56,11 +56,11 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
                   type="tel" 
                   placeholder="Phone Number *" 
                   required
-                  className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
                 />
                 <div className="relative">
                   <select 
-                    className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light appearance-none"
+                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light appearance-none"
                     defaultValue=""
                   >
                     <option value="" disabled>Event Type</option>
@@ -80,20 +80,20 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
                 type="text" 
                 placeholder="Subject *" 
                 required
-                className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
+                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400"
               />
 
               <textarea 
                 placeholder="Message / Requirements *" 
                 rows={5}
                 required
-                className="w-full px-4 py-8 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400 resize-none"
+                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-md text-sm outline-none focus:border-accent transition-colors text-text-light placeholder:text-gray-400 resize-none"
               ></textarea>
 
               <div>
                 <button 
                   type="submit"
-                  className="bg-[#5a102a] hover:bg-primary transition-colors text-white text-xs font-bold tracking-[0.15em] uppercase py-8 px-8 rounded flex items-center gap-2"
+                  className="bg-[#5a102a] hover:bg-primary transition-colors text-white text-xs font-bold tracking-[0.15em] uppercase py-4 px-8 rounded flex items-center gap-2"
                 >
                   {data.formSubmitText}
                   <span>→</span>
@@ -113,7 +113,7 @@ export const ContactPageContent = ({ data }: { data?: ContactPageData }) => {
               {data.infoItems.map((item, index) => (
                 <div 
                   key={item.id} 
-                  className={`flex gap-5 py-8 ${index !== 0 ? 'border-t border-gray-100' : ''}`}
+                  className={`flex gap-5 py-6 ${index !== 0 ? 'border-t border-gray-100' : ''}`}
                 >
                   {/* Icon */}
                   <div className="w-12 h-12 rounded-full bg-[#fdf5f7] flex items-center justify-center text-[#7b2440] shrink-0">

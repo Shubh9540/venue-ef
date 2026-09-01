@@ -113,7 +113,7 @@ export const CareerDetailPageContent = ({ data }: { data?: CareerDetailData }) =
                   <input 
                     type="text" 
                     placeholder="Enter your full name" 
-                    className="w-full px-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                   />
                 </div>
 
@@ -125,7 +125,7 @@ export const CareerDetailPageContent = ({ data }: { data?: CareerDetailData }) =
                   <input 
                     type="email" 
                     placeholder="Enter your email" 
-                    className="w-full px-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                   />
                 </div>
 
@@ -137,7 +137,7 @@ export const CareerDetailPageContent = ({ data }: { data?: CareerDetailData }) =
                   <input 
                     type="tel" 
                     placeholder="Enter your phone number" 
-                    className="w-full px-4 py-8 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                   />
                 </div>
 
@@ -146,7 +146,7 @@ export const CareerDetailPageContent = ({ data }: { data?: CareerDetailData }) =
                   <label className="block text-xs font-bold text-primary mb-2">
                     Experience <span className="text-red-500">*</span>
                   </label>
-                  <select className="w-full px-4 py-8 bg-white border border-gray-200 rounded-lg text-sm text-text-light focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent appearance-none transition-colors">
+                  <select className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm text-text-light focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent appearance-none transition-colors">
                     <option value="">Select experience</option>
                     <option value="0-2">0 - 2 Years</option>
                     <option value="3-5">3 - 5 Years</option>
@@ -169,7 +169,7 @@ export const CareerDetailPageContent = ({ data }: { data?: CareerDetailData }) =
                 {/* Submit */}
                 <button 
                   type="button" 
-                  className="w-full bg-[#861d43] hover:bg-[#3d0a21] text-white font-bold py-8 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-md mt-6"
+                  className="w-full bg-[#861d43] hover:bg-[#3d0a21] text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-md mt-6"
                 >
                   <span>APPLY NOW</span>
                   <FaArrowRight className="text-sm" />

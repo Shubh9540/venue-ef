@@ -106,12 +106,20 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
             key={slide.id}
             className="animate-fadeIn"
           >
-            {/* Tagline Badge */}
-            <div className="inline-flex items-center gap-2 border border-accent/60 bg-accent/10 backdrop-blur-sm px-4 py-8.5 rounded-full mb-4 sm:mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-              <span className="text-accent text-xs sm:text-sm font-semibold tracking-widest uppercase">
-                {slide.badge}
-              </span>
+            {/* Tagline Simple */}
+            <div className="flex flex-col gap-3 mb-4 sm:mb-6">
+              {slide.dividerIcon && (
+                <div className="flex items-center justify-center w-fit text-accent">
+                  {renderIcon(slide.dividerIcon)}
+                </div>
+              )}
+              <div className="flex items-center gap-3">
+                <div className="w-8 sm:w-10 h-[1px] bg-white/60" />
+                <span className="text-white text-xs sm:text-sm font-semibold tracking-widest uppercase">
+                  {slide.badge}
+                </span>
+                <div className="w-8 sm:w-10 h-[1px] bg-white/60" />
+              </div>
             </div>
 
             {/* Title */}
@@ -119,19 +127,6 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
               {slide.title}{' '}
               <span className="text-accent italic font-serif font-normal">{slide.titleHighlight}</span>
             </h1>
-
-            {/* Standard Heart Divider */}
-            {slide.dividerIcon && (
-              <div className="flex items-center gap-2 mb-4 sm:mb-6">
-                <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
-                <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-                <div className="flex items-center justify-center text-accent text-base">
-                  {renderIcon(slide.dividerIcon)}
-                </div>
-                <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-                <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
-              </div>
-            )}
 
             {/* Description */}
             <p className="text-white/80 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 max-w-xl">
@@ -142,14 +137,14 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href={slide.primaryBtn.url}
-                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-white px-6 sm:px-7 py-8.5 rounded-md font-semibold text-sm sm:text-base transition-all duration-300 shadow-lg hover:shadow-accent/40 hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-white px-6 sm:px-7 py-3.5 rounded-md font-semibold text-sm sm:text-base transition-all duration-300 shadow-lg hover:shadow-accent/40 hover:shadow-xl"
               >
                 {slide.primaryBtn.text}
                 {renderIcon(slide.primaryBtn.icon || 'MdArrowForward')}
               </Link>
               <Link
                 href={slide.secondaryBtn.url}
-                className="inline-flex items-center justify-center gap-3 border border-white/60 hover:border-white text-white px-6 sm:px-7 py-8.5 rounded-md font-semibold text-sm sm:text-base transition-all duration-300 backdrop-blur-sm hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-3 border border-white/60 hover:border-white text-white px-6 sm:px-7 py-3.5 rounded-md font-semibold text-sm sm:text-base transition-all duration-300 backdrop-blur-sm hover:bg-white/10"
               >
                 <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/60 flex items-center justify-center">
                   {renderIcon(slide.secondaryBtn.icon || 'FaPlay')}

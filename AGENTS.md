@@ -33,9 +33,9 @@ lexora law firm/
 │   ├── layout.tsx                # Root layout (metadata only)
 │   ├── page.tsx                  # Homepage — renders all sections
 │   ├── about/page.tsx
-│   ├── services/[slug]/page.tsx  # Dynamic service pages
-│   ├── industries/[slug]/page.tsx
-│   ├── team/[slug]/page.tsx
+│   ├── services/[id]/page.tsx  # Dynamic service pages
+│   ├── industries/[id]/page.tsx
+│   ├── team/[id]/page.tsx
 │   ├── why-choose-us/page.tsx
 │   ├── our-approach/page.tsx
 │   └── sitemap/page.tsx
@@ -155,9 +155,9 @@ export default function SomePage() {
 In Next.js 15, `params` and `searchParams` in Page components are **Promises**. You MUST `await` them before using.
 ```tsx
 // CORRECT Next.js 15 dynamic route pattern
-export default async function DynamicPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function DynamicPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
-  const slug = resolvedParams.slug;
+  const id = resolvedParams.id;
   // ... rest of the code
 }
 ```
@@ -493,3 +493,14 @@ className="w-full lg:w-1/2 object-cover"
 - **Vertical Section Padding:** Use standard Tailwind classes like `py-8 lg:py-12` (which equals 32px to 48px) as the standard for main section wrappers. NEVER use 100px unless explicitly asked.
 - **Internal Component Spacing:** Keep gaps inside grids/flexboxes reasonable using standard classes (`gap-4` to `gap-8`).
 - The user has explicitly stated: *"spacing zyda nhi deni abi ap hr jga 100 100 px k rhye ho... 30 top se botoom se 30... usse talwind way mai hi likho usme px nhi ata"*. Adhere to this by keeping padding tight and using pure Tailwind values (`py-8`, `py-10`, `py-12`).
+
+---
+
+## 16. Strict Visual Design Fidelity (CRITICAL RULE)
+
+> **DO NOT** force generic designs, shapes, or project default styles if the user provides a specific design screenshot or layout requirement.
+> **DO NOT** blindly apply bulk standardization scripts (like global regex replaces for spacing) without carefully isolating ONLY the target elements (e.g., main section wrappers).
+
+- **Inner Component Paddings are Sacred:** When asked to standardize section spacing, NEVER modify the inner paddings of buttons (`py-2`, `py-3`), badges (`py-1`), or cards (`p-6`, `p-8`). Only target the outermost wrapper (e.g., `<section className="...">`).
+- **Match the Provided Design Exactly:** If the user provides a design screenshot, you must match its exact shapes (e.g., flat lines vs pill boxes), layout (centered vs left-aligned), and colors. Do not assume the existing codebase style is correct if the user explicitly asks for a layout from a screenshot.
+- **Ask Before Altering Designs:** If an instruction to standardize spacing or code might break the visual appearance of a UI element (like a button or a testimonial box), STOP and ask the user for confirmation or write a safer, more targeted script.

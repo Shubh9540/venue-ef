@@ -129,7 +129,7 @@ export const CareersPageContent = ({ data }: { data?: CareersPageData }) => {
                 <div className="col-span-2 flex justify-start lg:justify-end">
                   <Link 
                     href={`/careers/${pos.id}`}
-                    className="inline-flex items-center justify-center gap-2 border-2 border-[#861d43] text-[#861d43] hover:bg-[#861d43] hover:text-white font-bold text-xs uppercase tracking-widest px-6 py-8 rounded-md transition-colors w-full lg:w-auto"
+                    className="inline-flex items-center justify-center gap-2 border-2 border-[#861d43] text-[#861d43] hover:bg-[#861d43] hover:text-white font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-md transition-colors w-full lg:w-auto"
                   >
                     <span>Apply Now</span>
                     <FaArrowRight />
