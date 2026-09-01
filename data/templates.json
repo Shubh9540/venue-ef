@@ -1129,7 +1129,7 @@
               ],
               "contactButton": {
                 "text": "Get a Quote",
-                "url": "/contact"
+                "url": "/get-a-quote"
               }
             }
           }
@@ -1149,12 +1149,12 @@
                   "description": "From elegant venues to extraordinary celebrations, we bring your perfect event to life.",
                   "primaryBtn": {
                     "text": "Get a Quote",
-                    "url": "/contact",
+                    "url": "/get-a-quote",
                     "icon": "MdArrowForward"
                   },
                   "secondaryBtn": {
                     "text": "Watch Video",
-                    "url": "#video",
+                    "url": "/gallery",
                     "icon": "FaPlay"
                   }
                 },
@@ -1168,12 +1168,12 @@
                   "dividerIcon": "FaRegHeart",
                   "description": "From floral decor to grand banquets, we craft every detail of your special day with love and precision.",
                   "primaryBtn": {
-                    "text": "Explore Venues",
-                    "url": "/venues",
+                    "text": "Our Story",
+                    "url": "/our-story",
                     "icon": "MdArrowForward"
                   },
                   "secondaryBtn": {
-                    "text": "Our Portfolio",
+                    "text": "Our Gallery",
                     "url": "/gallery",
                     "icon": "FaPlay"
                   }
@@ -1964,7 +1964,7 @@
               "titleHighlight": "That Last Forever.",
               "description": "Whether it's an intimate gathering or a grand celebration, we're here to bring your vision to life with perfection.",
               "buttonText": "GET A QUOTE",
-              "buttonUrl": "/contact",
+              "buttonUrl": "/get-a-quote",
               "buttonIcon": "MdArrowForward",
               "phoneLabel": "TALK TO OUR EXPERT",
               "phoneNumber": "+91 98765 43210",
