@@ -2134,28 +2134,28 @@
                   "links": [
                     {
                       "id": "res-1",
-                      "label": "Event Planning Guide",
-                      "url": "/resources/event-planning-guide"
+                      "label": "Our Team",
+                      "url": "/team"
                     },
                     {
                       "id": "res-2",
-                      "label": "Checklists",
-                      "url": "/resources/checklists"
+                      "label": "Careers",
+                      "url": "/careers"
                     },
                     {
                       "id": "res-3",
-                      "label": "Vendor Recommendations",
-                      "url": "/resources/vendor-recommendations"
+                      "label": "Testimonials",
+                      "url": "/testimonials"
                     },
                     {
                       "id": "res-4",
-                      "label": "Budget Calculator",
-                      "url": "/resources/budget-calculator"
+                      "label": "Partners",
+                      "url": "/partners"
                     },
                     {
                       "id": "res-5",
                       "label": "FAQs",
-                      "url": "/faqs"
+                      "url": "/faq"
                     }
                   ]
                 }
@@ -2190,12 +2190,12 @@
                 {
                   "id": "legal-1",
                   "label": "Privacy Policy",
-                  "url": "/privacy"
+                  "url": "/privacy-policy"
                 },
                 {
                   "id": "legal-2",
                   "label": "Terms & Conditions",
-                  "url": "/terms"
+                  "url": "/terms-conditions"
                 }
               ],
               "tagline": "Made with passion for unforgettable experiences.",
