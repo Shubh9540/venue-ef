@@ -143,7 +143,6 @@ export interface CounterData {
 
 export interface ServiceCard {
   id: string;
-  slug: string;
   image: string;
   imageAlt?: string;
   icon: string;
@@ -192,7 +191,6 @@ export interface ServiceDetailPageData {
 
 export interface EventCard {
   id: string;
-  slug: string;
   title: string;
   description: string;
   image: string;
@@ -537,7 +535,6 @@ export interface CtaData {
 
 export interface BlogItem {
   id: string;
-  slug: string;
   image: string;
   imageAlt?: string;
   icon: string;
@@ -676,7 +673,6 @@ export interface TeamMemberStat {
 
 export interface TeamMember {
   id: string;
-  slug: string;
   name: string;
   role: string;
   image: string;

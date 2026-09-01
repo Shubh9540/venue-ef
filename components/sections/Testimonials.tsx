@@ -3,16 +3,18 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { TestimonialsData } from '@/types/templates.types';
-import { 
-  FaStar, 
-  FaRing, 
-  FaBriefcase, 
-  FaBirthdayCake, 
-  FaConciergeBell, 
-  FaRocket, 
+import {
+  FaStar,
+  FaRing,
+  FaBriefcase,
+  FaBirthdayCake,
+  FaConciergeBell,
+  FaRocket,
   FaGlassCheers,
   FaRegHeart,
-  FaHeart
+  FaHeart,
+  FaChevronLeft,
+  FaChevronRight
 } from 'react-icons/fa';
 
 const renderIcon = (iconName?: string) => {
@@ -110,7 +112,7 @@ export const Testimonials = ({ data }: { data?: TestimonialsData }) => {
   return (
     <section className="py-8 bg-[#fcf9fa] overflow-hidden">
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header Badge */}
         <div className="flex items-center justify-center gap-3 mb-2">
           <span className="block w-10 sm:w-14 h-0.5 bg-accent/70 shrink-0" />
@@ -160,81 +162,79 @@ export const Testimonials = ({ data }: { data?: TestimonialsData }) => {
               transform: `translateX(-${(current % total) * (100 / cardsPerView)}%)`
             }}
           >
-            {/* Repeated items for infinite loop */}
-            {[...items, ...items, ...items].map((item, idx) => (
-              <div 
-                key={`${item.id}-${idx}`}
-                className="w-full sm:w-1/2 lg:w-1/3 shrink-0 px-2 sm:px-3"
-              >
-                <div className="bg-white rounded-2xl p-5 sm:p-7 border border-[#f3d9e3] shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full group">
-                  
-                  {/* Top: Large Quote Mark & Star Rating Badge */}
-                  <div className="flex items-center justify-between mb-3 sm:mb-4">
-                    <span className="text-accent text-3xl sm:text-4xl font-serif leading-none select-none">
-                      “
-                    </span>
-                    <div className="bg-primary text-white text-[10px] px-2.5 py-1 rounded-sm flex items-center gap-1 shadow-sm">
-                      {Array.from({ length: item.rating || 5 }).map((_, s) => (
-                        <FaStar key={s} className="text-[10px] text-white" />
-                      ))}
-                    </div>
-                  </div>
+              {/* Repeated items for infinite loop */}
+              {[...items, ...items, ...items].map((item, idx) => (
+                <div
+                  key={`${item.id}-${idx}`}
+                  className="w-full sm:w-1/2 lg:w-1/3 shrink-0 px-2 sm:px-3"
+                >
+                  <div className="bg-white rounded-2xl p-5 sm:p-7 border border-[#f3d9e3] shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full group">
 
-                  {/* Body: Quote Text */}
-                  <p className="text-xs sm:text-[13px] text-[#4a4a4a] leading-relaxed mb-4 min-h-[50px] sm:min-h-[55px]">
-                    {item.quote}
-                  </p>
-
-                  {/* Decorative divider with diamond */}
-                  <div className="w-full relative flex items-center justify-center my-3">
-                    <div className="w-full h-px bg-[#f3d9e3]" />
-                    <span className="absolute bg-white px-2 text-accent text-[9px]">✦</span>
-                  </div>
-
-                  {/* Bottom: Author Details */}
-                  <div className="flex items-center gap-3.5 mt-1">
-                    <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-white shadow-md shrink-0">
-                      <Image
-                        src={item.image}
-                        alt={item.imageAlt || item.name}
-                        fill
-                        sizes="60px"
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <h4 className="text-sm sm:text-base font-bold text-primary leading-tight mb-1">
-                        {item.name}
-                      </h4>
-                      <div className="text-xs text-accent font-medium flex items-center gap-1.5">
-                        {renderIcon(item.roleIcon)}
-                        <span>{item.role}</span>
+                    {/* Top: Large Quote Mark & Star Rating Badge */}
+                    <div className="flex items-center justify-between mb-3 sm:mb-4">
+                      <span className="text-accent text-3xl sm:text-4xl font-serif leading-none select-none">
+                        “
+                      </span>
+                      <div className="bg-primary text-white text-[10px] px-2.5 py-1 rounded-sm flex items-center gap-1 shadow-sm">
+                        {Array.from({ length: item.rating || 5 }).map((_, s) => (
+                          <FaStar key={s} className="text-[10px] text-white" />
+                        ))}
                       </div>
                     </div>
-                  </div>
 
+                    {/* Body: Quote Text */}
+                    <p className="text-xs sm:text-[13px] text-[#4a4a4a] leading-relaxed mb-4 min-h-[50px] sm:min-h-[55px]">
+                      {item.quote}
+                    </p>
+
+                    {/* Decorative divider with diamond */}
+                    <div className="w-full relative flex items-center justify-center my-3">
+                      <div className="w-full h-px bg-[#f3d9e3]" />
+                      <span className="absolute bg-white px-2 text-accent text-[9px]">✦</span>
+                    </div>
+
+                    {/* Bottom: Author Details */}
+                    <div className="flex items-center gap-3.5 mt-1">
+                      <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-white shadow-md shrink-0">
+                        <Image
+                          src={item.image}
+                          alt={item.imageAlt || item.name}
+                          fill
+                          sizes="60px"
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="flex flex-col">
+                        <h4 className="text-sm sm:text-base font-bold text-primary leading-tight mb-1">
+                          {item.name}
+                        </h4>
+                        <div className="text-xs text-accent font-medium flex items-center gap-1.5">
+                          {renderIcon(item.roleIcon)}
+                          <span>{item.role}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-              </div>
             ))}
           </div>
         </div>
 
         {/* Navigation Dots */}
-        <div className="flex items-center justify-center gap-2 mt-6 lg:mt-10">
+        <div className="flex items-center justify-center gap-3 mt-6 lg:mt-10">
           {Array.from({ length: total }).map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`transition-all duration-300 rounded-full ${
-                (current % total) === i
-                  ? 'w-6 h-2 bg-primary'
-                  : 'w-2 h-2 bg-primary/25 hover:bg-primary/50'
-              }`}
+              className={`transition-all duration-300 rounded-full w-2.5 h-2.5 ${(current % total) === i
+                  ? 'bg-primary scale-110'
+                  : 'bg-black/15 hover:bg-black/30'
+                }`}
               aria-label={`Go to slide ${i + 1}`}
             />
           ))}
         </div>
-
       </div>
     </section>
   );

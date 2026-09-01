@@ -107,19 +107,12 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
             className="animate-fadeIn"
           >
             {/* Tagline Simple */}
-            <div className="flex flex-col gap-3 mb-4 sm:mb-6">
-              {slide.dividerIcon && (
-                <div className="flex items-center justify-center w-fit text-accent">
-                  {renderIcon(slide.dividerIcon)}
-                </div>
-              )}
-              <div className="flex items-center gap-3">
-                <div className="w-8 sm:w-10 h-[1px] bg-white/60" />
-                <span className="text-white text-xs sm:text-sm font-semibold tracking-widest uppercase">
-                  {slide.badge}
-                </span>
-                <div className="w-8 sm:w-10 h-[1px] bg-white/60" />
-              </div>
+            <div className="flex items-center gap-4 mb-4 sm:mb-6">
+              <div className="w-8 sm:w-12 h-[1px] bg-white/60" />
+              <span className="text-white text-xs sm:text-sm font-semibold tracking-widest uppercase">
+                {slide.badge}
+              </span>
+              <div className="w-8 sm:w-12 h-[1px] bg-white/60" />
             </div>
 
             {/* Title */}
@@ -127,6 +120,19 @@ export const HeroSlider = ({ data }: { data?: HeroData }) => {
               {slide.title}{' '}
               <span className="text-accent italic font-serif font-normal">{slide.titleHighlight}</span>
             </h1>
+
+            {/* Standard Heart Divider */}
+            {slide.dividerIcon && (
+              <div className="flex items-center gap-2 mb-4 sm:mb-6">
+                <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
+                <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                <div className="flex items-center justify-center text-accent text-base">
+                  {renderIcon(slide.dividerIcon)}
+                </div>
+                <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                <div className="w-12 sm:w-16 h-[1.5px] bg-accent rounded-full" />
+              </div>
+            )}
 
             {/* Description */}
             <p className="text-white/80 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 max-w-xl">
