@@ -54,8 +54,204 @@
             "about": {
               "components": [
                 {
-                  "key": "AboutUs",
-                  "component": "VenueAboutUs1"
+                  "key": "OurStory",
+                  "component": "VenueOurStory1"
+                },
+                {
+                  "key": "Counter",
+                  "component": "VenueCounter1"
+                },
+                {
+                  "key": "OurValues",
+                  "component": "VenueOurValues1"
+                },
+                {
+                  "key": "MissionVision",
+                  "component": "VenueMissionVision1"
+                },
+                {
+                  "key": "CoreValues",
+                  "component": "VenueCoreValues1"
+                }
+              ]
+            },
+            "blogs": {
+              "components": [
+                {
+                  "key": "Blogs",
+                  "component": "VenueBlogs1"
+                }
+              ]
+            },
+            "careers": {
+              "components": [
+                {
+                  "key": "CareersPageContent",
+                  "component": "VenueCareersPage1"
+                }
+              ]
+            },
+            "contact": {
+              "components": [
+                {
+                  "key": "ContactPageContent",
+                  "component": "VenueContactPage1"
+                }
+              ]
+            },
+            "cookies-policy": {
+              "components": [
+                {
+                  "key": "LegalPageContent",
+                  "component": "VenueCookiesPolicyPage"
+                }
+              ]
+            },
+            "disclaimer": {
+              "components": [
+                {
+                  "key": "LegalPageContent",
+                  "component": "VenueDisclaimerPage"
+                }
+              ]
+            },
+            "events": {
+              "components": [
+                {
+                  "key": "Events",
+                  "component": "VenueEvents1"
+                }
+              ]
+            },
+            "faq": {
+              "components": [
+                {
+                  "key": "FAQ",
+                  "component": "VenueFAQ1"
+                }
+              ]
+            },
+            "gallery": {
+              "components": [
+                {
+                  "key": "GalleryImageSection",
+                  "component": "VenueGalleryImage1"
+                },
+                {
+                  "key": "GalleryVideoSection",
+                  "component": "VenueGalleryVideo1"
+                }
+              ]
+            },
+            "get-a-quote": {
+              "components": [
+                {
+                  "key": "QuotePageContent",
+                  "component": "VenueQuotePage1"
+                }
+              ]
+            },
+            "our-awards": {
+              "components": [
+                {
+                  "key": "Awards",
+                  "component": "VenueAwards1"
+                }
+              ]
+            },
+            "our-mission": {
+              "components": [
+                {
+                  "key": "AboutMission",
+                  "component": "VenueAboutMission1"
+                }
+              ]
+            },
+            "our-story": {
+              "components": [
+                {
+                  "key": "OurStory",
+                  "component": "VenueOurStory1"
+                }
+              ]
+            },
+            "our-vision": {
+              "components": [
+                {
+                  "key": "AboutVision",
+                  "component": "VenueAboutVision1"
+                }
+              ]
+            },
+            "partners": {
+              "components": [
+                {
+                  "key": "Partners",
+                  "component": "VenuePartnersPage1"
+                }
+              ]
+            },
+            "privacy-policy": {
+              "components": [
+                {
+                  "key": "LegalPageContent",
+                  "component": "VenuePrivacyPage"
+                }
+              ]
+            },
+            "refund-policy": {
+              "components": [
+                {
+                  "key": "LegalPageContent",
+                  "component": "VenueRefundPage"
+                }
+              ]
+            },
+            "services": {
+              "components": [
+                {
+                  "key": "Services",
+                  "component": "VenueServices1"
+                }
+              ]
+            },
+            "sitemap": {
+              "components": [
+                {
+                  "key": "SitemapPageContent",
+                  "component": "VenueSitemap1"
+                }
+              ]
+            },
+            "team": {
+              "components": [
+                {
+                  "key": "Team",
+                  "component": "VenueTeam1"
+                }
+              ]
+            },
+            "terms-conditions": {
+              "components": [
+                {
+                  "key": "LegalPageContent",
+                  "component": "VenueTermsPage"
+                }
+              ]
+            },
+            "testimonials": {
+              "components": [
+                {
+                  "key": "Testimonials",
+                  "component": "VenueTestimonials1"
+                }
+              ]
+            },
+            "why-choose-us": {
+              "components": [
+                {
+                  "key": "WhyChooseUsPageContent",
+                  "component": "VenueWhyChooseUsPage1"
                 }
               ]
             }
