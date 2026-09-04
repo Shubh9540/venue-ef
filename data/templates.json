@@ -2425,43 +2425,37 @@
               "description": "From corporate gatherings to grand celebrations, we create experiences that connect people and leave a lasting impression.",
               "items": [
                 {
-                  "id": "1",
-                  "slug": "corporate-events",
+                  "id": "corporate-events",
                   "title": "Corporate Events",
                   "description": "Conferences, seminars, product launches and business meetings that drive impact.",
                   "image": "/about/about1.webp"
                 },
                 {
-                  "id": "2",
-                  "slug": "weddings",
+                  "id": "weddings",
                   "title": "Weddings",
                   "description": "Beautifully planned weddings that celebrate love with elegance and style.",
                   "image": "/about/about2.webp"
                 },
                 {
-                  "id": "3",
-                  "slug": "social-celebrations",
+                  "id": "social-celebrations",
                   "title": "Social Celebrations",
                   "description": "Birthdays, anniversaries and private parties crafted with creativity and care.",
                   "image": "/about/about2.webp"
                 },
                 {
-                  "id": "4",
-                  "slug": "exhibitions",
+                  "id": "exhibitions",
                   "title": "Exhibitions & Trade Shows",
                   "description": "Engaging booths and immersive experiences that showcase your brand brilliantly.",
                   "image": "/banner/banner1.webp"
                 },
                 {
-                  "id": "5",
-                  "slug": "seminars",
+                  "id": "seminars",
                   "title": "Seminars & Workshops",
                   "description": "Knowledge-driven events that inform, engage and inspire your audience.",
                   "image": "/banner/banner2.webp"
                 },
                 {
-                  "id": "6",
-                  "slug": "entertainment",
+                  "id": "entertainment",
                   "title": "Entertainment Events",
                   "description": "Live shows, concerts and entertainment nights that create unforgettable memories.",
                   "image": "/banner/banner3.webp"
